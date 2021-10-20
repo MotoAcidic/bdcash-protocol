@@ -5,7 +5,7 @@ It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensu
 [![GitHub Release Date](https://img.shields.io/github/release-date/bdcashdev/BigdataCash?color=%24000ace&cacheSeconds=3600)](https://github.com/BigdataCash/BigdataCash/releases)
 ### Coin Specs
 
-Coin Name | BigdataCash
+Coin Name | Bdcash Protocol
 :--- | :---
 Ticker | BDCASH
 Block time | 60 seconds
@@ -35,7 +35,7 @@ From | To | Rewards | Masternode | Staker |
 
 ### Social Network
  
-Twitter:  https://twitter.com/BigdataCash 
+Twitter:  https://twitter.com/bdcashprotocol 
 
 ANN Official:  https://bitcointalk.org/index.php?topic=5244522 
 
@@ -43,7 +43,7 @@ Discord:  https://discord.gg/rrr8vFS
 
 Reddit:  https://www.reddit.com/r/BigdataCash/ 
 
-Telegram Official: https://t.me/bigdatacash_official
+Telegram Official: https://t.me/bdcashprotocol_official
 
 ### Market/ Price  Data 
 Coinpaprika:  https://coinpaprika.com/coin/bdcash-bigdatacash/

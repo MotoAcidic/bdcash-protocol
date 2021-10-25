@@ -1,5 +1,5 @@
-## What is BigdataCash?
-It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensus Proof-Of-Stake and Masternodes. Our greatest mission is to bring privacy and security to cloud storage, bringing a new layer of security to existing services.
+## What is Bdcash Protocol?
+It is a peer-to-peer project based on and forked PIVX code with proof-of-stake consensus and masternode, but with major changes to its protocol, making our code unique allowing for faster transactions and relatively low fees.
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)

@@ -1,8 +1,8 @@
 ## What is BigdataCash?
 It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensus Proof-Of-Stake and Masternodes. Our greatest mission is to bring privacy and security to cloud storage, bringing a new layer of security to existing services.
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/bdcashdev/BigdataCash?color=%24000ace&cacheSeconds=3600)](https://github.com/BigdataCash/BigdataCash/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date/bdcashdev/BigdataCash?color=%24000ace&cacheSeconds=3600)](https://github.com/BigdataCash/BigdataCash/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 ### Coin Specs
 
 Coin Name | Bdcash Protocol

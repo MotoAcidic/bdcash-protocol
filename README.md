@@ -3,6 +3,7 @@ It is a peer-to-peer project based on and forked PIVX code with proof-of-stake c
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
+<img alt="open collective badge" src="https://opencollective.com/bdcash-protocol-project/tiers/sponsor/badge.svg?label=sponsor&color=brightgreen" />
 ### Coin Specs
 
 Coin Name | Bdcash Protocol

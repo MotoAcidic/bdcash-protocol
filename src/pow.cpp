@@ -38,11 +38,11 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         int64_t nTargetSpacing = 180;
         int64_t nTargetTimespan = 60 * 40;
 
-        if (!IsSporkActive(SPORK_20_BLOCK_TIME_ADJUSTMENT) && ActiveProtocol < TIME_CHANGE ) {
+        if (!IsSporkActive(SPORK_20_BLOCK_TIME_ADJUSTMENT) && ActiveProtocol() < TIME_CHANGE ) {
             nTargetSpacing = 180;
             nTargetTimespan = 60 * 40;
         }
-        else if (IsSporkActive(SPORK_20_BLOCK_TIME_ADJUSTMENT) && ActiveProtocol >= TIME_CHANGE ){
+        else if (IsSporkActive(SPORK_20_BLOCK_TIME_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE ){
             nTargetSpacing = 120;
             nTargetTimespan = 30;
         }

@@ -66,8 +66,8 @@ Just open a terminal and run following commands:
 
 ```
 sudo apt update
-sudo apt install build-essential libssl-dev curl -y
-curl -sL https://github.com/BdcashProtocol/bdcash-protocol/install.sh -o install.sh
+git clone https://github.com//BdcashProtocol/bdcash-protocol bdcash
+cd bdcash
 sudo chmod +x install.sh
 ./install.sh
 ```

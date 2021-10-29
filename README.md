@@ -58,3 +58,16 @@ CoinmarketCap https://coinmarketcap.com/currencies/bigdatacash/
 Coinlib: https://coinlib.io/coin/BDCASH/BigDataCash/
 
 Livecoinwatch : https://www.livecoinwatch.com/price/BigdataCash-BDCASH
+
+## Install with bash script
+If you're on Ubuntu you can install the wallet with our `install.sh` script.
+
+Just open a terminal and run following commands:
+
+```
+sudo apt update
+sudo apt install build-essential libssl-dev curl -y
+curl -sL https://github.com/BdcashProtocol/bdcash-protocol/install.sh -o install.sh
+sudo chmod +x install.sh
+./install.sh
+```

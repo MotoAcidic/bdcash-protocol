@@ -4,12 +4,14 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "amount.h"
-
+#include "spork.h"
 #include "tinyformat.h"
 
 CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 {
-    if (nSize > 0)
+    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && nSize > 0)
+        nSatoshisPerK = nFeePaid * 500 / nSize;
+    else if (!IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && nSize > 0)
         nSatoshisPerK = nFeePaid * 1000 / nSize;
     else
         nSatoshisPerK = 0;

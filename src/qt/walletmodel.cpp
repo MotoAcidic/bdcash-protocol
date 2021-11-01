@@ -234,7 +234,7 @@ WalletModel::SendCoinsReturn WalletModel::prepareTransaction(WalletModelTransact
                 return InvalidAmount;
             }
             total += subtotal;
-        } else { // User-entered bigdatacash address / amount:
+        } else { // User-entered bdcash address / amount:
             if (!validateAddress(rcp.address)) {
                 return InvalidAddress;
             }
@@ -323,7 +323,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction& tran
                 std::string value;
                 rcp.paymentRequest.SerializeToString(&value);
                 newTx->vOrderForm.push_back(make_pair(key, value));
-            } else if (!rcp.message.isEmpty()) // Message from normal bigdatacash:URI (bigdatacash:XyZ...?message=example)
+            } else if (!rcp.message.isEmpty()) // Message from normal bdcash:URI (bdcash:XyZ...?message=example)
             {
                 newTx->vOrderForm.push_back(make_pair("Message", rcp.message.toStdString()));
             }

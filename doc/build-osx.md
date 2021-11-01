@@ -33,26 +33,26 @@ Follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-BDCASH Core is now available at `./src/bigdatacashd`
+BDCASH Core is now available at `./src/bdcashd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=bigdatacashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/bigdatacash/bigdatacash.conf"
+    echo -e "rpcuser=bdcashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/bdcash/bdcash.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/bigdatacash/bigdatacash.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/bdcash/bdcash.conf"
 
 The first time you run recapd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/bigdatacash/debug.log
+    tail -f $HOME/Library/Application\ Support/bdcash/debug.log
 
 Other commands:
 -------
 
-    ./src/bigdatacashd -daemon # Starts the bigdatacash daemon.
-    ./src/bigdatacash-cli --help # Outputs a list of command-line options.
-    ./src/bigdatacash-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/bdcashd -daemon # Starts the bdcash daemon.
+    ./src/bdcash-cli --help # Outputs a list of command-line options.
+    ./src/bdcash-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------

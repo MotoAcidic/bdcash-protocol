@@ -1,19 +1,19 @@
 [Unit]
-Description=BIGDATACASH's distributed currency daemon
+Description=BDCASH's distributed currency daemon
 After=network.target
 
 [Service]
-User=bigdatacash
-Group=bigdatacash
+User=bdcash
+Group=bdcash
 
 Type=forking
-PIDFile=/var/lib/bigdatacashd/bigdatacashd.pid
+PIDFile=/var/lib/bdcashd/bdcashd.pid
 
-ExecStart=/usr/bin/bigdatacashd -daemon -pid=/var/lib/bigdatacashd/bigdatacashd.pid \
-          -conf=/etc/bigdatacash/bigdatacash.conf -datadir=/var/lib/bigdatacashd
+ExecStart=/usr/bin/bdcashd -daemon -pid=/var/lib/bdcashd/bdcashd.pid \
+          -conf=/etc/bdcash/bdcash.conf -datadir=/var/lib/bdcashd
 
-ExecStop=-/usr/bin/bigdatacash-cli -conf=/etc/bigdatacash/bigdatacash.conf \
-         -datadir=/var/lib/bigdatacashd stop
+ExecStop=-/usr/bin/bdcash-cli -conf=/etc/bdcash/bdcash.conf \
+         -datadir=/var/lib/bdcashd stop
 
 Restart=always
 PrivateTmp=true

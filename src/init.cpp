@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bigdatacash-config.h"
+#include "config/bdcash-config.h"
 #endif
 
 #include "init.h"
@@ -173,7 +173,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("bigdatacash-shutoff");
+    RenameThread("bdcash-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
 #ifdef ENABLE_WALLET
@@ -307,7 +307,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-blocknotify=<cmd>", _("Execute command when the best block changes (%s in cmd is replaced by block hash)"));
     strUsage += HelpMessageOpt("-checkblocks=<n>", strprintf(_("How many blocks to check at startup (default: %u, 0 = all)"), 500));
     strUsage += HelpMessageOpt("-checklevel=<n>", strprintf(_("How thorough the block verification of -checkblocks is (0-4, default: %u)"), 3));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "bigdatacash.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "bdcash.conf"));
     if (mode == HMM_BITCOIND) {
 #if !defined(WIN32)
         strUsage += HelpMessageOpt("-daemon", _("Run in the background as a daemon and accept commands"));
@@ -319,7 +319,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-maxorphantx=<n>", strprintf(_("Keep at most <n> unconnectable transactions in memory (default: %u)"), DEFAULT_MAX_ORPHAN_TRANSACTIONS));
     strUsage += HelpMessageOpt("-par=<n>", strprintf(_("Set the number of script verification threads (%u to %d, 0 = auto, <0 = leave that many cores free, default: %d)"), -(int)boost::thread::hardware_concurrency(), MAX_SCRIPTCHECK_THREADS, DEFAULT_SCRIPTCHECK_THREADS));
 #ifndef WIN32
-    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "bigdatacashd.pid"));
+    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "bdcashd.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
 #if !defined(WIN32)
@@ -412,7 +412,7 @@ std::string HelpMessage(HelpMessageMode mode)
         strUsage += HelpMessageOpt("-stopafterblockimport", strprintf(_("Stop running after importing blocks from disk (default: %u)"), 0));
         strUsage += HelpMessageOpt("-sporkkey=<privkey>", _("Enable spork administration functionality with the appropriate private key."));
     }
-    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, mempool, net, bigdatacash, (obfuscation, swifttx, masternode, mnpayments, mnbudget)"; // Don't translate these and qt below
+    string debugCategories = "addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, mempool, net, bdcash, (obfuscation, swifttx, masternode, mnpayments, mnbudget)"; // Don't translate these and qt below
     if (mode == HMM_BITCOIN_QT)
         debugCategories += ", qt";
     strUsage += HelpMessageOpt("-debug=<category>", strprintf(_("Output debugging information (default: %u, supplying <category> is optional)"), 0) + ". " +
@@ -442,7 +442,7 @@ std::string HelpMessage(HelpMessageMode mode)
     }
     strUsage += HelpMessageOpt("-shrinkdebugfile", _("Shrink debug.log file on client startup (default: 1 when no -debug)"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all BIGDATACASH specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all BDCASH specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)"), 0));
 
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
@@ -465,7 +465,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageGroup(_("Obfuscation options:"));
     strUsage += HelpMessageOpt("-enableobfuscation=<n>", strprintf(_("Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)"), 0));
     strUsage += HelpMessageOpt("-obfuscationrounds=<n>", strprintf(_("Use N separate masternodes to anonymize funds  (2-8, default: %u)"), 2));
-    strUsage += HelpMessageOpt("-anonymizebigdatacashamount=<n>", strprintf(_("Keep N BDCASH anonymized (default: %u)"), 0));
+    strUsage += HelpMessageOpt("-anonymizebdcashamount=<n>", strprintf(_("Keep N BDCASH anonymized (default: %u)"), 0));
     strUsage += HelpMessageOpt("-liquidityprovider=<n>", strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0));
 
     strUsage += HelpMessageGroup(_("SwiftTX options:"));
@@ -548,7 +548,7 @@ struct CImportingNow {
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("bigdatacash-loadblk");
+    RenameThread("bdcash-loadblk");
 
     // -reindex
     if (fReindex) {
@@ -606,7 +606,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 }
 
 /** Sanity checks
- *  Ensure that BIGDATACASH is running in a usable environment with all
+ *  Ensure that BDCASH is running in a usable environment with all
  *  necessary library support.
  */
 bool InitSanityCheck(void)
@@ -623,7 +623,7 @@ bool InitSanityCheck(void)
 }
 
 
-/** Initialize bigdatacash.
+/** Initialize bdcash.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2(boost::thread_group& threadGroup)
@@ -900,7 +900,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile))
         return InitError(strprintf(_("Wallet %s resides outside data directory %s"), strWalletFile, strDataDir));
 #endif
-    // Make sure only a single BIGDATACASH process is using the data directory.
+    // Make sure only a single BDCASH process is using the data directory.
     boost::filesystem::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fopen(pathLockFile.string().c_str(), "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
@@ -916,7 +916,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("BIGDATACASH version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("BDCASH version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
 #ifdef ENABLE_WALLET
     LogPrintf("Using BerkeleyDB version %s\n", DbEnv::version(0, 0, 0));
@@ -1582,7 +1582,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         nObfuscationRounds = 99999;
     }
 
-    nAnonymizeBDCASHAmount = GetArg("-anonymizebigdatacashamount", 0);
+    nAnonymizeBDCASHAmount = GetArg("-anonymizebdcashamount", 0);
     if (nAnonymizeBDCASHAmount > 999999) nAnonymizeBDCASHAmount = 999999;
     if (nAnonymizeBDCASHAmount < 2) nAnonymizeBDCASHAmount = 2;
 
@@ -1599,7 +1599,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
     LogPrintf("Obfuscation rounds %d\n", nObfuscationRounds);
-    LogPrintf("Anonymize BIGDATACASH Amount %d\n", nAnonymizeBDCASHAmount);
+    LogPrintf("Anonymize BDCASH Amount %d\n", nAnonymizeBDCASHAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

@@ -1,2 +1,2 @@
-usr/local/bin/bigdatacashd usr/bin
-usr/local/bin/bigdatacash-cli usr/bin
+usr/local/bin/bdcashd usr/bin
+usr/local/bin/bdcash-cli usr/bin

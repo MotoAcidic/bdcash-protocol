@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/bigdatacash-config.h \
+           src/bdcash-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/bigdatacash-config.h \
+           src/config/bdcash-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/bigdatacash.moc \
+           src/qt/bdcash.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/bigdatacash-cli.cpp \
-           src/bigdatacash-tx.cpp \
-           src/bigdatacash.cpp \
+           src/bdcash-cli.cpp \
+           src/bdcash-tx.cpp \
+           src/bdcash.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/bigdatacash.cpp \
-           src/qt/bigdatacashstrings.cpp \
+           src/qt/bdcash.cpp \
+           src/qt/bdcashstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_bigdatacash.cpp \
+           src/test/test_bdcash.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/bigdatacash.qrc src/qt/bigdatacash_locale.qrc
+RESOURCES += src/qt/bdcash.qrc src/qt/bdcash_locale.qrc
 
-TRANSLATIONS += src/qt/locale/bigdatacash_bg.ts \
-                src/qt/locale/bigdatacash_de.ts \
-                src/qt/locale/bigdatacash_en.ts \
-                src/qt/locale/bigdatacash_es.ts \
-                src/qt/locale/bigdatacash_fi.ts \
-                src/qt/locale/bigdatacash_fr.ts \
-                src/qt/locale/bigdatacash_it.ts \
-                src/qt/locale/bigdatacash_ja.ts \
-                src/qt/locale/bigdatacash_pl.ts \
-                src/qt/locale/bigdatacash_pt.ts \
-                src/qt/locale/bigdatacash_ru.ts \
-                src/qt/locale/bigdatacash_sk.ts \
-                src/qt/locale/bigdatacash_sv.ts \
-                src/qt/locale/bigdatacash_vi.ts \
-                src/qt/locale/bigdatacash_zh_CN.ts \
-                src/qt/locale/bigdatacash_zh_TW.ts
+TRANSLATIONS += src/qt/locale/bdcash_bg.ts \
+                src/qt/locale/bdcash_de.ts \
+                src/qt/locale/bdcash_en.ts \
+                src/qt/locale/bdcash_es.ts \
+                src/qt/locale/bdcash_fi.ts \
+                src/qt/locale/bdcash_fr.ts \
+                src/qt/locale/bdcash_it.ts \
+                src/qt/locale/bdcash_ja.ts \
+                src/qt/locale/bdcash_pl.ts \
+                src/qt/locale/bdcash_pt.ts \
+                src/qt/locale/bdcash_ru.ts \
+                src/qt/locale/bdcash_sk.ts \
+                src/qt/locale/bdcash_sv.ts \
+                src/qt/locale/bdcash_vi.ts \
+                src/qt/locale/bdcash_zh_CN.ts \
+                src/qt/locale/bdcash_zh_TW.ts

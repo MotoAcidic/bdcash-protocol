@@ -2,14 +2,14 @@
 
 BDCASH version *version* is now available from:
 
-  <https://github.com/bigdatacash-project/bigdatacash/releases>
+  <https://github.com/bdcash-project/bdcash/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/bigdatacash-project/bigdatacash/issues>
+  <https://github.com/bdcash-project/bdcash/issues>
 
 Compatibility
 ==============
@@ -65,4 +65,4 @@ Credits
 Thanks to everyone who directly contributed to this release:
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bigdatacash-project-translations/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bdcash-project-translations/).

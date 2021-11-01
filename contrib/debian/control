@@ -1,4 +1,4 @@
-Source: bigdatacash
+Source: bdcash
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,11 +22,11 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.bigdatacash.io
-Vcs-Git: git://github.com/BDCASHCoin/bigdatacash.git
-Vcs-Browser: http://github.com/BDCASHCoin/bigdatacash
+Homepage: http://www.bdcash.io
+Vcs-Git: git://github.com/BDCASHCoin/bdcash.git
+Vcs-Browser: http://github.com/BDCASHCoin/bdcash
 
-Package: bigdatacashd
+Package: bdcashd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,10 +39,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, bigdatacashd, and the CLI tool
- bigdatacash-cli to interact with the daemon.
+ This package provides the daemon, bdcashd, and the CLI tool
+ bdcash-cli to interact with the daemon.
 
-Package: bigdatacash-qt
+Package: bdcash-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

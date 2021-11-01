@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the bigdatacashd tests manually, launch src/test/test_bigdatacash .
+To run the bdcashd tests manually, launch src/test/test_bdcash .
 
-To add more bigdatacashd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more bdcashd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the bigdatacash-qt tests manually, launch src/qt/test/bigdatacash-qt_test
+To run the bdcash-qt tests manually, launch src/qt/test/bdcash-qt_test
 
-To add more bigdatacash-qt tests, add them to the `src/qt/test/` directory and
+To add more bdcash-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

@@ -29,7 +29,7 @@
       <string notr="true">QLabel { font-style:italic; }</string>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/bigdatacash_logo_horizontal&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/images/bdcash_logo_horizontal&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -49,7 +49,7 @@
    <item>
     <widget class="QLabel" name="sizeWarningLabel">
      <property name="text">
-      <string>BDCASH will download and store a copy of the BIGDATACASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</string>
+      <string>BDCASH will download and store a copy of the BDCASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</string>
      </property>
      <property name="wordWrap">
       <bool>true</bool>
@@ -199,7 +199,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../bigdatacash.qrc"/>
+  <include location="../bdcash.qrc"/>
  </resources>
  <connections>
   <connection>

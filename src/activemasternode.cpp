@@ -8,7 +8,7 @@
 #include "spork.h"
 
 //
-// Bootup the Masternode, look for a 5000 BIGDATACASH input and register on the network
+// Bootup the Masternode, look for a 5000 BDCASH input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

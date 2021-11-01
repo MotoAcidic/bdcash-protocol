@@ -101,7 +101,7 @@ Value getgenerate(const Array& params, bool fHelp)
         throw runtime_error(
             "getgenerate\n"
             "\nReturn if the server is set to generate coins or not. The default is false.\n"
-            "It is set with the command line argument -gen (or bigdatacash.conf setting gen)\n"
+            "It is set with the command line argument -gen (or bdcash.conf setting gen)\n"
             "It can also be set with the setgenerate call.\n"
             "\nResult\n"
             "true|false      (boolean) If the server is set to generate coins or not\n"
@@ -417,10 +417,10 @@ Value getblocktemplate(const Array& params, bool fHelp)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid mode");
 
     //if (vNodes.empty())
-    //    throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "BIGDATACASH is not connected!");
+    //    throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "BDCASH is not connected!");
 
     //if (IsInitialBlockDownload())
-    //    throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "BIGDATACASH is downloading blocks...");
+    //    throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "BDCASH is downloading blocks...");
 
     static unsigned int nTransactionsUpdatedLast;
 

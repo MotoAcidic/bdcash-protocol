@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2021 The PIVX Developers, The Bigdatacash Developers
+// Copyright (c) 2015-2021 The PIVX Developers, The Bdcash Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -97,15 +97,15 @@ public:
         pchMessageStart[3] = 0xa6;
         vAlertPubKey = ParseHex("049801bf46c8b443593b55388a6ed7ff7dd7ba5d5a7cc95327ec8427d56f2cab5ecfc9d2d0d6ca1a25cf96818cf1d38f21317c632634f2b9584c04915f5dac3325");
         nDefaultPort = 36264;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Bigdatacash starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Bdcash starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 3 * 60; // Bigdatacash: 1 minute (aka every block)
-        nTargetSpacing = 3 * 60;  // Bigdatacash: 1 minute
+        nTargetTimespan = 3 * 60; // Bdcash: 1 minute (aka every block)
+        nTargetSpacing = 3 * 60;  // Bdcash: 1 minute
         nLastPOWBlock = 10000;
         nMaturity = 15;
         nMasternodeCountDrift = 20;
@@ -172,7 +172,8 @@ public:
 
         vSeeds.push_back(CDNSSeedData("45.132.241.104", "45.132.241.104"));
         vSeeds.push_back(CDNSSeedData("144.91.78.61", "144.91.78.61"));
-        vSeeds.push_back(CDNSSeedData("node1", "node1.bdcashprotocol.com"));
+        vSeeds.push_back(CDNSSeedData("seed1", "seed1.bdcashprotocol.com"));
+        vSeeds.push_back(CDNSSeedData("seed2", "seed2.bdcashprotocol.com"));     
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 18);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
@@ -227,8 +228,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Bigdatacash: 1 minute
-        nTargetSpacing = 1 * 60;  // Bigdatacash: 1 minute
+        nTargetTimespan = 1 * 60; // Bdcash: 1 minute
+        nTargetSpacing = 1 * 60;  // Bdcash: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -266,16 +267,17 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("nodetest", "nodeTest.bdcashprotocol.com"));
+        vSeeds.push_back(CDNSSeedData("45.132.241.104", "45.132.241.104"));
+        vSeeds.push_back(CDNSSeedData("141.136.35.97", "141.136.35.97"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 250); // Testnet bigdatacash addresses start with 'P'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 290);  // Testnet bigdatacash script addresses start with 'M'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 250); // Testnet bdcash addresses start with 'P'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 290);  // Testnet bdcash script addresses start with 'M'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 184);     // Testnet private keys start with 2
-        // Testnet bigdatacash BIP32 pubkeys start with 'DRKV'
+        // Testnet bdcash BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet bigdatacash BIP32 prvkeys start with 'DRKP'
+        // Testnet bdcash BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet bigdatacash BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet bdcash BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));

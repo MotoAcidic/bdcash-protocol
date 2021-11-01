@@ -42,11 +42,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case BDCASH:
-        return QString("bigdatacash");
+        return QString("bdcash");
     case mBDCASH:
-        return QString("mbigdatacash");
+        return QString("mbdcash");
     case uBDCASH:
-        return QString::fromUtf8("ubigdatacash");
+        return QString::fromUtf8("ubdcash");
     default:
         return QString("???");
     }

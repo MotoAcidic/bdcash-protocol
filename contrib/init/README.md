@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: bigdatacashd.service
-Upstart: bigdatacashd.conf
-OpenRC:  bigdatacashd.openrc
-         bigdatacashd.openrcconf
-CentOS:  bigdatacashd.init
+SystemD: bdcashd.service
+Upstart: bdcashd.conf
+OpenRC:  bdcashd.openrc
+         bdcashd.openrcconf
+CentOS:  bdcashd.init
 
 have been made available to assist packagers in creating node packages here.
 

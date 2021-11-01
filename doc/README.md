@@ -3,7 +3,7 @@ BDCASH
 
 Setup
 ---------------------
-[BDCASH](http://bigdatacash.io/) is the original BDCASH client and it builds the backbone of the network. However, it downloads and stores the entire history of BDCASH transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[BDCASH](http://bdcash.io/) is the original BDCASH client and it builds the backbone of the network. However, it downloads and stores the entire history of BDCASH transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run BDCASH on your native platfor
 
 Unpack the files into a directory and run:
 
-- bin/32/bigdatacash-qt (GUI, 32-bit) or bin/32/bigdatacashd (headless, 32-bit)
-- bin/64/bigdatacash-qt (GUI, 64-bit) or bin/64/bigdatacashd (headless, 64-bit)
+- bin/32/bdcash-qt (GUI, 32-bit) or bin/32/bdcashd (headless, 32-bit)
+- bin/64/bdcash-qt (GUI, 64-bit) or bin/64/bdcashd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run bigdatacash-qt.exe.
+Unpack the files into a directory, and then run bdcash-qt.exe.
 
 ### OSX
 
@@ -34,7 +34,7 @@ The following are developer notes on how to build BDCASH on your native platform
 
 Development
 ---------------------
-The BDCASH repo's [root README](https://github.com/BDCASHCoin/bigdatacash/blob/master/README.md) contains relevant information on the development process and automated testing.
+The BDCASH repo's [root README](https://github.com/BDCASHCoin/bdcash/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

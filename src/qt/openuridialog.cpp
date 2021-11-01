@@ -18,7 +18,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent),
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("bigdatacash:");
+    ui->uriEdit->setPlaceholderText("bdcash:");
 #endif
 }
 
@@ -49,5 +49,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if (filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("bigdatacash:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("bdcash:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

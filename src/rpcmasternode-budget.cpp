@@ -137,7 +137,7 @@ Value preparebudget(const Array& params, bool fHelp)
 
     if (fHelp || params.size() != 6)
         throw runtime_error(
-            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"bigdatacash-address\" monthy-payment\n"
+            "preparebudget \"proposal-name\" \"url\" payment-count block-start \"bdcash-address\" monthy-payment\n"
             "\nPrepare proposal for network by signing and creating tx\n"
 
             "\nArguments:\n"
@@ -145,7 +145,7 @@ Value preparebudget(const Array& params, bool fHelp)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"bigdatacash-address\":   (string, required) BIGDATACASH address to send payments to\n"
+            "5. \"bdcash-address\":   (string, required) BDCASH address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
 
             "\nResult:\n"
@@ -230,7 +230,7 @@ Value submitbudget(const Array& params, bool fHelp)
 
     if (fHelp || params.size() != 7)
         throw runtime_error(
-            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"bigdatacash-address\" monthy-payment \"fee-tx\"\n"
+            "submitbudget \"proposal-name\" \"url\" payment-count block-start \"bdcash-address\" monthy-payment \"fee-tx\"\n"
             "\nSubmit proposal to the network\n"
 
             "\nArguments:\n"
@@ -238,7 +238,7 @@ Value submitbudget(const Array& params, bool fHelp)
             "2. \"url\":            (string, required) URL of proposal details (64 character limit)\n"
             "3. payment-count:    (numeric, required) Total number of monthly payments\n"
             "4. block-start:      (numeric, required) Starting super block height\n"
-            "5. \"bigdatacash-address\":   (string, required) BIGDATACASH address to send payments to\n"
+            "5. \"bdcash-address\":   (string, required) BDCASH address to send payments to\n"
             "6. monthly-payment:  (numeric, required) Monthly payment amount\n"
             "7. \"fee-tx\":         (string, required) Transaction hash from preparebudget command\n"
 
@@ -661,7 +661,7 @@ Value getbudgetprojection(const Array& params, bool fHelp)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) BIGDATACASH address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) BDCASH address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"
@@ -724,7 +724,7 @@ Value getbudgetinfo(const Array& params, bool fHelp)
             "    \"BlockEnd\": n,                (numeric) Proposal ending block\n"
             "    \"TotalPaymentCount\": n,       (numeric) Number of payments\n"
             "    \"RemainingPaymentCount\": n,   (numeric) Number of remaining payments\n"
-            "    \"PaymentAddress\": \"xxxx\",     (string) BIGDATACASH address of payment\n"
+            "    \"PaymentAddress\": \"xxxx\",     (string) BDCASH address of payment\n"
             "    \"Ratio\": x.xxx,               (numeric) Ratio of yeas vs nays\n"
             "    \"Yeas\": n,                    (numeric) Number of yea votes\n"
             "    \"Nays\": n,                    (numeric) Number of nay votes\n"

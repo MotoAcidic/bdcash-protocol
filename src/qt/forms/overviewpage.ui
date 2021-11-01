@@ -133,7 +133,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BIGDATACASH network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="text">
                <string notr="true">(out of sync)</string>
@@ -624,7 +624,7 @@
                </sizepolicy>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BIGDATACASH network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true"/>
@@ -1600,7 +1600,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BIGDATACASH network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true"/>

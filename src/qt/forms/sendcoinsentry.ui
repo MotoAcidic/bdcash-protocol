@@ -63,7 +63,7 @@
          </size>
         </property>
         <property name="toolTip">
-         <string>The BIGDATACASH address to send the payment to</string>
+         <string>The BDCASH address to send the payment to</string>
         </property>
         <property name="placeholderText">
          <string/>
@@ -79,7 +79,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bigdatacash.qrc">
+         <iconset resource="../bdcash.qrc">
           <normaloff>:/icons/address-book@2x</normaloff>:/icons/address-book@2x</iconset>
         </property>
         <property name="iconSize">
@@ -102,7 +102,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bigdatacash.qrc">
+         <iconset resource="../bdcash.qrc">
           <normaloff>:/icons/editpaste@2x</normaloff>:/icons/editpaste@2x</iconset>
         </property>
         <property name="iconSize">
@@ -125,7 +125,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bigdatacash.qrc">
+         <iconset resource="../bdcash.qrc">
           <normaloff>:/icons/remove@2x</normaloff>:/icons/remove@2x</iconset>
         </property>
         <property name="iconSize">
@@ -194,7 +194,7 @@
     <item row="3" column="1">
      <widget class="QLabel" name="messageTextLabel">
       <property name="toolTip">
-       <string>A message that was attached to the BIGDATACASH: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BIGDATACASH network.</string>
+       <string>A message that was attached to the BDCASH: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BDCASH network.</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>
@@ -659,7 +659,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bigdatacash.qrc">
+         <iconset resource="../bdcash.qrc">
           <normaloff>:/icons/remove@2x</normaloff>:/icons/remove@2x</iconset>
         </property>
         <property name="iconSize">
@@ -1192,7 +1192,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bigdatacash.qrc">
+         <iconset resource="../bdcash.qrc">
           <normaloff>:/icons/remove@2x</normaloff>:/icons/remove@2x</iconset>
         </property>
         <property name="iconSize">
@@ -1265,7 +1265,7 @@
   <tabstop>deleteButton_s</tabstop>
  </tabstops>
  <resources>
-  <include location="../bigdatacash.qrc"/>
+  <include location="../bdcash.qrc"/>
  </resources>
  <connections/>
 </ui>

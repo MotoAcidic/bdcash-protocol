@@ -162,7 +162,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../bigdatacash.qrc"/>
+  <include location="../bdcash.qrc"/>
  </resources>
  <connections/>
 </ui>

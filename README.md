@@ -1,9 +1,8 @@
 ## What is Bdcash Protocol?
-It is a peer-to-peer project based on and forked PIVX code with proof-of-stake consensus and masternode, but with major changes to its protocol, making our code unique allowing for faster transactions and relatively low fees.
+It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensus Proof-Of-Stake and Masternodes. Our greatest mission is to bring privacy and security to cloud storage, bringing a new layer of security to existing services.
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
-<img alt="open collective badge" src="https://opencollective.com/bdcash-protocol-project/tiers/sponsor/badge.svg?label=sponsor&color=brightgreen" />
 ### Coin Specs
 
 Coin Name | Bdcash Protocol
@@ -42,32 +41,19 @@ ANN Official:  https://bitcointalk.org/index.php?topic=5244522
 
 Discord:  https://discord.gg/rrr8vFS 
 
-Reddit:  https://www.reddit.com/r/BigdataCash/ 
+Reddit:  https://www.reddit.com/r/Bdcash/ 
 
 Telegram Official: https://t.me/bdcashprotocol_official
 
 ### Market/ Price  Data 
-Coinpaprika:  https://coinpaprika.com/coin/bdcash-bigdatacash/
+Coinpaprika:  https://coinpaprika.com/coin/bdcash-bdcash/
 
 Coingecko: https://coingecko.com/coins/bigdata-cash/
 
-Coinlore  https://www.coinlore.com/coin/bigdatacash
+Coinlore  https://www.coinlore.com/coin/bdcash
 
-CoinmarketCap https://coinmarketcap.com/currencies/bigdatacash/
+CoinmarketCap https://coinmarketcap.com/currencies/bdcash/
 
 Coinlib: https://coinlib.io/coin/BDCASH/BigDataCash/
 
-Livecoinwatch : https://www.livecoinwatch.com/price/BigdataCash-BDCASH
-
-## Install with bash script
-If you're on Ubuntu you can install the wallet with our `install.sh` script.
-
-Just open a terminal and run following commands:
-
-```
-sudo apt update
-git clone https://github.com//BdcashProtocol/bdcash-protocol bdcash
-cd bdcash
-sudo chmod +x install.sh
-./install.sh
-```
+Livecoinwatch : https://www.livecoinwatch.com/price/Bdcash-BDCASH

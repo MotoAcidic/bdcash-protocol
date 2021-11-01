@@ -36,10 +36,10 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Automatically start BIGDATACASH after logging in to the system.</string>
+          <string>Automatically start BDCASH after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start BIGDATACASH on system login</string>
+          <string>&amp;Start BDCASH on system login</string>
          </property>
         </widget>
        </item>
@@ -202,7 +202,7 @@
             <string notr="true"/>
            </property>
            <property name="text">
-            <string>Amount of BIGDATACASH to keep anonymized</string>
+            <string>Amount of BDCASH to keep anonymized</string>
            </property>
           </widget>
          </item>
@@ -323,7 +323,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Automatically open the BIGDATACASH client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -355,7 +355,7 @@
           </size>
          </property>
          <property name="toolTip">
-          <string>Connect to the BIGDATACASH network through a SOCKS5 proxy.</string>
+          <string>Connect to the BDCASH network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -539,7 +539,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting BIGDATACASH.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting BDCASH.</string>
            </property>
           </widget>
          </item>
@@ -561,7 +561,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bigdatacash-project/bigdatacash-project-translations</string>
+https://www.transifex.com/bdcash-project/bdcash-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

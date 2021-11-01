@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/bigdatacash/.bigdatacash" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bigdatacash/.bigdatacash"
+if [ -d "/var/lib/bdcash/.bdcash" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/bdcash/.bdcash"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bigdatacashd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/bdcashd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/bigdatacash/bigdatacash.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/bigdatacashd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/bigdatacashd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/bdcash/bdcash.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/bdcashd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/bdcashd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-bigdatacash}
-BITCOIND_GROUP=${BITCOIND_GROUP:-bigdatacash}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bigdatacashd}
+BITCOIND_USER=${BITCOIND_USER:-bdcash}
+BITCOIND_GROUP=${BITCOIND_GROUP:-bdcash}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bdcashd}
 
 name="BDCASH Daemon"
-description="BIGDATACASH crypto-currency p2p network daemon"
+description="BDCASH crypto-currency p2p network daemon"
 
-command="/usr/bin/bigdatacashd"
+command="/usr/bin/bdcashd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run bigdatacashd."
+		eerror "ERROR: You must set a secure rpcpassword to run bdcashd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

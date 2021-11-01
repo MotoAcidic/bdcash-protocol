@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../bigdatacash.qrc">:/images/about</pixmap>
+      <pixmap resource="../bdcash.qrc">:/images/about</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -100,7 +100,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../bigdatacash.qrc"/>
+  <include location="../bdcash.qrc"/>
  </resources>
  <connections>
   <connection>

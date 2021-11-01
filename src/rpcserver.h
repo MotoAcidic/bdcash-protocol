@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * BIGDATACASH RPC command dispatcher.
+ * BDCASH RPC command dispatcher.
  */
 class CRPCTable
 {

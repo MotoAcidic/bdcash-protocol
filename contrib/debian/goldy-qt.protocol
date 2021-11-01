@@ -1,6 +1,6 @@
 [Protocol]
-exec=bigdatacash-qt '%u'
-protocol=bigdatacash
+exec=bdcash-qt '%u'
+protocol=bdcash
 input=none
 output=none
 helper=true

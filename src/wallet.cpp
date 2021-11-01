@@ -2227,7 +2227,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, CAmount> >& vecSend,
                 if (nChange > 0) {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-bigdatacash-address
+                    // change transaction isn't always pay-to-bdcash-address
                     CScript scriptChange;
 		    bool combineChange = false;
 
@@ -3735,9 +3735,9 @@ string CWallet::SendMoney(const CTxDestination &address, CAmount nValue, CWallet
     return "";
 }
 
-bool CWallet::IsMine(const string& bigdatacash_address)
+bool CWallet::IsMine(const string& bdcash_address)
 {
-    CBitcoinAddress check_address(bigdatacash_address);
+    CBitcoinAddress check_address(bdcash_address);
     CTxDestination dest = check_address.Get();
     isminetype mine = pwalletMain ? ::IsMine(*pwalletMain, dest) : ISMINE_NO;
 

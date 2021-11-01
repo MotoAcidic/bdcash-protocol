@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.bigdatacash.BDCASH-Qt";
+        return @"io.bdcash.BDCASH-Qt";
     } else {
         return [self __bundleIdentifier];
     }

@@ -1,34 +1,33 @@
-Name "BDCASH Core (64-bit)"
+Name "BDCASH Core (32-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.6.0
+!define VERSION 1.7.0
 !define COMPANY "BDCASH"
-!define URL http://www.bigdatacash.org
-
+!define URL http://www.bdcashprotocol.com
 # MUI Symbol Definitions
-!define MUI_ICON "/mnt/c/BigdataCash/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/c/BigdataCash/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/mnt/c/bdcashprotocol/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/c/bdcashprotocol/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/mnt/c/BigdataCash/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/mnt/c/bdcashprotocol/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "BDCASH Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\bigdatacash-qt.exe
+!define MUI_FINISHPAGE_RUN $INSTDIR\bdcash-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/c/BigdataCash/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/mnt/c/bdcashprotocol/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "64" == "64"
+!if "32" == "64"
 !include x64.nsh
 !endif
 
@@ -48,8 +47,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/c/BigdataCash/bigdatacash-${VERSION}-win64-setup.exe
-!if "64" == "64"
+OutFile /mnt/c/bdcashprotocol/bdcash-${VERSION}-win32-setup.exe
+!if "32" == "64"
 InstallDir $PROGRAMFILES64\BDCASH
 !else
 InstallDir $PROGRAMFILES\BDCASH
@@ -73,19 +72,19 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /mnt/c/BigdataCash/release/bigdatacash-qt.exe
-    File /oname=COPYING.txt /mnt/c/BigdataCash/COPYING
-    File /oname=readme.txt /mnt/c/BigdataCash/doc/README_windows.txt
+    File /mnt/c/bdcashprotocol/release/bdcash-qt.exe
+    File /oname=COPYING.txt /mnt/c/bdcashprotocol/COPYING
+    File /oname=readme.txt /mnt/c/bdcashprotocol/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /mnt/c/BigdataCash/release/bigdatacashd.exe
-    File /mnt/c/BigdataCash/release/bigdatacash-cli.exe
+    File /mnt/c/bdcashprotocol/release/bdcashd.exe
+    File /mnt/c/bdcashprotocol/release/bdcash-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /mnt/c/BigdataCash/doc\*.*
+    File /r /mnt/c/bdcashprotocol/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
-    # Remove old wxwidgets-based-bigdatacash executable and locales:
-    Delete /REBOOTOK $INSTDIR\bigdatacash.exe
+    # Remove old wxwidgets-based-bdcash executable and locales:
+    Delete /REBOOTOK $INSTDIR\bdcash.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
@@ -95,7 +94,7 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\bigdatacash-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\bdcash-qt.exe
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -106,10 +105,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "bigdatacash" "URL Protocol" ""
-    WriteRegStr HKCR "bigdatacash" "" "URL:BDCASH"
-    WriteRegStr HKCR "bigdatacash\DefaultIcon" "" $INSTDIR\bigdatacash-qt.exe
-    WriteRegStr HKCR "bigdatacash\shell\open\command" "" '"$INSTDIR\bigdatacash-qt.exe" "%1"'
+    WriteRegStr HKCR "bdcash" "URL Protocol" ""
+    WriteRegStr HKCR "bdcash" "" "URL:BDCASH"
+    WriteRegStr HKCR "bdcash\DefaultIcon" "" $INSTDIR\bdcash-qt.exe
+    WriteRegStr HKCR "bdcash\shell\open\command" "" '"$INSTDIR\bdcash-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -127,7 +126,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\bigdatacash-qt.exe
+    Delete /REBOOTOK $INSTDIR\bdcash-qt.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -147,7 +146,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "bigdatacash"
+    DeleteRegKey HKCR "bdcash"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0
@@ -160,7 +159,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "64" == "64"
+!if "32" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

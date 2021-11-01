@@ -220,10 +220,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop BIGDATACASH server.");
+            "\nStop BDCASH server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "BIGDATACASH server stopping";
+    return "BDCASH server stopping";
 }
 
 
@@ -301,35 +301,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* BDCASH features */
-        {"bigdatacash", "masternode", &masternode, true, true, false},
-        {"bigdatacash", "listmasternodes", &listmasternodes, true, true, false},
-        {"bigdatacash", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"bigdatacash", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"bigdatacash", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"bigdatacash", "masternodedebug", &masternodedebug, true, true, false},
-        {"bigdatacash", "startmasternode", &startmasternode, true, true, false},
-        {"bigdatacash", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"bigdatacash", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"bigdatacash", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"bigdatacash", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"bigdatacash", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"bigdatacash", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"bigdatacash", "mnbudget", &mnbudget, true, true, false},
-        {"bigdatacash", "preparebudget", &preparebudget, true, true, false},
-        {"bigdatacash", "submitbudget", &submitbudget, true, true, false},
-        {"bigdatacash", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"bigdatacash", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"bigdatacash", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"bigdatacash", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"bigdatacash", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"bigdatacash", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"bigdatacash", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"bigdatacash", "checkbudgets", &checkbudgets, true, true, false},
-        {"bigdatacash", "mnsync", &mnsync, true, true, false},
-        {"bigdatacash", "spork", &spork, true, true, false},
-        {"bigdatacash", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"bdcash", "masternode", &masternode, true, true, false},
+        {"bdcash", "listmasternodes", &listmasternodes, true, true, false},
+        {"bdcash", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"bdcash", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"bdcash", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"bdcash", "masternodedebug", &masternodedebug, true, true, false},
+        {"bdcash", "startmasternode", &startmasternode, true, true, false},
+        {"bdcash", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"bdcash", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"bdcash", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"bdcash", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"bdcash", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"bdcash", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"bdcash", "mnbudget", &mnbudget, true, true, false},
+        {"bdcash", "preparebudget", &preparebudget, true, true, false},
+        {"bdcash", "submitbudget", &submitbudget, true, true, false},
+        {"bdcash", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"bdcash", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"bdcash", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"bdcash", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"bdcash", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"bdcash", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"bdcash", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"bdcash", "checkbudgets", &checkbudgets, true, true, false},
+        {"bdcash", "mnsync", &mnsync, true, true, false},
+        {"bdcash", "spork", &spork, true, true, false},
+        {"bdcash", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"bigdatacash", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"bdcash", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -594,16 +594,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use bigdatacashd, or the -server option to bigdatacash-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use bdcashd, or the -server option to bdcash-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=bigdatacashrpc\n"
+                                               "rpcuser=bdcashrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"BIGDATACASH Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"BDCASH Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1054,7 +1054,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> bigdatacash-cli " + methodname + " " + args + "\n";
+    return "> bdcash-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

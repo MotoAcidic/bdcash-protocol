@@ -17,13 +17,13 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>1.3.0, Copyright © 2009-2019 The Bitcoin Core developers, 2014-2019 The Dash Core developers, 2020-2021 The BDCASH developers</string>
+  <string>1.7.0, Copyright © 2009-2021 The Bitcoin Core developers, 2014-2021 The Dash Core developers, 2015-2021 The BDCASH developers</string>
 
   <key>CFBundleShortVersionString</key>
-  <string>1.3.0</string>
+  <string>1.7.0</string>
 
   <key>CFBundleVersion</key>
-  <string>1.3.0</string>
+  <string>1.7.0</string>
 
   <key>CFBundleSignature</key>
   <string>????</string>
@@ -32,7 +32,7 @@
   <string>BDCASH-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.bigdatacash.BDCASH-Qt</string>
+  <string>io.bdcash.BDCASH-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.bigdatacash.BDCASHPayment</string>
+      <string>io.bdcash.BDCASHPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bigdatacash</string>
+        <string>bdcash</string>
       </array>
     </dict>
   </array>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.bigdatacash.paymentrequest</string>
+      <string>io.bdcash.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>BDCASH payment request</string>
       <key>UTTypeConformsTo</key>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-bigdatacash-payment-request</string>
+        <string>application/x-bdcash-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>bigdatacashpaymentrequest</string>
+          <string>bdcashpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.bigdatacash.paymentrequest</string>
+        <string>io.bdcash.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

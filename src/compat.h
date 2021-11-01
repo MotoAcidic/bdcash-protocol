@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bigdatacash-config.h"
+#include "config/bdcash-config.h"
 #endif
 
 #ifdef WIN32

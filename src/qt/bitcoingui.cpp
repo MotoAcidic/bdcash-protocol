@@ -298,7 +298,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     QIcon icon_send = QIcon(":/icons/send@2x");
     icon_send.addPixmap(QPixmap(":/icons/send_on@2x"), QIcon::Normal, QIcon::On);
     sendCoinsAction = new QAction(icon_send, tr("&SEND"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a BIGDATACASH address"));
+    sendCoinsAction->setStatusTip(tr("Send coins to a BDCASH address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setFont(btn_font);
@@ -312,7 +312,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     QIcon icon_receive = QIcon(":/icons/receiving_addresses@2x");
     icon_receive.addPixmap(QPixmap(":/icons/receiving_addresses_on@2x"), QIcon::Normal, QIcon::On);
     receiveCoinsAction = new QAction(icon_receive, tr("&RECEIVE"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and bigdatacash: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and bdcash: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setFont(btn_font);
@@ -386,7 +386,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     aboutQtAction->setStatusTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setStatusTip(tr("Modify configuration options for BIGDATACASH"));
+    optionsAction->setStatusTip(tr("Modify configuration options for BDCASH"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
@@ -402,9 +402,9 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     unlockWalletAction->setToolTip(tr("Unlock wallet"));
     lockWalletAction = new QAction(tr("&Lock Wallet"), this);
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your BIGDATACASH addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your BDCASH addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified BIGDATACASH addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified BDCASH addresses"));
     bip38ToolAction = new QAction(QIcon(":/icons/key"), tr("&BIP38 tool"), this);
     bip38ToolAction->setToolTip(tr("Encrypt and decrypt private keys using a passphrase"));
     multiSendAction = new QAction(QIcon(":/icons/edit"), tr("&MultiSend"), this);
@@ -434,11 +434,11 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a BIGDATACASH: URI or payment request"));
+    openAction->setStatusTip(tr("Open a BDCASH: URI or payment request"));
 
     showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
-    showHelpMessageAction->setStatusTip(tr("Show the BDCASH help message to get a list with possible BIGDATACASH command-line options"));
+    showHelpMessageAction->setStatusTip(tr("Show the BDCASH help message to get a list with possible BDCASH command-line options"));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
@@ -847,7 +847,7 @@ void BitcoinGUI::setNumConnections(int count)
     }
     QIcon connectionItem = QIcon(icon).pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE);
     labelConnectionsIcon->setIcon(connectionItem);
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to BIGDATACASH network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to BDCASH network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count)
@@ -1000,7 +1000,7 @@ void BitcoinGUI::message(const QString& title, const QString& message, unsigned 
             break;
         }
     }
-    // Append title to "BIGDATACASH - "
+    // Append title to "BDCASH - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 

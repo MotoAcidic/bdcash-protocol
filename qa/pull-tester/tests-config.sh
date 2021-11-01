@@ -3,14 +3,14 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-BUILDDIR="/mnt/c/b8c"
-EXEEXT=""
+BUILDDIR="/mnt/c/bdcashprotocol"
+EXEEXT=".exe"
 
 # These will turn into comments if they were disabled when configuring.
 ENABLE_WALLET=1
 ENABLE_UTILS=1
 ENABLE_BITCOIND=1
 
-REAL_BITCOIND="$BUILDDIR/src/bigdatacashd${EXEEXT}"
-REAL_BITCOINCLI="$BUILDDIR/src/bigdatacash-cli${EXEEXT}"
+REAL_BITCOIND="$BUILDDIR/src/bdcashd${EXEEXT}"
+REAL_BITCOINCLI="$BUILDDIR/src/bdcash-cli${EXEEXT}"
 

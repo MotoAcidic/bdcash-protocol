@@ -20,7 +20,7 @@ Consensus | PoS / Mn
 Algorithm | Quark
 Collateral | 5,000 
 RPC/P2P main Port | 36264/36263
-RPCP2P testnet Port | 37264 / 37263
+RPC/P2P test Port | 37264/37263
  
 </td><td>
  

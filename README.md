@@ -1,5 +1,5 @@
-## What is Bdcash Protocol?
-It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensus Proof-Of-Stake and Masternodes. Our greatest mission is to bring privacy and security to cloud storage, bringing a new layer of security to existing services.
+## What is BDCash Protocol?
+The best decentralization to cash or the BDCASH is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
 
 
 ![GitHub Logo](https://bdcashprotocol.com/img/bdcash-logo.png) </br>

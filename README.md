@@ -2,13 +2,16 @@
 The best decentralization to cash or the BDCASH is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
 
 
-![GitHub Logo](https://bdcashprotocol.com/img/bdcash-logo.png) </br>
+<img style="float:right;" src="https://bdcashprotocol.com/img/bdcash-logo.png"></br>
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/rrr8vFS) 
 [![Twitter Follow](https://img.shields.io/twitter/follow/BdcashProtocol)](https://twitter.com/BdcashProtocol)
-### Coin Specs
 
+<table>
+<tr><th>Coin Specs </th><th>Reward Schema</th></tr>
+<tr><td>
+ 
 Coin Name | BDCash Protocol
 :--- | :---
 Ticker | BDCASH
@@ -18,11 +21,11 @@ Algorithm | Quark
 Collateral | 5,000 
 RPC/P2P main Port | 36264/36263
 RPCP2P testnet Port | 37264 / 37263
-
-### Reward Schema
-
+ 
+</td><td>
+ 
 From | To | Rewards | Masternode | Staker |
----: | ---: | ---: | ---: | ---: |
+---: | --- | ---: | ---: | ---: |
 0         | 1         | 1,000,000   | 0%  | 0%  
 2     | 10000    | 1      | 0% | 0% 
 10001     | 19999    | 2     | 75% | 25% 
@@ -35,7 +38,8 @@ From | To | Rewards | Masternode | Staker |
 150000    | 199999   | 0.75  | 80% | 20% 
 200000    | 299999   | 0.5   | 90% | 10% 
 300000    | to end   | 0.25  | 70% | 30% 
-
+ 
+</td></tr> </table>
 
 ### Clients:
 [![GitHub Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/latest/total)](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest) 

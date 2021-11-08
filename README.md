@@ -36,7 +36,12 @@ From | To | Rewards | Masternode | Staker |
 200000    | 299999   | 0.5   | 90% | 10% 
 300000    | to end   | 0.25  | 70% | 30% 
 
-### Social Network
+
+### Clients:
+> [Client Binaries](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest)<br>
+> [![GitHub Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/latest/total)](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest) [![GitHub All Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/total?label=downloads%40all%20releases)](https://github.com/BdcashProtocol/bdcash-protocol/releases)<br>
+
+### Social Network:
  
 Twitter:  https://twitter.com/bdcashprotocol 
 
@@ -48,7 +53,7 @@ Reddit:  https://www.reddit.com/r/Bdcash/
 
 Telegram Official: https://t.me/bdcashprotocol_official
 
-### Market/ Price  Data 
+### Market/ Price  Data:
 
 CoinmarketCap https://coinmarketcap.com/currencies/bdcash/
 

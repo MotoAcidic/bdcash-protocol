@@ -1,14 +1,17 @@
 ## What is Bdcash Protocol?
 It is a peer-to-peer technology cryptocurrency based on PIVX code, with consensus Proof-Of-Stake and Masternodes. Our greatest mission is to bring privacy and security to cloud storage, bringing a new layer of security to existing services.
 
+
+![GitHub Logo](https://bdcashprotocol.com/img/bdcash-logo.png) </br>
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
+[![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/rrr8vFS) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/BdcashProtocol)](https://twitter.com/BdcashProtocol)
 ### Coin Specs
 
-Coin Name | Bdcash Protocol
+Coin Name | BDCash Protocol
 :--- | :---
 Ticker | BDCASH
-Block time | 60 seconds
 Maximum supply | 15,000,000(15M) 
 Consensus mechanism | Proof-of-Stake / Masternode
 Algorithm | Quark
@@ -46,13 +49,14 @@ Reddit:  https://www.reddit.com/r/Bdcash/
 Telegram Official: https://t.me/bdcashprotocol_official
 
 ### Market/ Price  Data 
+
+CoinmarketCap https://coinmarketcap.com/currencies/bdcash/
+
 Coinpaprika:  https://coinpaprika.com/coin/bdcash-bdcash/
 
 Coingecko: https://coingecko.com/coins/bigdata-cash/
 
 Coinlore  https://www.coinlore.com/coin/bdcash
-
-CoinmarketCap https://coinmarketcap.com/currencies/bdcash/
 
 Coinlib: https://coinlib.io/coin/BDCASH/BigDataCash/
 

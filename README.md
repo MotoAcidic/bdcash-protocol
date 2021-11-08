@@ -16,7 +16,7 @@ Coin Name | BDCash Protocol
 :--- | :---
 Ticker | BDCASH
 Maximum supply | 15,000,000(15M) 
-Consensus mechanism | PoS / Mn
+Consensus | PoS / Mn
 Algorithm | Quark
 Collateral | 5,000 
 RPC/P2P main Port | 36264/36263

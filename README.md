@@ -38,31 +38,24 @@ From | To | Rewards | Masternode | Staker |
 
 
 ### Clients:
-> [Client Binaries](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest)<br>
-> [![GitHub Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/latest/total)](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest) [![GitHub All Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/total?label=downloads%40all%20releases)](https://github.com/BdcashProtocol/bdcash-protocol/releases)<br>
+[![GitHub Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/latest/total)](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest) 
+[![GitHub All Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/total?label=downloads%40all%20releases)](https://github.com/BdcashProtocol/bdcash-protocol/releases)<br>
 
 ### Social Network:
- 
-Twitter:  https://twitter.com/bdcashprotocol 
-
-ANN Official:  https://bitcointalk.org/index.php?topic=5244522 
-
-Discord:  https://discord.gg/rrr8vFS 
-
-Reddit:  https://www.reddit.com/r/Bdcash/ 
-
-Telegram Official: https://t.me/bdcashprotocol_official
+ [![Twitter](https://img.shields.io/static/v1?label=Twitter&message=Follow&color=blue)](https://twitter.com/bdcashprotocol) 
+ [![ANN Official](https://img.shields.io/static/v1?label=BitcoinTalk&message=Join&color=yellow)](https://bitcointalk.org/index.php?topic=5244522) 
+ [![Discord](https://img.shields.io/static/v1?label=Discord&message=Join&color=blueviolet)](https://discord.gg/rrr8vFS)
+ [![Telegram Officia](https://img.shields.io/static/v1?label=Telegram&message=Join&color=blue)](https://t.me/bdcashprotocol_official) 
+ [![Reddit](https://img.shields.io/static/v1?label=Reddit&message=Join&color=orange)](https://www.reddit.com/r/Bdcash/)
+ [![Medium](https://img.shields.io/static/v1?label=Medium&message=Join&color=green)](https://bdcashprotocol.medium.com/) 
+  
 
 ### Market/ Price  Data:
 
-CoinmarketCap https://coinmarketcap.com/currencies/bdcash/
-
-Coinpaprika:  https://coinpaprika.com/coin/bdcash-bdcash/
-
-Coingecko: https://coingecko.com/coins/bigdata-cash/
-
-Coinlore  https://www.coinlore.com/coin/bdcash
-
-Coinlib: https://coinlib.io/coin/BDCASH/BigDataCash/
-
-Livecoinwatch : https://www.livecoinwatch.com/price/Bdcash-BDCASH
+[![CoinMarketCap](https://img.shields.io/static/v1?label=CoinMarketCap&message=Check&color=blue)](https://coinmarketcap.com/currencies/bdcash/) 
+[![CoinGecko](https://img.shields.io/static/v1?label=CoinGecko&message=Check&color=green)](https://coingecko.com/coins/bigdata-cash/) 
+[![Coinpaprika](https://img.shields.io/static/v1?label=Coinpaprika&message=Join&color=red)](https://coinpaprika.com/coin/bdcash-bdcash/) 
+[![Coinlore](https://img.shields.io/static/v1?label=Coinlore&message=Join&color=9cf)](https://www.coinlore.com/coin/bdcash)
+[![Coinlib](https://img.shields.io/static/v1?label=Coinlib&message=Join&color=Blueblack)](https://coinlib.io/coin/BDCASH/BigDataCash/) 
+[![LivecoinWatch](https://img.shields.io/static/v1?label=LivecoinWatch&message=Join&color=greenblack)](https://www.livecoinwatch.com/price/Bdcash-BDCASH) 
+ 

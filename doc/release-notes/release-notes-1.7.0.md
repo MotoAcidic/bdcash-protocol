@@ -4,9 +4,10 @@
 2. New Logo, icons and images to QT binaries.
 3. Reduce fee  transaction 50% from atually.
 4. Reduce time block 50% from atually
+5. Fix network stucked
 
 
 ## Contributors
 
-- Tfinch ()
-- Fabianno Limma ()
+- Tfinch (https://github.com/MotoAcidic)
+- Fabianno Limma (https://github.com/bdcashdev)

@@ -1,7 +1,6 @@
 ## What is BDCash Protocol?
 The best decentralization to cash or the BDCASH is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
 
-
 <img style="float:right;" src="https://bdcashprotocol.com/img/bdcash-logo.png"></br>
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
 [![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)

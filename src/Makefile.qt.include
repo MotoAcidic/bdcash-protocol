@@ -1,32 +1,32 @@
-bin_PROGRAMS += qt/bigdatacash-qt
+bin_PROGRAMS += qt/bdcash-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# bigdatacash qt core #
+# bdcash qt core #
 QT_TS = \
-  qt/locale/bigdatacash_bg.ts \
-  qt/locale/bigdatacash_ca.ts \
-  qt/locale/bigdatacash_cs.ts \
-  qt/locale/bigdatacash_da.ts \
-  qt/locale/bigdatacash_de.ts \
-  qt/locale/bigdatacash_en.ts \
-  qt/locale/bigdatacash_en_US.ts \
-  qt/locale/bigdatacash_es.ts \
-  qt/locale/bigdatacash_fi.ts \
-  qt/locale/bigdatacash_fr_FR.ts \
-  qt/locale/bigdatacash_it.ts \
-  qt/locale/bigdatacash_ja.ts \
-  qt/locale/bigdatacash_ko_KR.ts \
-  qt/locale/bigdatacash_nl.ts \
-  qt/locale/bigdatacash_pl.ts \
-  qt/locale/bigdatacash_pt.ts \
-  qt/locale/bigdatacash_pt_BR.ts \
-  qt/locale/bigdatacash_ro_RO.ts \
-  qt/locale/bigdatacash_ru.ts \
-  qt/locale/bigdatacash_sk.ts \
-  qt/locale/bigdatacash_sv.ts \
-  qt/locale/bigdatacash_uk.ts \
-  qt/locale/bigdatacash_zh_CN.ts \
-  qt/locale/bigdatacash_zh_TW.ts
+  qt/locale/bdcash_bg.ts \
+  qt/locale/bdcash_ca.ts \
+  qt/locale/bdcash_cs.ts \
+  qt/locale/bdcash_da.ts \
+  qt/locale/bdcash_de.ts \
+  qt/locale/bdcash_en.ts \
+  qt/locale/bdcash_en_US.ts \
+  qt/locale/bdcash_es.ts \
+  qt/locale/bdcash_fi.ts \
+  qt/locale/bdcash_fr_FR.ts \
+  qt/locale/bdcash_it.ts \
+  qt/locale/bdcash_ja.ts \
+  qt/locale/bdcash_ko_KR.ts \
+  qt/locale/bdcash_nl.ts \
+  qt/locale/bdcash_pl.ts \
+  qt/locale/bdcash_pt.ts \
+  qt/locale/bdcash_pt_BR.ts \
+  qt/locale/bdcash_ro_RO.ts \
+  qt/locale/bdcash_ru.ts \
+  qt/locale/bdcash_sk.ts \
+  qt/locale/bdcash_sv.ts \
+  qt/locale/bdcash_uk.ts \
+  qt/locale/bdcash_zh_CN.ts \
+  qt/locale/bdcash_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -104,16 +104,16 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/bigdatacash.moc \
+  qt/bdcash.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_bigdatacash.cpp
-QT_QRC = qt/bigdatacash.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_bigdatacash_locale.cpp
-QT_QRC_LOCALE = qt/bigdatacash_locale.qrc
+QT_QRC_CPP = qt/qrc_bdcash.cpp
+QT_QRC = qt/bdcash.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_bdcash_locale.cpp
+QT_QRC_LOCALE = qt/bdcash_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -334,7 +334,7 @@ RES_IMAGES = \
   qt/res/images/AEGbrand2x.png \
   qt/res/images/AEGbrand.png \
   qt/res/images/AEGbrand.svg \
-  qt/res/images/bigdatacash_logo_horizontal.png \
+  qt/res/images/bdcash_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/leftArrow_small.png \
@@ -359,7 +359,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/bigdatacash-qt-res.rc
+BITCOIN_RC = qt/res/bdcash-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -379,68 +379,68 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_bigdatacash_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_bdcash_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# bigdatacash-qt binary #
-qt_bigdatacash_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# bdcash-qt binary #
+qt_bdcash_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_bigdatacash_qt_SOURCES = qt/bigdatacash.cpp
+qt_bdcash_qt_SOURCES = qt/bdcash.cpp
 if TARGET_DARWIN
-  qt_bigdatacash_qt_SOURCES += $(BITCOIN_MM)
+  qt_bdcash_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_bigdatacash_qt_SOURCES += $(BITCOIN_RC)
+  qt_bdcash_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_bigdatacash_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_bdcash_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_bigdatacash_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_bdcash_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_bigdatacash_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_bdcash_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_bigdatacash_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_bdcash_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
-qt_bigdatacash_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_bigdatacash_qt_LIBTOOLFLAGS = --tag CXX
+qt_bdcash_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_bdcash_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/bigdatacashstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/bdcashstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/bigdatacashstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/bdcashstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/bigdatacash_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/bdcash_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bigdatacash_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bdcash_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_FONTS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bigdatacash $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name bdcash $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-bigdatacash_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bigdatacash_qt_OBJECTS) qt/bigdatacash-qt$(EXEEXT) $(LIBBITCOINQT)
+bdcash_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_bdcash_qt_OBJECTS) qt/bdcash-qt$(EXEEXT) $(LIBBITCOINQT)
 
-bigdatacash_qt : qt/bigdatacash-qt$(EXEEXT)
+bdcash_qt : qt/bdcash-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

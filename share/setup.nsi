@@ -1,4 +1,4 @@
-Name "BDCASH Core (32-bit)"
+Name "BDCASH Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -8,6 +8,7 @@ SetCompressor /SOLID lzma
 !define VERSION 1.7.0
 !define COMPANY "BDCASH"
 !define URL http://www.bdcashprotocol.com
+
 # MUI Symbol Definitions
 !define MUI_ICON "/mnt/c/bdcashprotocol/share/pixmaps/bitcoin.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "/mnt/c/bdcashprotocol/share/pixmaps/nsis-wizard.bmp"
@@ -27,7 +28,7 @@ SetCompressor /SOLID lzma
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
-!if "32" == "64"
+!if "" == "64"
 !include x64.nsh
 !endif
 
@@ -47,8 +48,8 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /mnt/c/bdcashprotocol/bdcash-${VERSION}-win32-setup.exe
-!if "32" == "64"
+OutFile /mnt/c/bdcashprotocol/bdcash-${VERSION}-win-setup.exe
+!if "" == "64"
 InstallDir $PROGRAMFILES64\BDCASH
 !else
 InstallDir $PROGRAMFILES\BDCASH
@@ -159,7 +160,7 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
-!if "32" == "64"
+!if "" == "64"
     ${If} ${RunningX64}
       ; disable registry redirection (enable access to 64-bit portion of registry)
       SetRegView 64

@@ -5,5 +5,5 @@ make HOST=x86_64-w64-mingw32
 cd ..
 
 bash autogen.sh # not required when building from tarball
-CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
+CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/ --disable-zmq
 make

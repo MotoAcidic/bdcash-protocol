@@ -344,7 +344,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("APOLLON Stake");
+        return tr("BDCASH Stake");
     case TransactionRecord::StakeZAPOLLON:
         return tr("zAPOLLON Stake");
     case TransactionRecord::Generated:
@@ -360,15 +360,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted APOLLON to zAPOLLON");
+        return tr("Converted BDCASH to zAPOLLON");
     case TransactionRecord::ZerocoinSpend:
         return tr("Spent zAPOLLON");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received APOLLON from zAPOLLON");
+        return tr("Received BDCASH from zAPOLLON");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
         return tr("Minted Change as zAPOLLON from zAPOLLON Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zAPOLLON to APOLLON");
+        return tr("Converted zAPOLLON to BDCASH");
 
     default:
         return QString();

@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/apollon-config.h"
+#include "config/bdcash-config.h"
 #endif
 
 #include "optionsdialog.h"
@@ -86,8 +86,8 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     }
 
     /* Theme selector static themes */
-    ui->theme->addItem(QString("apollon dark mode"), QVariant("default"));
-    ui->theme->addItem(QString("apollon light mode"), QVariant("light"));
+    ui->theme->addItem(QString("bdcash dark mode"), QVariant("default"));
+    ui->theme->addItem(QString("bdcash light mode"), QVariant("light"));
 
     /* Preferred Zerocoin Denominations */
     ui->preferredDenom->addItem(QString(tr("Any")), QVariant("0"));

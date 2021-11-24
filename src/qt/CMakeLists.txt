@@ -159,12 +159,12 @@ set_source_files_properties(${QT_TRANSLATIONS_FILES} PROPERTIES OUTPUT_LOCATION 
 QT5_ADD_TRANSLATION(QM ${QT_TRANSLATIONS_FILES})
 add_custom_target(translations_target ALL DEPENDS ${QM})
 
-QT5_ADD_RESOURCES(QRC_RESOURCE apollon.qrc)
+QT5_ADD_RESOURCES(QRC_RESOURCE bdcash.qrc)
 QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE apollon_locale.qrc)
 
-add_executable(apollon-qt apollon.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
-add_dependencies(apollon-qt translations_target libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
-target_link_libraries(apollon-qt
+add_executable(bdcash-qt bdcash.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
+add_dependencies(bdcash-qt translations_target libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+target_link_libraries(bdcash-qt
         qt_stuff
         univalue
         SERVER_A UTIL_A WALLET_A CLI_A COMMON_A BITCOIN_CRYPTO_A ZEROCOIN_A
@@ -173,24 +173,24 @@ target_link_libraries(apollon-qt
         pthread
         )
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-    target_link_libraries(apollon-qt "-framework Cocoa")
+    target_link_libraries(bdcash-qt "-framework Cocoa")
 endif()
 if(GMP_FOUND)
-    target_link_libraries(apollon-qt ${GMP_LIBRARY})
+    target_link_libraries(bdcash-qt ${GMP_LIBRARY})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(apollon-qt ZMQ_A ${ZMQ_LIB})
+    target_link_libraries(bdcash-qt ZMQ_A ${ZMQ_LIB})
 endif()
 if (QRCODE_FOUND)
-    target_link_libraries(apollon-qt ${QRCODE_LIB})
+    target_link_libraries(bdcash-qt ${QRCODE_LIB})
 endif()
 
-QT5_USE_Modules(apollon-qt Gui)
-QT5_USE_Modules(apollon-qt Coapollon
-QT5_USE_Modules(apollon-qt Widgets)
-QT5_USE_Modules(apollon-qt Test)
-QT5_USE_Modules(apollon-qt Prapollonupport)
-QT5_USE_Modules(apollon-qt Network)
+QT5_USE_Modules(bdcash-qt Gui)
+QT5_USE_Modules(bdcash-qt Coapollon
+QT5_USE_Modules(bdcash-qt Widgets)
+QT5_USE_Modules(bdcash-qt Test)
+QT5_USE_Modules(bdcash-qt Prapollonupport)
+QT5_USE_Modules(bdcash-qt Network)
 if (Qt5DBus_FOUND)
     QT5_USE_Moduapollonapollon-qt DBus)
 endif()

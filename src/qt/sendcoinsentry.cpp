@@ -29,9 +29,9 @@ SendCoinsEntry::SendCoinsEntry(QWidget* parent) : QStackedWidget(parent),
 #endif
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 
-    // normal apollon address field
+    // normal bdcash address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying apollon address(es)
+    // just a label for displaying bdcash address(es)
     ui->payTo_is->setFont(GUIUtil::bitcoinAddressFont());
 
     // Connect signals

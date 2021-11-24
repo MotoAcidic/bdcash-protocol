@@ -1,4 +1,4 @@
-# bash programmable completion for apollon-tx(1)
+# bash programmable completion for bdcash-tx(1)
 # Copyright (c) 2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -7,7 +7,7 @@ _apollon_tx() {
     local cur prev words=() cword
     local apollon_tx
 
-    # save and use original argument to invoke apollon-tx for -help
+    # save and use original argument to invoke bdcash-tx for -help
     # it might not be in $PATH
     apollon_tx="$1"
 
@@ -27,7 +27,7 @@ _apollon_tx() {
 
     if [[ "$cword" == 1 || ( "$prev" != "-create" && "$prev" == -* ) ]]; then
         # only options (or an uncompletable hex-string) allowed
-        # parse apollon-tx -help for options
+        # parse bdcash-tx -help for options
         local helpopts
         helpopts=$($apollon_tx -help | sed -e '/^  -/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
@@ -46,7 +46,7 @@ _apollon_tx() {
 
     return 0
 } &&
-complete -F _apollon_tx apollon-tx
+complete -F _apollon_tx bdcash-tx
 
 # Local variables:
 # mode: shell-script

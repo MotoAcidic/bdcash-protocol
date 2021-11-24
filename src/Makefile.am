@@ -70,11 +70,11 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += apollon-cli apollon-tx
+  bin_PROGRAMS += bdcash-cli bdcash-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# apollon core #
+# bdcash core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -201,7 +201,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between apollond and apollon-qt
+# server: shared between apollond and bdcash-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -249,7 +249,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between apollond and apollon-qt, but only linked
+# wallet: shared between apollond and bdcash-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -357,7 +357,7 @@ if USE_NUM_OPENSSL
   libzerocoin_libbitcoin_zerocoin_a_SOURCES += libzerocoin/bignum_openssl.cpp
 endif
 
-# common: shared between apollond, and apollon-qt and non-server tools
+# common: shared between apollond, and bdcash-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -422,7 +422,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between apollon-cli and apollon-qt
+# cli: shared between bdcash-cli and bdcash-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -457,14 +457,14 @@ apollond_LDADD = \
 
 apollond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# apollon-cli binary #
-apollon_cli_SOURCES = apollon-cli.cpp
+# bdcash-cli binary #
+apollon_cli_SOURCES = bdcash-cli.cpp
 apollon_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 apollon_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 apollon_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-apollon_cli_SOURCES += apollon-cli-res.rc
+apollon_cli_SOURCES += bdcash-cli-res.rc
 endif
 
 apollon_cli_LDADD = \
@@ -476,14 +476,14 @@ apollon_cli_LDADD = \
 apollon_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# apollon-tx binary #
-apollon_tx_SOURCES = apollon-tx.cpp
+# bdcash-tx binary #
+apollon_tx_SOURCES = bdcash-tx.cpp
 apollon_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 apollon_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 apollon_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-apollon_tx_SOURCES += apollon-tx-res.rc
+apollon_tx_SOURCES += bdcash-tx-res.rc
 endif
 
 apollon_tx_LDADD = \
@@ -549,12 +549,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/apollon-config.h: config/stamp-h1
+config/bdcash-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/apollon-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/bdcash-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/apollon-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/apollon-config.h.in
+$(top_srcdir)/$(subdir)/config/bdcash-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/bdcash-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

@@ -1,10 +1,10 @@
 
-## <summary>policy for apollon</summary>
+## <summary>policy for bdcash</summary>
 
 
 ########################################
 ## <summary>
-##	Transition to apollon.
+##	Transition to bdcash.
 ## </summary>
 ## <param name="domain">
 ## <summary>
@@ -24,7 +24,7 @@ interface(`apollon_domtrans',`
 
 ########################################
 ## <summary>
-##	Execute apollon server in the apollon domain.
+##	Execute bdcash server in the bdcash domain.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -43,7 +43,7 @@ interface(`apollon_initrc_domtrans',`
 
 ########################################
 ## <summary>
-##	Search apollon lib directories.
+##	Search bdcash lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -62,7 +62,7 @@ interface(`apollon_search_lib',`
 
 ########################################
 ## <summary>
-##	Read apollon lib files.
+##	Read bdcash lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -81,7 +81,7 @@ interface(`apollon_read_lib_files',`
 
 ########################################
 ## <summary>
-##	Manage apollon lib files.
+##	Manage bdcash lib files.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -100,7 +100,7 @@ interface(`apollon_manage_lib_files',`
 
 ########################################
 ## <summary>
-##	Manage apollon lib directories.
+##	Manage bdcash lib directories.
 ## </summary>
 ## <param name="domain">
 ##	<summary>
@@ -121,7 +121,7 @@ interface(`apollon_manage_lib_dirs',`
 ########################################
 ## <summary>
 ##	All of the rules required to administrate
-##	a apollon environment
+##	a bdcash environment
 ## </summary>
 ## <param name="domain">
 ##	<summary>

@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +14,7 @@
 #include "collateral.h"
 
 //
-// Bootup the Masternode, look for a 10000 APOLLON input and register on the network
+// Bootup the Masternode, look for a 10000 BDCASH input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

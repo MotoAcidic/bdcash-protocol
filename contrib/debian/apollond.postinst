@@ -1,15 +1,15 @@
 
 #!/bin/sh
 
-# setup apollon account, homedir etc
+# setup bdcash account, homedir etc
 
 set -e
 
-BCUSER="apollon"
-BCHOME="/var/lib/apollon"
+BCUSER="bdcash"
+BCHOME="/var/lib/bdcash"
 
 if [ "$apollon "configure" ]; then
-	# Add apollon user/group - this will gracefully abort if the user already exists.
+	# Add bdcash user/group - this will gracefully abort if the user already exists.
 	# A homedir is never created.
 	set +e
 	adduser --system --home "${BCHOME}" --no-create-home --group "${BCUSER}" 2>/dev/null

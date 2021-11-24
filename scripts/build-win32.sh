@@ -4,4 +4,4 @@ cd ..
 make -j$(nproc)
 cd src
 cd qt
-strip apollon-qt.exe
+strip bdcash-qt.exe

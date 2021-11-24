@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços APOLLON para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços BDCASH para onde enviar pagamentos. Confira sempre o montante e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços APOLLON onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços BDCASH onde receber pagamentos. Recomenda-se o uso de um novo endereço para cada transacção.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas APOLLONs contra roubo por malware infectando seu computador.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas APOLLONs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA APOLLON&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA BDCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -669,8 +669,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>Um endereço APOLLON para assinar a mensagem</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>Um endereço BDCASH para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -701,12 +701,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço APOLLON.</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço BDCASH.</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>O endereço APOLLON que foi assinado com</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>O endereço BDCASH que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

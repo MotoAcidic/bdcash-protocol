@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -366,7 +366,7 @@ public:
 
     // Verify and vote on finalized budget
     void CheckAndVote();
-    //total apollon paid out by this budget
+    //total bdcash paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();

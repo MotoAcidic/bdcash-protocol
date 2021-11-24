@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços APOLLON para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços BDCASH para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços APOLLON para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços BDCASH para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas APOLLONs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas APOLLONs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS APOLLON&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS BDCASH&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,7 +254,7 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>Enter a APOLLON Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a BDCASH Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -617,8 +617,8 @@
         <translation>Abet</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Enviar moedas para um endereço APOLLON</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Enviar moedas para um endereço BDCASH</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
@@ -645,16 +645,16 @@
         <translation>Mostra informação sobre o Abet</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Modificar opções de configuração para APOLLON</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Modificar opções de configuração para BDCASH</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços APOLLON para provar que você os detém</translation>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços BDCASH para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços APOLLON especificados</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços BDCASH especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -685,8 +685,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a APOLLON: URI or payment request</source>
-        <translation>Abrir um APOLLON: URI ou requisição de pagamento</translation>
+        <source>Open a BDCASH: URI or payment request</source>
+        <translation>Abrir um BDCASH: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -697,12 +697,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Abet help message to get a list with possible APOLLON command-line options</source>
-        <translation>Mostra a ajuda da Abet para receber uma lista com possíveis opções de linha de comando APOLLON</translation>
+        <source>Show the Abet help message to get a list with possible BDCASH command-line options</source>
+        <translation>Mostra a ajuda da Abet para receber uma lista com possíveis opções de linha de comando BDCASH</translation>
     </message>
     <message>
         <source>Abet client</source>
-        <translation>Cliente Core APOLLON</translation>
+        <translation>Cliente Core BDCASH</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1118,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid APOLLON address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de APOLLON</translation>
+        <source>The entered address "%1" is not a valid BDCASH address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de BDCASH</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1234,8 +1234,8 @@ MultiSend: %1</translation>
         <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Abet vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Abet will download and store a copy of the APOLLON block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Abet vai baixar e armazenar uma cópia da blockchain APOLLON. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>Abet will download and store a copy of the BDCASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Abet vai baixar e armazenar uma cópia da blockchain BDCASH. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1577,8 +1577,8 @@ MultiSend: %1</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the APOLLON client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente APOLLON no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente BDCASH no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1597,12 +1597,12 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start APOLLON after logging in to the system.</source>
-        <translation>Iniciar automaticamente APOLLON depois de logar no sistema.</translation>
+        <source>Automatically start BDCASH after logging in to the system.</source>
+        <translation>Iniciar automaticamente BDCASH depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start APOLLON on system login</source>
-        <translation>&amp;Iniciar APOLLON ao logar no sistema</translation>
+        <source>&amp;Start BDCASH on system login</source>
+        <translation>&amp;Iniciar BDCASH ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1617,8 +1617,8 @@ MultiSend: %1</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting APOLLON.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do APOLLON.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting BDCASH.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do BDCASH.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1627,8 +1627,8 @@ https://www.transifex.com/abet-project/abet-project-translations</source>
 https://www.transifex.com/abet-project/abet-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the APOLLON network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede APOLLON através de um proxy SOCKS5</translation>
+        <source>Connect to the BDCASH network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede BDCASH através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1758,8 +1758,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede APOLLON após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede BDCASH após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1855,8 +1855,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Ações Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede APOLLON após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede BDCASH após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>O endereço APOLLON para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
+        <source>The BDCASH address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>O endereço BDCASH para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2045,8 +2045,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a APOLLON address (e.g. %1)</source>
-        <translation>Insira um endereço APOLLON (e.g. %1)</translation>
+        <source>Enter a BDCASH address (e.g. %1)</source>
+        <translation>Insira um endereço BDCASH (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2307,8 +2307,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the APOLLON RPC console.</source>
-        <translation>Bem-vindo ao console da APOLLON RPC</translation>
+        <source>Welcome to the BDCASH RPC console.</source>
+        <translation>Bem-vindo ao console da BDCASH RPC</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
@@ -2567,8 +2567,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2615,8 +2615,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Se a taxa padrão estiver definida para 1000 uAPOLLONs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uAPOLLONs em taxa,&lt;br /&gt; pagará pelo menos 1000 uAPOLLONs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for APOLLON transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de APOLLON do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BDCASH transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de BDCASH do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2663,8 +2663,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized APOLLON</source>
-        <translation>APOLLON anonimizadas</translation>
+        <source>Anonymized BDCASH</source>
+        <translation>BDCASH anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2699,8 +2699,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Copiar troco</translation>
     </message>
     <message>
-        <source>Warning: Invalid APOLLON address</source>
-        <translation>Aviso: endereço APOLLON inválido</translation>
+        <source>Warning: Invalid BDCASH address</source>
+        <translation>Aviso: endereço BDCASH inválido</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2786,8 +2786,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to</source>
-        <translation>O endereço APOLLON para enviar o pagamento</translation>
+        <source>The BDCASH address to send the payment to</source>
+        <translation>O endereço BDCASH para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2868,8 +2868,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>O endereço APOLLON para assinar a mensagem</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>O endereço BDCASH para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2900,16 +2900,16 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço APOLLON</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço BDCASH</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>O endereço APOLLON que assinou a mensagem</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>O endereço BDCASH que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço APOLLON especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço BDCASH especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3007,7 +3007,7 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The APOLLON Core developers</source>
+        <source>The BDCASH Core developers</source>
         <translation>Os desenvolvedores do Abet</translation>
     </message>
     <message>
@@ -3552,12 +3552,12 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em APOLLON/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em BDCASH/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em APOLLON/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em BDCASH/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3576,8 +3576,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 APOLLON.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 1000 APOLLON.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BDCASH.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 1000 BDCASH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3593,7 +3593,7 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Abet will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core APOLLON não vai funcionar corretamente.</translation>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core BDCASH não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3660,7 +3660,7 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The APOLLON Core Developers</source>
+        <source>Copyright (C) 2015-%i The BDCASH Core Developers</source>
         <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Abet</translation>
     </message>
     <message>
@@ -3752,8 +3752,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in APOLLON/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em APOLLON/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in BDCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em BDCASH/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>

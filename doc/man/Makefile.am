@@ -5,9 +5,9 @@ if BUILD_BITCOIND
 endif
 
 if ENABLE_QT
-  dist_man1_MANS+=apollon-qt.1
+  dist_man1_MANS+=bdcash-qt.1
 endif
 
 if BUILD_BITCOIN_UTILS
-  dist_man1_MANS+=apollon-cli.1 apollon-tx.1
+  dist_man1_MANS+=bdcash-cli.1 bdcash-tx.1
 endif

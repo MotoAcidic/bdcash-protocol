@@ -1,5 +1,5 @@
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -43,7 +43,7 @@ public:
 
     bool addWitWork(CGenWit wit) {
         if (!isWorkerRunning) {
-            LogPrintf("%s not running trying to add wit work \n", "apollon-light-thread");
+            LogPrintf("%s not running trying to add wit work \n", "bdcash-light-thread");
             return false;
         }
         requestsQueue.push(wit);
@@ -51,13 +51,13 @@ public:
     }
 
     void StartLightZpivThread(boost::thread_group& threadGroup) {
-        LogPrintf("%s thread start\n", "apollon-light-thread");
+        LogPrintf("%s thread start\n", "bdcash-light-thread");
         threadIns = boost::thread(boost::bind(&CLightWorker::ThreadLightZPIVSimplified, this));
     }
 
     void StopLightZpivThread() {
         threadIns.interrupt();
-        LogPrintf("%s thread interrupted\n", "apollon-light-thread");
+        LogPrintf("%s thread interrupted\n", "bdcash-light-thread");
     }
 
 private:

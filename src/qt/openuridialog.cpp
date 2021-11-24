@@ -16,7 +16,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
                                                 ui(new Ui::OpenURIDialog)
 {
     ui->setupUi(this);
-    ui->uriEdit->setPlaceholderText("apollon:");
+    ui->uriEdit->setPlaceholderText("bdcash:");
 }
 
 OpenURIDialog::~OpenURIDialog()
@@ -46,5 +46,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if (filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("apollon:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("bdcash:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

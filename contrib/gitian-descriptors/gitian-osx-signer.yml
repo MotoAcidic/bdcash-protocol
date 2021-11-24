@@ -1,5 +1,5 @@
 ---
-name: "apollon-dmg-signer"
+name: "bdcash-dmg-signer"
 distro: "ubuntu"
 suites:
 - "bionic"
@@ -8,10 +8,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/apollon-project/apollon-detached-sigs.git"
+- "url": "https://github.com/bdcash-project/bdcash-detached-sigs.git"
   "dir": "signature"
 files:
-- "apollon-osx-unsigned.tar.gz"
+- "bdcash-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -30,8 +30,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=apollon-osx-unsigned.tar.gz
-  SIGNED=apollon-osx-signed.dmg
+  UNSIGNED=bdcash-osx-unsigned.tar.gz
+  SIGNED=bdcash-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

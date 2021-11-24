@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.apollon.Apollon-Qt";
+        return @"io.bdcash.Bdcash-Qt";
     } else {
         return [self __bundleIdentifier];
     }

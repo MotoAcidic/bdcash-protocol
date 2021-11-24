@@ -443,7 +443,7 @@ Usage:
     $ ./copyright_header.py update <base_directory>
 
 Arguments:
-    <base_directory> - The base directory of a apollon source code repository.
+    <base_directory> - The base directory of a bdcash source code repository.
 """
 
 def print_file_action_message(filename, action):

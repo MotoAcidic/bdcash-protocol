@@ -168,7 +168,7 @@ QVariant ProposalTableModel::data(const QModelIndex& index, int role) const
         case Percentage:
             return QString("%1\%").arg(rec->percentage);
         case Amount:
-            return BitcoinUnits::format(BitcoinUnits::APOLLON, rec->amount);
+            return BitcoinUnits::format(BitcoinUnits::BDCASH, rec->amount);
         }
         break;
     case Qt::EditRole:

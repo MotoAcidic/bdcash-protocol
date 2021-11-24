@@ -42,9 +42,9 @@ TEST_EXIT_FAILED = 1
 TEST_EXIT_SKIPPED = 77
 
 class BitcoinTestFramework():
-    """Base class for a apollon test script.
+    """Base class for a bdcash test script.
 
-    Individual apollon test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual bdcash test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
@@ -76,7 +76,7 @@ class BitcoinTestFramework():
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
                           help="Don't stop apollonds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__))+"/../../../src"),
-                          help="Source directory containing apollond/apollon-cli (default: %default)")
+                          help="Source directory containing apollond/bdcash-cli (default: %default)")
         parser.add_option("--cachedir", dest="cachedir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                           help="Directory for caching pregenerated datadirs")
         parser.add_option("--tmpdir", dest="tmpdir", help="Root directory for datadirs")

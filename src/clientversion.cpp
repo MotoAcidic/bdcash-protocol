@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both apollond and apollon-qt, to make it harder for attackers to
+ * for both apollond and bdcash-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Apollon");
+const std::string CLIENT_NAME("Bdcash");
 
 /**
  * Client version number

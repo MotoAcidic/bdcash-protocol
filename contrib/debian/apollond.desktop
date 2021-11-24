@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=APOLLON Core
-Comment=APOLLON P2P Cryptocurrency
-Comment[fr]=APOLLON, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=APOLLON, eşten eşe kriptografik sanal para birimi
-Exec=apollon-qt %u
+Name=BDCASH Core
+Comment=BDCASH P2P Cryptocurrency
+Comment[fr]=BDCASH, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BDCASH, eşten eşe kriptografik sanal para birimi
+Exec=bdcash-qt %u
 Terminal=false
 Type=Application
 Icon=apollon128
-MimeType=x-scheme-handler/apollon;
+MimeType=x-scheme-handler/bdcash;
 Categories=Office;Finance;
-StartupWMClass=Apollon-qt
+StartupWMClass=Bdcash-qt

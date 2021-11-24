@@ -14,9 +14,9 @@ To add more apollond tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_FIXTURE_TEST_SUITE sections.
 
-To run the apollon-qt tests manually, launch `src/qt/test/test_apollon-qt`
+To run the bdcash-qt tests manually, launch `src/qt/test/test_apollon-qt`
 
-To add more apollon-qt tests, add them to the `src/qt/test/` directory and
+To add more bdcash-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
@@ -35,7 +35,7 @@ Run `test_apollon --help` for the full list.
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since apollon already uses boost, it makes
+unit testing framework, and since bdcash already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apollon"
-            VALUE "FileDescription",    "apollon-tx (CLI APOLLON transaction editor utility)"
+            VALUE "CompanyName",        "Bdcash"
+            VALUE "FileDescription",    "bdcash-tx (CLI BDCASH transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "apollon-tx"
+            VALUE "InternalName",       "bdcash-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "apollon-tx.exe"
-            VALUE "ProductName",        "apollon-tx"
+            VALUE "OriginalFilename",   "bdcash-tx.exe"
+            VALUE "ProductName",        "bdcash-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  apollond The APOLLON core server.
+#  apollond The BDCASH core server.
 #
 #
 # chkconfig: 345 80 20

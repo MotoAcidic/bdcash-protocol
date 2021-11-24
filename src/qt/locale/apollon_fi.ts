@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun APOLLON osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun BDCASH osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun APOLLON osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun BDCASH osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,15 +172,15 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella APOLLONien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella APOLLONien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki APOLLONisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -566,11 +566,11 @@
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ydin</translation>
+        <translation>BDCASH Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Lähetä kolikkoja APOLLON osoitteeseen</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Lähetä kolikkoja BDCASH osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
@@ -590,19 +590,19 @@
     </message>
     <message>
         <source>Show information about Abet</source>
-        <translation>Näytä tietoja APOLLON Ytimestä</translation>
+        <translation>Näytä tietoja BDCASH Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja APOLLON:lle</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja BDCASH:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä APOLLON osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä BDCASH osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a APOLLON: URI or payment request</source>
-        <translation>Avaa APOLLON: URI tai pyydä maksua</translation>
+        <source>Open a BDCASH: URI or payment request</source>
+        <translation>Avaa BDCASH: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -645,12 +645,12 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the Abet help message to get a list with possible APOLLON command-line options</source>
-        <translation>Näytä APOLLON Ydin apuviesti saadaksesi lista mahdollisista APOLLON komentolinja komennoista.</translation>
+        <source>Show the Abet help message to get a list with possible BDCASH command-line options</source>
+        <translation>Näytä BDCASH Ydin apuviesti saadaksesi lista mahdollisista BDCASH komentolinja komennoista.</translation>
     </message>
     <message>
         <source>Abet client</source>
-        <translation>APOLLON Ydin asiakasohjelma</translation>
+        <translation>BDCASH Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -920,7 +920,7 @@
     <name>HelpMessageDialog</name>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ydin</translation>
+        <translation>BDCASH Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -939,11 +939,11 @@
     </message>
     <message>
         <source>Welcome to Abet.</source>
-        <translation>Tervetuloa APOLLON Ytimeen.</translation>
+        <translation>Tervetuloa BDCASH Ytimeen.</translation>
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ydin</translation>
+        <translation>BDCASH Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1129,12 +1129,12 @@
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start APOLLON after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä APOLLON kun kirjaudut sisään.</translation>
+        <source>Automatically start BDCASH after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä BDCASH kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start APOLLON on system login</source>
-        <translation>&amp;Aloita APOLLON järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start BDCASH on system login</source>
+        <translation>&amp;Aloita BDCASH järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1153,12 +1153,12 @@
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting APOLLON.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting BDCASH.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the APOLLON network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä APOLLON verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the BDCASH network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä BDCASH verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1392,7 +1392,7 @@
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ydin</translation>
+        <translation>BDCASH Ydin</translation>
     </message>
     </context>
 <context>
@@ -1449,8 +1449,8 @@
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the APOLLON debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa APOLLON debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the BDCASH debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa BDCASH debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1561,8 +1561,8 @@
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the APOLLON RPC console.</source>
-        <translation>Tervetuloa APOLLON RPC konsoliin.</translation>
+        <source>Welcome to the BDCASH RPC console.</source>
+        <translation>Tervetuloa BDCASH RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1604,12 +1604,12 @@
         <translation>M&amp;äärä:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana APOLLON verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana BDCASH verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana APOLLON  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana BDCASH  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1809,8 +1809,8 @@
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1885,8 +1885,8 @@
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid APOLLON address</source>
-        <translation>Varoitus: Virheellinen APOLLON osoite</translation>
+        <source>Warning: Invalid BDCASH address</source>
+        <translation>Varoitus: Virheellinen BDCASH osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1936,8 +1936,8 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to</source>
-        <translation>APOLLON osoite johon maksu lähetetään</translation>
+        <source>The BDCASH address to send the payment to</source>
+        <translation>BDCASH osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1980,7 +1980,7 @@
     <name>ShutdownWindow</name>
     <message>
         <source>Abet is shutting down...</source>
-        <translation>APOLLON core sammuu...</translation>
+        <translation>BDCASH core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1998,8 +1998,8 @@
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>APOLLON osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>BDCASH osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2030,16 +2030,16 @@
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän APOLLON osoitteen</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BDCASH osoitteen</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>APOLLON osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>BDCASH osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla APOLLON osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla BDCASH osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2122,7 +2122,7 @@
     <name>SplashScreen</name>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ydin</translation>
+        <translation>BDCASH Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2137,8 +2137,8 @@
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The APOLLON Core developers</source>
-        <translation>APOLLON core kehittäjät</translation>
+        <source>The BDCASH Core developers</source>
+        <translation>BDCASH core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>

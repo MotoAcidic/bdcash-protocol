@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +35,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::APOLLON)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::BDCASH)
     {
     }
 
@@ -210,12 +210,12 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // APOLLON Balance
+    // BDCASH Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // APOLLON Watch-Only Balance
+    // BDCASH Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
@@ -230,7 +230,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = pivAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // APOLLON labels
+    // BDCASH labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pivAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -264,10 +264,10 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
         automintHelp += tr("AutoMint is currently enabled and set to ") + QString::number(nZeromintPercentage) + "%.\n";
-        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in apollon.conf.");
+        automintHelp += tr("To disable AutoMint add 'enablezeromint=0' in bdcash.conf.");
     }
     else {
-        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in apollon.conf");
+        automintHelp += tr("AutoMint is currently disabled.\nTo enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in bdcash.conf");
     }
 
     // Only show most balances if they are non-zero for the sake of simplicity
@@ -280,28 +280,28 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // APOLLON Available
+    // BDCASH Available
     bool showAPOLLONAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
     bool showWatchOnlyAPOLLONAvailable = showAPOLLONAvailable || nAvailableWatchBalance != nTotalWatchBalance;
     ui->labelBalanceText->setVisible(showAPOLLONAvailable || showWatchOnlyAPOLLONAvailable);
     ui->labelBalance->setVisible(showAPOLLONAvailable || showWatchOnlyAPOLLONAvailable);
     ui->labelWatchAvailable->setVisible(showWatchOnlyAPOLLONAvailable && showWatchOnly);
 
-    // APOLLON Pending
+    // BDCASH Pending
     bool showAPOLLONPending = settingShowAllBalances || unconfirmedBalance != 0;
     bool showWatchOnlyAPOLLONPending = showAPOLLONPending || watchUnconfBalance != 0;
     ui->labelPendingText->setVisible(showAPOLLONPending || showWatchOnlyAPOLLONPending);
     ui->labelUnconfirmed->setVisible(showAPOLLONPending || showWatchOnlyAPOLLONPending);
     ui->labelWatchPending->setVisible(showWatchOnlyAPOLLONPending && showWatchOnly);
 
-    // APOLLON Immature
+    // BDCASH Immature
     bool showAPOLLONImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = showAPOLLONImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showAPOLLONImmature || showWatchOnlyImmature);
     ui->labelImmature->setVisible(showAPOLLONImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // APOLLON Locked
+    // BDCASH Locked
     bool showAPOLLONLocked = settingShowAllBalances || nLockedBalance != 0;
     bool showWatchOnlyAPOLLONLocked = showAPOLLONLocked || nWatchOnlyLockedBalance != 0;
     ui->labelLockedBalanceText->setVisible(showAPOLLONLocked || showWatchOnlyAPOLLONLocked);
@@ -394,7 +394,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("APOLLON")
+    // update the display unit, to not use the default ("BDCASH")
     updateDisplayUnit();
 
     // Hide orphans

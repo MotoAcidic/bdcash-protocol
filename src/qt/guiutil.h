@@ -31,7 +31,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the APOLLON Qt UI.
+/** Utility functions used by the BDCASH Qt UI.
  */
 namespace GUIUtil
 {
@@ -39,7 +39,7 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render APOLLON addresses in monospace font
+// Render BDCASH addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts
@@ -51,7 +51,7 @@ void setupTXIDWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupTXIDIndexWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "apollon:" URI into recipient object, return true on successful parsing
+// Parse "bdcash:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -117,7 +117,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 void openDebugLogfile();
 
-// Open apollon.conf
+// Open bdcash.conf
 void openConfigfile();
 
 // Open masternode.conf

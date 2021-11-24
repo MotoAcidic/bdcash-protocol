@@ -20,7 +20,7 @@
 #include <QPixmap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/apollon-config.h" /* for USE_QRCODE */
+#include "config/bdcash-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

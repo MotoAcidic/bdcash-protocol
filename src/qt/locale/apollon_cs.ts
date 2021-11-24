@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše APOLLON adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše BDCASH adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše APOLLON adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše BDCASH adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,15 +172,15 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše APOLLONy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše APOLLONy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
         <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE APOLLONy&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -605,8 +605,8 @@
         <translation>Abet</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Odeslat platbuna APOLLON adresu</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Odeslat platbuna BDCASH adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
@@ -633,16 +633,16 @@
         <translation>Zobraz informace o Abet</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Upravit možnosti konfigurace pro APOLLON</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Upravit možnosti konfigurace pro BDCASH</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší APOLLON adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší BDCASH adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými APOLLON adresami</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými BDCASH adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a APOLLON: URI or payment request</source>
-        <translation>Otevřít APOLLON: URI nebo platební žádost</translation>
+        <source>Open a BDCASH: URI or payment request</source>
+        <translation>Otevřít BDCASH: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -685,8 +685,8 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Abet help message to get a list with possible APOLLON command-line options</source>
-        <translation>Zobrazit Abet pomocnou zpráv pro získání seznamu možných parametrů APOLLON pro příkazy do příkazové řádky</translation>
+        <source>Show the Abet help message to get a list with possible BDCASH command-line options</source>
+        <translation>Zobrazit Abet pomocnou zpráv pro získání seznamu možných parametrů BDCASH pro příkazy do příkazové řádky</translation>
     </message>
     <message>
         <source>Abet client</source>
@@ -1081,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid APOLLON address.</source>
-        <translation>Zadaná adresa "%1" není validní APOLLON adresa.</translation>
+        <source>The entered address "%1" is not a valid BDCASH address.</source>
+        <translation>Zadaná adresa "%1" není validní BDCASH adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
         <translation>Při prvním spuštění programu si můžete vybrat, kam bude Abet ukládat svá data.</translation>
     </message>
     <message>
-        <source>Abet will download and store a copy of the APOLLON block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Abet stáhne a uloží kopii APOLLON blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Abet will download and store a copy of the BDCASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Abet stáhne a uloží kopii BDCASH blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1480,12 +1480,12 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start APOLLON after logging in to the system.</source>
-        <translation>Automaticky spustit APOLLON po přihlášení do systému</translation>
+        <source>Automatically start BDCASH after logging in to the system.</source>
+        <translation>Automaticky spustit BDCASH po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start APOLLON on system login</source>
-        <translation>&amp;Spusti APOLLON při přihlášení do systému</translation>
+        <source>&amp;Start BDCASH on system login</source>
+        <translation>&amp;Spusti BDCASH při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2016,8 +2016,8 @@ MultiSend: %1</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2141,8 +2141,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>APOLLON adresa pro podepsání zprávy</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>BDCASH adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2169,16 +2169,16 @@ MultiSend: %1</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto APOLLON adresu</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto BDCASH adresu</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>APOLLON adresa zprávy byla podpsána</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>BDCASH adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou APOLLON adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou BDCASH adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

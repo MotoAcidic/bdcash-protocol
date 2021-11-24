@@ -13,29 +13,29 @@
 %endif
 %endif
 
-Name:		apollon
+Name:		bdcash
 Version:	0.12.0
 Release:	2%{?dist}
 Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://apollon.org/
-Source0:	https://apollon.org/bin/apollon-core-%{version}/apollon-%{version}.tar.gz
+URL:		https://bdcash.org/
+Source0:	https://bdcash.org/bin/bdcash-core-%{version}/bdcash-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/contrib/debian/examples/apollon.conf
+Source10:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/contrib/debian/examples/bdcash.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/doc/man/apollond.1
-Source21:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/doc/man/apollon-cli.1
-Source22:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/doc/man/apollon-qt.1
+Source20:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/doc/man/apollond.1
+Source21:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/doc/man/bdcash-cli.1
+Source22:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/doc/man/bdcash-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/contrib/rpm/apollon.te
-# Source31 - what about apollon-tx and bench_apollon ???
-Source31:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/contrib/rpm/apollon.fc
-Source32:	https://raw.githubusercontent.com/apollon-project/apollon/v%{version}/contrib/rpm/apollon.if
+Source30:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/contrib/rpm/bdcash.te
+# Source31 - what about bdcash-tx and bench_apollon ???
+Source31:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/contrib/rpm/bdcash.fc
+Source32:	https://raw.githubusercontent.com/bdcash-project/bdcash/v%{version}/contrib/rpm/bdcash.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 
@@ -50,7 +50,7 @@ BuildRequires:	autoconf automake libtool
 BuildRequires:	libevent-devel
 
 
-Patch0:		apollon-0.12.0-libressl.patch
+Patch0:		bdcash-0.12.0-libressl.patch
 
 
 %description
@@ -100,7 +100,7 @@ functionality.
 Unless you know need this package, you probably do not.
 
 %package devel
-Summary:	Development files for apollon
+Summary:	Development files for bdcash
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
@@ -112,9 +112,9 @@ that wants to link against that library, then you need this package installed.
 Most people do not need this package installed.
 
 %package server
-Summary:	The apollon daemon
+Summary:	The bdcash daemon
 Group:		System Environment/Daemons
-Requires:	apollon-utils = %{version}-%{release}
+Requires:	bdcash-utils = %{version}-%{release}
 Requires:	selinux-policy policycoreutils-python
 Requires(pre):	shadow-utils
 Requires(post):	%{_sbindir}/semodule %{_sbindir}/restorecon %{_sbindir}/fixfiles %{_sbindir}/sestatus
@@ -124,13 +124,13 @@ BuildRequires:	checkpolicy
 BuildRequires:	%{_datadir}/selinux/devel/Makefile
 
 %description server
-This package provides a stand-alone apollon-core daemon. For most users, this
+This package provides a stand-alone bdcash-core daemon. For most users, this
 package is only needed if they need a full-node without the graphical client.
 
 Some third party wallet software will want this package to provide the actual
-apollon-core node they use to connect to the network.
+bdcash-core node they use to connect to the network.
 
-If you use the graphical apollon-core client then you almost certainly do not
+If you use the graphical bdcash-core client then you almost certainly do not
 need this package.
 
 %package utils
@@ -139,19 +139,19 @@ Group:		Applications/System
 
 %description utils
 This package provides several command line utilities for interacting with a
-apollon-core daemon.
+bdcash-core daemon.
 
-The apollon-cli utility allows you to communicate and control a apollon daemon
-over RPC, the apollon-tx utility allows you to create a custom transaction, and
+The bdcash-cli utility allows you to communicate and control a bdcash daemon
+over RPC, the bdcash-tx utility allows you to create a custom transaction, and
 the bench_apollon utility can be used to perform some benchmarks.
 
-This package contains utilities needed by the apollon-server package.
+This package contains utilities needed by the bdcash-server package.
 
 
 %prep
 %setup -q
 %patch0 -p1 -b .libressl
-cp -p %{SOURCE10} ./apollon.conf.example
+cp -p %{SOURCE10} ./bdcash.conf.example
 tar -zxf %{SOURCE1}
 cp -p db-%{bdbv}.NC/LICENSE ./db-%{bdbv}.NC-LICENSE
 mkdir db4 SELinux
@@ -172,7 +172,7 @@ make %{?_smp_mflags}
 pushd SELinux
 for selinuxvariant in %{selinux_variants}; do
 	make NAME=${selinuxvariant} -f %{_datadir}/selinux/devel/Makefile
-	mv apollon.pp apollon.pp.${selinuxvariant}
+	mv bdcash.pp bdcash.pp.${selinuxvariant}
 	make NAME=${selinuxvariant} -f %{_datadir}/selinux/devel/Makefile clean
 done
 popd
@@ -186,28 +186,28 @@ mv %{buildroot}%{_bindir}/apollond %{buildroot}%{_sbindir}/apollond
 
 # systemd stuff
 mkdir -p %{buildroot}%{_tmpfilesdir}
-cat <<EOF > %{buildroot}%{_tmpfilesdir}/apollon.conf
-d /run/apollond 0750 apollon apollon -
+cat <<EOF > %{buildroot}%{_tmpfilesdir}/bdcash.conf
+d /run/apollond 0750 bdcash bdcash -
 EOF
-touch -a -m -t 201504280000 %{buildroot}%{_tmpfilesdir}/apollon.conf
+touch -a -m -t 201504280000 %{buildroot}%{_tmpfilesdir}/bdcash.conf
 
 mkdir -p %{buildroot}%{_sysconfdir}/sysconfig
-cat <<EOF > %{buildroot}%{_sysconfdir}/sysconfig/apollon
-# Provide options to the apollon daemon here, for example
+cat <<EOF > %{buildroot}%{_sysconfdir}/sysconfig/bdcash
+# Provide options to the bdcash daemon here, for example
 # OPTIONS="-testnet -disable-wallet"
 
 OPTIONS=""
 
 # System service defaults.
 # Don't change these unless you know what you're doing.
-CONFIG_FILE="%{_sysconfdir}/apollon/apollon.conf"
-DATA_DIR="%{_localstatedir}/lib/apollon"
+CONFIG_FILE="%{_sysconfdir}/bdcash/bdcash.conf"
+DATA_DIR="%{_localstatedir}/lib/bdcash"
 PID_FILE="/run/apollond/apollond.pid"
 EOF
-touch -a -m -t 201504280000 %{buildroot}%{_sysconfdir}/sysconfig/apollon
+touch -a -m -t 201504280000 %{buildroot}%{_sysconfdir}/sysconfig/bdcash
 
 mkdir -p %{buildroot}%{_unitdir}
-cat <<EOF > %{buildroot}%{_unitdir}/apollon.service
+cat <<EOF > %{buildroot}%{_unitdir}/bdcash.service
 [Unit]
 Description=Bitcoin daemon
 After=syslog.target network.target
@@ -215,9 +215,9 @@ After=syslog.target network.target
 [Service]
 Type=forking
 ExecStart=%{_sbindir}/apollond -daemon -conf=\${CONFIG_FILE} -datadir=\${DATA_DIR} -pid=\${PID_FILE} \$OPTIONS
-EnvironmentFile=%{_sysconfdir}/sysconfig/apollon
-User=apollon
-Group=apollon
+EnvironmentFile=%{_sysconfdir}/sysconfig/bdcash
+User=bdcash
+Group=bdcash
 
 Restart=on-failure
 PrivateTmp=true
@@ -229,24 +229,24 @@ StartLimitBurst=5
 [Install]
 WantedBy=multi-user.target
 EOF
-touch -a -m -t 201504280000 %{buildroot}%{_unitdir}/apollon.service
+touch -a -m -t 201504280000 %{buildroot}%{_unitdir}/bdcash.service
 #end systemd stuff
 
-mkdir %{buildroot}%{_sysconfdir}/apollon
-mkdir -p %{buildroot}%{_localstatedir}/lib/apollon
+mkdir %{buildroot}%{_sysconfdir}/bdcash
+mkdir -p %{buildroot}%{_localstatedir}/lib/bdcash
 
 #SELinux
 for selinuxvariant in %{selinux_variants}; do
 	install -d %{buildroot}%{_datadir}/selinux/${selinuxvariant}
-	install -p -m 644 SELinux/apollon.pp.${selinuxvariant} %{buildroot}%{_datadir}/selinux/${selinuxvariant}/apollon.pp
+	install -p -m 644 SELinux/bdcash.pp.${selinuxvariant} %{buildroot}%{_datadir}/selinux/${selinuxvariant}/bdcash.pp
 done
 
 %if %{_buildqt}
 # qt icons
-install -D -p share/pixmaps/apollon.ico %{buildroot}%{_datadir}/pixmaps/apollon.ico
+install -D -p share/pixmaps/bdcash.ico %{buildroot}%{_datadir}/pixmaps/bdcash.ico
 install -p share/pixmaps/nsis-header.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p share/pixmaps/nsis-wizard.bmp %{buildroot}%{_datadir}/pixmaps/
-install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/apollon.svg
+install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/bdcash.svg
 %{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/apollon16.png -w16 -h16
 %{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/apollon32.png -w32 -h32
 %{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/apollon64.png -w64 -h64
@@ -262,30 +262,30 @@ touch %{buildroot}%{_datadir}/pixmaps/*.xpm -r %{SOURCE100}
 
 # Desktop File - change the touch timestamp if modifying
 mkdir -p %{buildroot}%{_datadir}/applications
-cat <<EOF > %{buildroot}%{_datadir}/applications/apollon-core.desktop
+cat <<EOF > %{buildroot}%{_datadir}/applications/bdcash-core.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Name=Bitcoin
 Comment=Bitcoin P2P Cryptocurrency
 Comment[fr]=Bitcoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Bitcoin, eşten eşe kriptografik sanal para birimi
-Exec=apollon-qt %u
+Exec=bdcash-qt %u
 Terminal=false
 Type=Application
 Icon=apollon128
-MimeType=x-scheme-handler/apollon;
+MimeType=x-scheme-handler/bdcash;
 Categories=Office;Finance;
 EOF
 # change touch date when modifying desktop
-touch -a -m -t 201511100546 %{buildroot}%{_datadir}/applications/apollon-core.desktop
-%{_bindir}/desktop-file-validate %{buildroot}%{_datadir}/applications/apollon-core.desktop
+touch -a -m -t 201511100546 %{buildroot}%{_datadir}/applications/bdcash-core.desktop
+%{_bindir}/desktop-file-validate %{buildroot}%{_datadir}/applications/bdcash-core.desktop
 
 # KDE protocol - change the touch timestamp if modifying
 mkdir -p %{buildroot}%{_datadir}/kde4/services
-cat <<EOF > %{buildroot}%{_datadir}/kde4/services/apollon-core.protocol
+cat <<EOF > %{buildroot}%{_datadir}/kde4/services/bdcash-core.protocol
 [Protocol]
-exec=apollon-qt '%u'
-protocol=apollon
+exec=bdcash-qt '%u'
+protocol=bdcash
 input=none
 output=none
 helper=true
@@ -296,14 +296,14 @@ makedir=false
 deleting=false
 EOF
 # change touch date when modifying protocol
-touch -a -m -t 201511100546 %{buildroot}%{_datadir}/kde4/services/apollon-core.protocol
+touch -a -m -t 201511100546 %{buildroot}%{_datadir}/kde4/services/bdcash-core.protocol
 %endif
 
 # man pages
 install -D -p %{SOURCE20} %{buildroot}%{_mandir}/man1/apollond.1
-install -p %{SOURCE21} %{buildroot}%{_mandir}/man1/apollon-cli.1
+install -p %{SOURCE21} %{buildroot}%{_mandir}/man1/bdcash-cli.1
 %if %{_buildqt}
-install -p %{SOURCE22} %{buildroot}%{_mandir}/man1/apollon-qt.1
+install -p %{SOURCE22} %{buildroot}%{_mandir}/man1/bdcash-qt.1
 %endif
 
 # nuke these, we do extensive testing of binaries in %%check before packaging
@@ -311,7 +311,7 @@ rm -f %{buildroot}%{_bindir}/test_*
 
 %check
 make check
-srcdir=src test/apollon-util-test.py
+srcdir=src test/bdcash-util-test.py
 test/functional/test_runner.py --extended
 
 %post libs -p /sbin/ldconfig
@@ -319,18 +319,18 @@ test/functional/test_runner.py --extended
 %postun libs -p /sbin/ldconfig
 
 %pre server
-getent group apollon >/dev/null || groupadd -r apollon
-getent passwd apollon >/dev/null ||
-	useradd -r -g apollon -d /var/lib/apollon -s /sbin/nologin \
-	-c "Bitcoin wallet server" apollon
+getent group bdcash >/dev/null || groupadd -r bdcash
+getent passwd bdcash >/dev/null ||
+	useradd -r -g bdcash -d /var/lib/bdcash -s /sbin/nologin \
+	-c "Bitcoin wallet server" bdcash
 exit 0
 
 %post server
-%systemd_post apollon.service
+%systemd_post bdcash.service
 # SELinux
 if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
-	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/apollon.pp &> /dev/null || :
+	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/bdcash.pp &> /dev/null || :
 done
 %{_sbindir}/semanage port -a -t apollon_port_t -p tcp 8332
 %{_sbindir}/semanage port -a -t apollon_port_t -p tcp 8333
@@ -338,18 +338,18 @@ done
 %{_sbindir}/semanage port -a -t apollon_port_t -p tcp 18333
 %{_sbindir}/semanage port -a -t apollon_port_t -p tcp 18443
 %{_sbindir}/semanage port -a -t apollon_port_t -p tcp 18444
-%{_sbindir}/fixfiles -R apollon-server restore &> /dev/null || :
-%{_sbindir}/restorecon -R %{_localstatedir}/lib/apollon || :
+%{_sbindir}/fixfiles -R bdcash-server restore &> /dev/null || :
+%{_sbindir}/restorecon -R %{_localstatedir}/lib/bdcash || :
 fi
 
 %posttrans server
 %{_bindir}/systemd-tmpfiles --create
 
 %preun server
-%systemd_preun apollon.service
+%systemd_preun bdcash.service
 
 %postun server
-%systemd_postun apollon.service
+%systemd_postun bdcash.service
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
@@ -360,11 +360,11 @@ if [ $1 -eq 0 ]; then
 	%{_sbindir}/semanage port -d -p tcp 18443
 	%{_sbindir}/semanage port -d -p tcp 18444
 	for selinuxvariant in %{selinux_variants}; do
-		%{_sbindir}/semodule -s ${selinuxvariant} -r apollon &> /dev/null || :
+		%{_sbindir}/semodule -s ${selinuxvariant} -r bdcash &> /dev/null || :
 	done
-	%{_sbindir}/fixfiles -R apollon-server restore &> /dev/null || :
-	[ -d %{_localstatedir}/lib/apollon ] && \
-		%{_sbindir}/restorecon -R %{_localstatedir}/lib/apollon &> /dev/null || :
+	%{_sbindir}/fixfiles -R bdcash-server restore &> /dev/null || :
+	[ -d %{_localstatedir}/lib/bdcash ] && \
+		%{_sbindir}/restorecon -R %{_localstatedir}/lib/bdcash &> /dev/null || :
 	fi
 fi
 
@@ -375,16 +375,16 @@ rm -rf %{buildroot}
 %files core
 %defattr(-,root,root,-)
 %license COPYING db-%{bdbv}.NC-LICENSE
-%doc COPYING apollon.conf.example doc/README.md doc/bips.md doc/files.md doc/multiwallet-qt.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
-%attr(0755,root,root) %{_bindir}/apollon-qt
-%attr(0644,root,root) %{_datadir}/applications/apollon-core.desktop
-%attr(0644,root,root) %{_datadir}/kde4/services/apollon-core.protocol
+%doc COPYING bdcash.conf.example doc/README.md doc/bips.md doc/files.md doc/multiwallet-qt.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
+%attr(0755,root,root) %{_bindir}/bdcash-qt
+%attr(0644,root,root) %{_datadir}/applications/bdcash-core.desktop
+%attr(0644,root,root) %{_datadir}/kde4/services/bdcash-core.protocol
 %attr(0644,root,root) %{_datadir}/pixmaps/*.ico
 %attr(0644,root,root) %{_datadir}/pixmaps/*.bmp
 %attr(0644,root,root) %{_datadir}/pixmaps/*.svg
 %attr(0644,root,root) %{_datadir}/pixmaps/*.png
 %attr(0644,root,root) %{_datadir}/pixmaps/*.xpm
-%attr(0644,root,root) %{_mandir}/man1/apollon-qt.1*
+%attr(0644,root,root) %{_mandir}/man1/bdcash-qt.1*
 %endif
 
 %files libs
@@ -406,30 +406,30 @@ rm -rf %{buildroot}
 %files server
 %defattr(-,root,root,-)
 %license COPYING db-%{bdbv}.NC-LICENSE
-%doc COPYING apollon.conf.example doc/README.md doc/REST-interface.md doc/bips.md doc/dnsseed-policy.md doc/files.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
+%doc COPYING bdcash.conf.example doc/README.md doc/REST-interface.md doc/bips.md doc/dnsseed-policy.md doc/files.md doc/reduce-traffic.md doc/release-notes.md doc/tor.md
 %attr(0755,root,root) %{_sbindir}/apollond
-%attr(0644,root,root) %{_tmpfilesdir}/apollon.conf
-%attr(0644,root,root) %{_unitdir}/apollon.service
-%dir %attr(0750,apollon,apollon) %{_sysconfdir}/apollon
-%dir %attr(0750,apollon,apollon) %{_localstatedir}/lib/apollon
-%config(noreplace) %attr(0600,root,root) %{_sysconfdir}/sysconfig/apollon
+%attr(0644,root,root) %{_tmpfilesdir}/bdcash.conf
+%attr(0644,root,root) %{_unitdir}/bdcash.service
+%dir %attr(0750,bdcash,bdcash) %{_sysconfdir}/bdcash
+%dir %attr(0750,bdcash,bdcash) %{_localstatedir}/lib/bdcash
+%config(noreplace) %attr(0600,root,root) %{_sysconfdir}/sysconfig/bdcash
 %attr(0644,root,root) %{_datadir}/selinux/*/*.pp
 %attr(0644,root,root) %{_mandir}/man1/apollond.1*
 
 %files utils
 %defattr(-,root,root,-)
 %license COPYING
-%doc COPYING apollon.conf.example doc/README.md
-%attr(0755,root,root) %{_bindir}/apollon-cli
-%attr(0755,root,root) %{_bindir}/apollon-tx
+%doc COPYING bdcash.conf.example doc/README.md
+%attr(0755,root,root) %{_bindir}/bdcash-cli
+%attr(0755,root,root) %{_bindir}/bdcash-tx
 %attr(0755,root,root) %{_bindir}/bench_apollon
-%attr(0644,root,root) %{_mandir}/man1/apollon-cli.1*
+%attr(0644,root,root) %{_mandir}/man1/bdcash-cli.1*
 
 
 
 %changelog
 * Fri Feb 26 2016 Alice Wonder <buildmaster@librelamp.com> - 0.12.0-2
-- Rename Qt package from apollon to apollon-core
+- Rename Qt package from bdcash to bdcash-core
 - Make building of the Qt package optional
 - When building the Qt package, default to Qt5 but allow building
 -  against Qt4
@@ -439,4 +439,4 @@ rm -rf %{buildroot}
 - Initial spec file for 0.12.0 release
 
 # This spec file is written from scratch but a lot of the packaging decisions are directly
-# based upon the 0.11.2 package spec file from https://www.ringingliberty.com/apollon/
+# based upon the 0.11.2 package spec file from https://www.ringingliberty.com/bdcash/

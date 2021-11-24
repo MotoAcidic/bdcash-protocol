@@ -5,17 +5,17 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/apollon/apollon.conf
+# /etc/bdcash/bdcash.conf
 
 [Unit]
-Description=APOLLON daemon
+Description=BDCASH daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/apollond -daemon -datadir=/var/lib/apollon -conf=/etc/apollon/apollon.conf -pid=/run/apollond/apollond.pid
-# Creates /run/apollond owned by apollon
+ExecStart=/usr/bin/apollond -daemon -datadir=/var/lib/bdcash -conf=/etc/bdcash/bdcash.conf -pid=/run/apollond/apollond.pid
+# Creates /run/apollond owned by bdcash
 RuntimeDirectory=apollond
-User=apollon
+User=bdcash
 Type=forking
 PIDFile=/run/apollond/apollond.pid
 Restart=on-failure

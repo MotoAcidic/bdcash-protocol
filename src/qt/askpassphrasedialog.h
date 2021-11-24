@@ -38,7 +38,7 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_APOLLON,       /** Send APOLLON */
+        Send_APOLLON,       /** Send BDCASH */
         Send_zAPOLLON,      /** Send zAPOLLON */
         Mint_zAPOLLON,      /** Mint zAPOLLON */
         BIP_38,         /** BIP38 menu */

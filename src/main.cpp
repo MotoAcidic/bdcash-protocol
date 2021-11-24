@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -51,7 +51,7 @@
 
 
 #if defined(NDEBUG)
-#error "APOLLON cannot be compiled without assertions."
+#error "BDCASH cannot be compiled without assertions."
 #endif
 
 /**
@@ -2436,7 +2436,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from APOLLON
+         * note we only undo zerocoin databasing in the following statement, value to and from BDCASH
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2593,7 +2593,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("apollon-scriptch");
+    RenameThread("bdcash-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2715,12 +2715,12 @@ bool RecalculatePIVSupply(int nHeightStart)
     if (nHeightStart == Params().Zerocoin_StartHeight())
         nSupplyPrev = CAmount(5449796547496199);
 
-    uiInterface.ShowProgress(_("Recalculating APOLLON supply..."), 0);
+    uiInterface.ShowProgress(_("Recalculating BDCASH supply..."), 0);
     while (true) {
         if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
             int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainActive.Height() - nHeightStart))));
-            uiInterface.ShowProgress(_("Recalculating APOLLON supply..."), percent);
+            uiInterface.ShowProgress(_("Recalculating BDCASH supply..."), percent);
         }
 
         CBlock block;
@@ -2782,7 +2782,7 @@ bool RecalculatePIVSupply(int nHeightStart)
 
 bool ReindexAccumulators(std::list<uint256>& listMissingCheckpoints, std::string& strError)
 {
-    // APOLLON: recalculate Accumulator Checkpoints that failed to database properly
+    // BDCASH: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty()) {
         uiInterface.ShowProgress(_("Calculating missing accumulators..."), 0);
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -3349,7 +3349,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
     /* Zerocoin minting is disabled
      *
 #ifdef ENABLE_WALLET
-    // If turned on AutoZeromint will automatically convert APOLLON to zPIV
+    // If turned on AutoZeromint will automatically convert BDCASH to zPIV
     if (pwalletMain && pwalletMain->isZeromintEnabled())
         pwalletMain->AutoZeromint();
 #endif // ENABLE_WALLET
@@ -4200,7 +4200,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // APOLLON
+        // BDCASH
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4289,9 +4289,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     }
 
     if (block.nBits != nBitsRequired) {
-        // Apollon Specific reference to the block with the wrong threshold was used.
+        // Bdcash Specific reference to the block with the wrong threshold was used.
         if ((block.nTime == (uint32_t) Params().ApollonBadBlockTime()) && (block.nBits == (uint32_t) Params().ApollonBadBlocknBits())) {
-            // accept APOLLON block minted with incorrect proof of work threshold
+            // accept BDCASH block minted with incorrect proof of work threshold
             return true;
         }
 
@@ -5940,7 +5940,7 @@ bool static ProcessMessage(CNode* pfrom, std::string strCommand, CDataStream& vR
             return false;
         }
 
-        // APOLLON: We use certain sporks during IBD, so check to see if they are
+        // BDCASH: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&

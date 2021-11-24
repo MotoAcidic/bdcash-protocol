@@ -10,8 +10,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between apollon-cli and apollond)
- * of a given instance of the Apollon system.
+ * CBaseChainParams defines the base parameters (shared between bdcash-cli and apollond)
+ * of a given instance of the Bdcash system.
  */
 class CBaseChainParams
 {

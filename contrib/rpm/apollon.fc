@@ -1,8 +1,8 @@
-/usr/bin/apollon-cli		--	gen_context(system_u:object_r:apollon_exec_t,s0)
+/usr/bin/bdcash-cli		--	gen_context(system_u:object_r:apollon_exec_t,s0)
 /usr/sbin/apollond		--	gen_context(system_u:object_r:apollon_exec_t,s0)
-/usr/lib(64)?/apollon/apollond		--	gen_context(system_u:object_r:apollon_exec_t,s0)
+/usr/lib(64)?/bdcash/apollond		--	gen_context(system_u:object_r:apollon_exec_t,s0)
 
-/etc/apollon(/.*)?		gen_context(system_u:object_r:apollon_conf_t,s0)
-/var/lib/apollon(/.*)?		gen_context(system_u:object_r:apollon_var_lib_t,s0)
+/etc/bdcash(/.*)?		gen_context(system_u:object_r:apollon_conf_t,s0)
+/var/lib/bdcash(/.*)?		gen_context(system_u:object_r:apollon_var_lib_t,s0)
 
 (/var)?/run/apollond(/.*)?   gen_context(system_u:object_r:apollon_var_run_t,s0)

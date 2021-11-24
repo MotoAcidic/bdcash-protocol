@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apollon"
-            VALUE "FileDescription",    "Apollon-cli (OSS RPC client for Apollon)"
+            VALUE "CompanyName",        "Bdcash"
+            VALUE "FileDescription",    "Bdcash-cli (OSS RPC client for Bdcash)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "apollon-cli"
+            VALUE "InternalName",       "bdcash-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "apollon-cli.exe"
-            VALUE "ProductName",        "Apollon-cli"
+            VALUE "OriginalFilename",   "bdcash-cli.exe"
+            VALUE "ProductName",        "Bdcash-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

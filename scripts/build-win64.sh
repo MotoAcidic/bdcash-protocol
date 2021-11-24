@@ -9,4 +9,4 @@ CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --pref
 make -j$(nproc)
 cd src
 cd qt
-strip apollon-qt.exe
+strip bdcash-qt.exe

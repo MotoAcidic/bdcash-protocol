@@ -1,6 +1,6 @@
 [Protocol]
-exec=apollon-qt '%u'
-protocol=apollon
+exec=bdcash-qt '%u'
+protocol=bdcash
 input=none
 output=none
 helper=true

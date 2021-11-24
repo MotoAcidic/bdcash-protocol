@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/apollon-config.h"
+#include "config/bdcash-config.h"
 #endif
 
 #include "util.h"
@@ -89,7 +89,7 @@
 #include <openssl/rand.h>
 
 
-// APOLLON only features
+// BDCASH only features
 // Masternode
 bool fMasterNode = false;
 std::string strMasterNodePrivKey = "";
@@ -220,8 +220,8 @@ bool LogAcceptCategory(const char* category)
             const std::vector<std::string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new std::set<std::string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "apollon" is a composite category enabling all APOLLON-related debug output
-            if (ptrCategory->count(std::string("apollon"))) {
+            // "bdcash" is a composite category enabling all BDCASH-related debug output
+            if (ptrCategory->count(std::string("bdcash"))) {
                 ptrCategory->insert(std::string("obfuscation"));
                 ptrCategory->insert(std::string("swiftx"));
                 ptrCategory->insert(std::string("masternode"));
@@ -388,7 +388,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "apollon";
+    const char* pszModule = "bdcash";
 #endif
     if (pex)
         return strprintf(
@@ -409,13 +409,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Apollon
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Apollon
-// Mac: ~/Library/Application Support/Apollon
-// Unix: ~/.apollon
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\Bdcash
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\Bdcash
+// Mac: ~/Library/Application Support/Bdcash
+// Unix: ~/.bdcash
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Apollon";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bdcash";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -427,10 +427,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Apollon";
+    return pathRet / "Bdcash";
 #else
     // Unix
-    return pathRet / ".apollon";
+    return pathRet / ".bdcash";
 #endif
 #endif
 }
@@ -477,7 +477,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "apollon.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "bdcash.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -496,14 +496,14 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty apollon.conf if it does not exist
+        // Create empty bdcash.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
 		{
             std::string strHeader =
                 "# Apollons Configuration File!\n"
                 "# If you need aditional addnodes vist site below.\n"
-                "# https://explorer.masternodes.online/currencies/APOLLON/ \n"
+                "# https://explorer.masternodes.online/currencies/BDCASH/ \n"
                 "addnode = 185.141.61.104 : 9270\n"
                 "addnode = 185.206.144.217 : 9270\n"
                 "addnode = 45.76.33.138 : 9270\n"
@@ -524,7 +524,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override apollon.conf
+        // Don't overwrite existing settings so command line settings override bdcash.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

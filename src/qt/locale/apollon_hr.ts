@@ -62,12 +62,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše APOLLON adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše BDCASH adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše APOLLON adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše BDCASH adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,15 +172,15 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše APOLLON od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše BDCASH od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
         <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ APOLLON1!</translation>
     </message>
     <message>
@@ -621,8 +621,8 @@
         <translation>Abet</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Pošaljite kovanice na APOLLON adresu</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Pošaljite kovanice na BDCASH adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
@@ -649,16 +649,16 @@
         <translation>Prikaz informacija o Abetu</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Izmijenite opcije konfiguracije za APOLLON</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Izmijenite opcije konfiguracije za BDCASH</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim APOLLON adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim BDCASH adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim APOLLON adresama</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim BDCASH adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1244,8 +1244,8 @@
         <translation>Ostatak:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1329,8 +1329,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>APOLLON adresa za potpisivanje poruke s</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>BDCASH adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1353,16 +1353,16 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove APOLLON adrese</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove BDCASH adrese</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>APOLLON adresa s kojom je potpisana poruka</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>BDCASH adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom APOLLON adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom BDCASH adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

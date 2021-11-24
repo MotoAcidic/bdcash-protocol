@@ -85,7 +85,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
     ui->labelZsupplyText1000->setText(tr("Denom. <b>1000</b>:"));
     ui->labelZsupplyText5000->setText(tr("Denom. <b>5000</b>:"));
 
-    // APOLLON settings
+    // BDCASH settings
     QSettings settings;
     if (!settings.contains("fMinimizeChange")){
         fMinimizeChange = false;
@@ -330,7 +330,7 @@ void PrivacyDialog::sendzAPOLLON()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Apollon Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Bdcash Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
@@ -363,7 +363,7 @@ void PrivacyDialog::sendzAPOLLON()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " APOLLON </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " BDCASH </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -819,7 +819,7 @@ void PrivacyDialog::updateSPORK16Status()
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
         // Mint zAPOLLON
         //ui->pushButtonMintzAPOLLON->setEnabled(true);
-        //ui->pushButtonMintzAPOLLON->setToolTip(tr("PrivacyDialog", "Enter an amount of APOLLON to convert to zAPOLLON", 0));
+        //ui->pushButtonMintzAPOLLON->setToolTip(tr("PrivacyDialog", "Enter an amount of BDCASH to convert to zAPOLLON", 0));
 
         // Spend zAPOLLON
         ui->pushButtonSpendzAPOLLON->setEnabled(true);

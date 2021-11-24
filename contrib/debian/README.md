@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package apollond/apollon-qt
-for Debian-based Linux systems. If you compile apollond/apollon-qt yourself, there are some useful files here.
+This directory contains files used to package apollond/bdcash-qt
+for Debian-based Linux systems. If you compile apollond/bdcash-qt yourself, there are some useful files here.
 
-## apollon: URI support ##
+## bdcash: URI support ##
 
 
-apollon-qt.desktop  (Gnome / Open Desktop)
+bdcash-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install apollon-qt.desktop
+	sudo desktop-file-install bdcash-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your apollon-qt binary to `/usr/bin`
+the .desktop file or copy or symlink your bdcash-qt binary to `/usr/bin`
 and the `../../share/pixmaps/apollon128.png` to `/usr/share/pixmaps`
 
-apollon-qt.protocol (KDE)
+bdcash-qt.protocol (KDE)
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -129,7 +129,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
     QFontDatabase::addApplicationFont(":/fonts/font");
 
-    QString windowTitle = tr("Apollon") + " - ";
+    QString windowTitle = tr("Bdcash") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
     enableWallet = !GetBoolArg("-disablewallet", false);
@@ -342,7 +342,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(themeDir+QString("/send")), tr("&Send"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a APOLLON address"));
+    sendCoinsAction->setStatusTip(tr("Send coins to a BDCASH address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -353,7 +353,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(QIcon(themeDir+QString("/receiving_addresses")), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and apollon: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and bdcash: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -415,14 +415,14 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About Apollon"), this);
-    aboutAction->setStatusTip(tr("Show information about Apollon"));
+    aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About Bdcash"), this);
+    aboutAction->setStatusTip(tr("Show information about Bdcash"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/qt-project.org/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setStatusTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setStatusTip(tr("Modify configuration options for APOLLON"));
+    optionsAction->setStatusTip(tr("Modify configuration options for BDCASH"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
@@ -438,9 +438,9 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     unlockWalletAction->setToolTip(tr("Unlock wallet"));
     lockWalletAction = new QAction(tr("&Lock Wallet"), this);
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your APOLLON addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your BDCASH addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified APOLLON addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified BDCASH addresses"));
     bip38ToolAction = new QAction(QIcon(":/icons/key"), tr("&BIP38 tool"), this);
     bip38ToolAction->setToolTip(tr("Encrypt and decrypt private keys using a passphrase"));
     multiSendAction = new QAction(QIcon(":/icons/edit"), tr("&MultiSend"), this);
@@ -477,13 +477,13 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     multisigSignAction->setStatusTip(tr("Sign with a multisignature address"));
 
     openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a APOLLON: URI or payment request"));
+    openAction->setStatusTip(tr("Open a BDCASH: URI or payment request"));
     openBlockExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&Blockchain explorer"), this);
     openBlockExplorerAction->setStatusTip(tr("Block explorer window"));
 
     showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
-    showHelpMessageAction->setStatusTip(tr("Show the Apollon help message to get a list with possible APOLLON command-line options"));
+    showHelpMessageAction->setStatusTip(tr("Show the Bdcash help message to get a list with possible BDCASH command-line options"));
 
 	connect(proposalAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(proposalAction, SIGNAL(triggered()), this, SLOT(gotoProposalPage()));
@@ -732,7 +732,7 @@ void BitcoinGUI::createTrayIcon(const NetworkStyle* networkStyle)
 {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    QString toolTip = tr("Apollon client") + " " + networkStyle->getTitleAddText();
+    QString toolTip = tr("Bdcash client") + " " + networkStyle->getTitleAddText();
     trayIcon->setToolTip(toolTip);
     trayIcon->setIcon(networkStyle->getAppIcon());
     trayIcon->hide();
@@ -922,7 +922,7 @@ void BitcoinGUI::Checkversion()
 {
     // https://github.com/WillyTheCat/BitCash/blob/c663d0793b7ade1324f643118c858685cbded6fc/src/qt/bitcashgui.cpp#L3396
     QNetworkAccessManager* managercheckversion = new QNetworkAccessManager(this);
-    QString versionCheckUrl = QString("https://apollon.io/versioninfostable/%1.txt").arg(QString::fromStdString(FormatFullVersion()));
+    QString versionCheckUrl = QString("https://bdcash.io/versioninfostable/%1.txt").arg(QString::fromStdString(FormatFullVersion()));
 
     connect(managercheckversion, SIGNAL(finished(QNetworkReply*)), this, SLOT(replyFinishedcheckversion(QNetworkReply*)));
 
@@ -982,7 +982,7 @@ void BitcoinGUI::setNumConnections(int count)
     }
     QIcon connectionItem = QIcon(icon).pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE);
     labelConnectionsIcon->setIcon(connectionItem);
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to APOLLON network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to BDCASH network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count)
@@ -1112,7 +1112,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
 void BitcoinGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret)
 {
-    QString strTitle = tr("Apollon"); // default title
+    QString strTitle = tr("Bdcash"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -1137,7 +1137,7 @@ void BitcoinGUI::message(const QString& title, const QString& message, unsigned 
             break;
         }
     }
-    // Append title to "APOLLON - "
+    // Append title to "BDCASH - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 

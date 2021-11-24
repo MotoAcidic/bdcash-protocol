@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/3.14.19060802-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/3.14.19060802-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.22.27905/bin/HostX64/x64/cl.exe 
@@ -45,10 +45,10 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/3.14.19060802-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/3.14.19060802-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_473b6 
 [1/2] Building C object CMakeFiles\cmTC_473b6.dir\testCCompiler.c.obj
@@ -58,7 +58,7 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_e7438 
 [1/2] Building C object CMakeFiles\cmTC_e7438.dir\CMakeCCompilerABI.c.obj
@@ -70,7 +70,7 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_08d6d 
 [1/2] Building C object CMakeFiles\cmTC_08d6d.dir\feature_tests.c.obj
@@ -82,7 +82,7 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4d016 
 [1/2] Building CXX object CMakeFiles\cmTC_4d016.dir\testCXXCompiler.cxx.obj
@@ -92,7 +92,7 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_bdc8f 
 [1/2] Building CXX object CMakeFiles\cmTC_bdc8f.dir\CMakeCXXCompilerABI.cpp.obj
@@ -104,7 +104,7 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: D:/Crypto/Apollon/Apollon-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/Crypto/Bdcash/Bdcash-2.0.0.0/src/qt/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
 Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_dd874 
 [1/2] Building CXX object CMakeFiles\cmTC_dd874.dir\feature_tests.cxx.obj

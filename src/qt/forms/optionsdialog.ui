@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start APOLLON after logging in to the system.</string>
+          <string>Automatically start BDCASH after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start APOLLON on system login</string>
+          <string>&amp;Start BDCASH on system login</string>
          </property>
         </widget>
        </item>
@@ -141,7 +141,7 @@
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintEnable">
               <property name="toolTip">
-               <string>Enable automatic minting of APOLLON units to zAPOLLON</string>
+               <string>Enable automatic minting of BDCASH units to zAPOLLON</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
@@ -171,7 +171,7 @@
             <item>
              <widget class="QLabel" name="percentage_label">
               <property name="toolTip">
-               <string>Percentage of incoming APOLLON which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</string>
+               <string>Percentage of incoming BDCASH which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</string>
               </property>
               <property name="text">
                <string>Percentage of autominted zAPOLLON</string>
@@ -204,7 +204,7 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough BDCASH for this denomination is available</string>
               </property>
               <property name="text">
                <string>Preferred Automint zAPOLLON Denomination</string>
@@ -220,7 +220,7 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough BDCASH for this denomination is available</string>
               </property>
               <property name="maxVisibleItems">
                <number>9</number>
@@ -325,7 +325,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the APOLLON client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -345,7 +345,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the APOLLON network through a SOCKS5 proxy.</string>
+          <string>Connect to the BDCASH network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -511,7 +511,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting APOLLON.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting BDCASH.</string>
            </property>
           </widget>
          </item>
@@ -533,7 +533,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/apollon-project/apollon-project-translations</string>
+https://www.transifex.com/bdcash-project/bdcash-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

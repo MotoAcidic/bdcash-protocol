@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите APOLLON адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите BDCASH адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите APOLLON адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите BDCASH адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия APOLLON от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия BDCASH от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ APOLLON&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ BDCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Enter a APOLLON Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a BDCASH Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Въведете Abet адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
     </message>
     <message>
-        <source>The APOLLON address to encrypt</source>
-        <translation>APOLLON Адреса за криптиране</translation>
+        <source>The BDCASH address to encrypt</source>
+        <translation>BDCASH Адреса за криптиране</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this APOLLON address</source>
-        <translation>Криптирай тайния ключ за този APOLLON адрес</translation>
+        <source>Encrypt the private key for this BDCASH address</source>
+        <translation>Криптирай тайния ключ за този BDCASH адрес</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -642,15 +642,15 @@
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ядро</translation>
+        <translation>BDCASH Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Изпратете монети до APOLLON адрес</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Изпратете монети до BDCASH адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  APOLLON:URI)</translation>
+        <translation>Поискай плащане (генерира QR кодове и  BDCASH:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -666,23 +666,23 @@
     </message>
     <message>
         <source>&amp;About Abet</source>
-        <translation>&amp;Относно APOLLON Ядрото</translation>
+        <translation>&amp;Относно BDCASH Ядрото</translation>
     </message>
     <message>
         <source>Show information about Abet</source>
-        <translation>Информациза за APOLLON Ядрото</translation>
+        <translation>Информациза за BDCASH Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Промени APOLLON конфигурацията</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Промени BDCASH конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте APOLLON адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте BDCASH адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните APOLLON адреси</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните BDCASH адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a APOLLON: URI or payment request</source>
-        <translation>Отвори APOLLON:URI платежно нареждане</translation>
+        <source>Open a BDCASH: URI or payment request</source>
+        <translation>Отвори BDCASH:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,12 +725,12 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Abet help message to get a list with possible APOLLON command-line options</source>
-        <translation>Разкрийте Помощ за APOLLON Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the Abet help message to get a list with possible BDCASH command-line options</source>
+        <translation>Разкрийте Помощ за BDCASH Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
         <source>Abet client</source>
-        <translation>Клиент APOLLON Ядро</translation>
+        <translation>Клиент BDCASH Ядро</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1161,8 +1161,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid APOLLON address.</source>
-        <translation>Зададения адрес "%1"не е валиден APOLLON адрес.</translation>
+        <source>The entered address "%1" is not a valid BDCASH address.</source>
+        <translation>Зададения адрес "%1"не е валиден BDCASH адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,7 +1219,7 @@ Address: %4
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ядро</translation>
+        <translation>BDCASH Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -1227,7 +1227,7 @@ Address: %4
     </message>
     <message>
         <source>About Abet</source>
-        <translation>Относно APOLLON Ядрото</translation>
+        <translation>Относно BDCASH Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,15 +1274,15 @@ Address: %4
     </message>
     <message>
         <source>Welcome to Abet.</source>
-        <translation>Добре Дошли в APOLLON Ядрото</translation>
+        <translation>Добре Дошли в BDCASH Ядрото</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Abet will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде APOLLON Ядрото ще съхранява своите данни.</translation>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде BDCASH Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Abet will download and store a copy of the APOLLON block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>APOLLON Ядрото ще изтегли и запише копие на целия APOLLON блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>Abet will download and store a copy of the BDCASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BDCASH Ядрото ще изтегли и запише копие на целия BDCASH блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,7 +1294,7 @@ Address: %4
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ядро</translation>
+        <translation>BDCASH Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1435,12 +1435,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other APOLLON addresses after it matures.
-To Add: enter percentage to give and APOLLON address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other BDCASH addresses after it matures.
+To Add: enter percentage to give and BDCASH address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други APOLLON адреси.
-Да Добавите: въведете процент и задайте APOLLON адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други BDCASH адреси.
+Да Добавите: въведете процент и задайте BDCASH адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1628,8 +1628,8 @@ Please be patient after clicking import.</source>
         <translation>Адрес / Сума:</translation>
     </message>
     <message>
-        <source>Add destinations to send APOLLON to</source>
-        <translation>Добави получател на APOLLON</translation>
+        <source>Add destinations to send BDCASH to</source>
+        <translation>Добави получател на BDCASH</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1762,8 +1762,8 @@ Please be patient after clicking import.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the APOLLON client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори APOLLON порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори BDCASH порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1782,12 +1782,12 @@ Please be patient after clicking import.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start APOLLON after logging in to the system.</source>
-        <translation>Стартирай APOLLON автоматично след влизане в системата.</translation>
+        <source>Automatically start BDCASH after logging in to the system.</source>
+        <translation>Стартирай BDCASH автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start APOLLON on system login</source>
-        <translation>&amp;Стартирай APOLLON заедно с операционната система</translation>
+        <source>&amp;Start BDCASH on system login</source>
+        <translation>&amp;Стартирай BDCASH заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1814,7 +1814,7 @@ Please be patient after clicking import.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting APOLLON.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting BDCASH.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
@@ -1828,24 +1828,24 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of APOLLON units to zAPOLLON</source>
-        <translation>Включи автоматичното емитиране на APOLLON единици в zAPOLLON</translation>
+        <source>Enable automatic minting of BDCASH units to zAPOLLON</source>
+        <translation>Включи автоматичното емитиране на BDCASH единици в zAPOLLON</translation>
     </message>
     <message>
         <source>Enable zAPOLLON Automint</source>
         <translation>Включи Автоматично емитиране на zAPOLLON</translation>
     </message>
     <message>
-        <source>Percentage of incoming APOLLON which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите APOLLON, който автоматично да се конвертира в zAPOLLON посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming BDCASH which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите BDCASH, който автоматично да се конвертира в zAPOLLON посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zAPOLLON</source>
         <translation>Процент автоматично сечени zAPOLLON</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zAPOLLON докато не се съберат достатъчно APOLLON за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BDCASH for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zAPOLLON докато не се съберат достатъчно BDCASH за тази деноминация</translation>
     </message>
     <message>
         <source>Preferred Automint zAPOLLON Denomination</source>
@@ -1856,8 +1856,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Праг на споделеното съхранение:</translation>
     </message>
     <message>
-        <source>Connect to the APOLLON network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с APOLLON мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the BDCASH network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с BDCASH мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2007,8 +2007,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Обща Наличност, включително и неналичните монети.</translation>
     </message>
     <message>
-        <source>APOLLON Balance</source>
-        <translation>APOLLON Наличности</translation>
+        <source>BDCASH Balance</source>
+        <translation>BDCASH Наличности</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2031,8 +2031,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Сегашния баланс по портфейли в режим на наблюдение само</translation>
     </message>
     <message>
-        <source>Your current APOLLON balance, unconfirmed and immature transactions included</source>
-        <translation>Вашите APOLLON наличности, включително непотвърдените и неузрели преводи</translation>
+        <source>Your current BDCASH balance, unconfirmed and immature transactions included</source>
+        <translation>Вашите BDCASH наличности, включително непотвърдените и неузрели преводи</translation>
     </message>
     <message>
         <source>zAPOLLON Balance</source>
@@ -2051,8 +2051,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Неузрели: потвърдени, но с по-малко от 1 емисии от същата деноминация след като са биле емитирани</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с APOLLON мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с BDCASH мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2095,8 +2095,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>Locked APOLLON or Masternode collaterals. These are excluded from zAPOLLON minting.</source>
-        <translation>Заключен APOLLON или допълнителни гаранции в Главни Възли. Тези не са включени в zAPOLLON емитирането.</translation>
+        <source>Locked BDCASH or Masternode collaterals. These are excluded from zAPOLLON minting.</source>
+        <translation>Заключен BDCASH или допълнителни гаранции в Главни Възли. Тези не са включени в zAPOLLON емитирането.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2160,8 +2160,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in abet.conf<
         <translation>Провал при стартирането на abet: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid APOLLON address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден APOLLON адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BDCASH address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден BDCASH адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2246,8 +2246,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in abet.conf<
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с APOLLON мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с BDCASH мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2330,7 +2330,7 @@ zAPOLLON са узрели, тогава когато имат повече от
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The BDCASH address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2710,7 +2710,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Invalid Abet Address</source>
-        <translation>Невалиден APOLLON адрес</translation>
+        <translation>Невалиден BDCASH адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2787,8 +2787,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a APOLLON address (e.g. %1)</source>
-        <translation>Задайте APOLLON адрес (например %1)</translation>
+        <source>Enter a BDCASH address (e.g. %1)</source>
+        <translation>Задайте BDCASH адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2832,7 +2832,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ядро</translation>
+        <translation>BDCASH Ядро</translation>
     </message>
     </context>
 <context>
@@ -2929,8 +2929,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the APOLLON debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори APOLLON дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the BDCASH debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори BDCASH дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3145,8 +3145,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the APOLLON RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на APOLLON.</translation>
+        <source>Welcome to the BDCASH RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на BDCASH.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3272,16 +3272,16 @@ Please be patient...</source>
         <translation>Сума:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по APOLLON мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по BDCASH мрежата.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ПОЛУЧИ</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по APOLLON мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по BDCASH мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3513,8 +3513,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3577,7 +3577,7 @@ Please be patient...</source>
         <translation>Ако собствената такса е настроена на 1000 uAPOLLON и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uAPOLLON входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uAPOLLON. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for APOLLON transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BDCASH transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3625,8 +3625,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized APOLLON</source>
-        <translation>Анонимизиран APOLLON</translation>
+        <source>Anonymized BDCASH</source>
+        <translation>Анонимизиран BDCASH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3673,8 +3673,8 @@ Please be patient...</source>
         <translation>Инструмента за разделяне на блока не работи, когато се изпраща до няколко адреса едновременно. Опитайте пак.</translation>
     </message>
     <message>
-        <source>Warning: Invalid APOLLON address</source>
-        <translation>Предупреждение: Невалиден APOLLON адрес</translation>
+        <source>Warning: Invalid BDCASH address</source>
+        <translation>Предупреждение: Невалиден BDCASH адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3772,8 +3772,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to</source>
-        <translation>APOLLON адреса - получател на плащането</translation>
+        <source>The BDCASH address to send the payment to</source>
+        <translation>BDCASH адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3812,8 +3812,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the APOLLON: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the APOLLON network.</source>
-        <translation>Съобщение, което е било прикачено към APOLLON:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по APOLLON мрежата.</translation>
+        <source>A message that was attached to the BDCASH: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BDCASH network.</source>
+        <translation>Съобщение, което е било прикачено към BDCASH:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по BDCASH мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3840,7 +3840,7 @@ Please be patient...</source>
     <name>ShutdownWindow</name>
     <message>
         <source>Abet is shutting down...</source>
-        <translation>Изключване на APOLLON Ядрото...</translation>
+        <translation>Изключване на BDCASH Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3862,8 +3862,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>APOLLON адреса, с който да подпишете съобщението</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>BDCASH адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3894,16 +3894,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този APOLLON адрес</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този BDCASH адрес</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>APOLLON адреса, който е подписано съобщението</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>BDCASH адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения APOLLON адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения BDCASH адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3990,7 +3990,7 @@ Please be patient...</source>
     <name>SplashScreen</name>
     <message>
         <source>Abet</source>
-        <translation>APOLLON Ядро</translation>
+        <translation>BDCASH Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4005,7 +4005,7 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The APOLLON Core developers</source>
+        <source>The BDCASH Core developers</source>
         <translation>Abet разработчици</translation>
     </message>
     <message>
@@ -4269,8 +4269,8 @@ Please be patient...</source>
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>APOLLON Stake</source>
-        <translation>APOLLON Stake</translation>
+        <source>BDCASH Stake</source>
+        <translation>BDCASH Stake</translation>
     </message>
     <message>
         <source>zAPOLLON Stake</source>
@@ -4293,24 +4293,24 @@ Please be patient...</source>
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted APOLLON to zAPOLLON</source>
-        <translation>Конвертиран APOLLON във zAPOLLON</translation>
+        <source>Converted BDCASH to zAPOLLON</source>
+        <translation>Конвертиран BDCASH във zAPOLLON</translation>
     </message>
     <message>
         <source>Spent zAPOLLON</source>
         <translation>Похарчени zAPOLLON</translation>
     </message>
     <message>
-        <source>Received APOLLON from zAPOLLON</source>
-        <translation>Получен APOLLON от zAPOLLON</translation>
+        <source>Received BDCASH from zAPOLLON</source>
+        <translation>Получен BDCASH от zAPOLLON</translation>
     </message>
     <message>
         <source>Minted Change as zAPOLLON from zAPOLLON Spend</source>
         <translation>Исечено ресто като zAPOLLON от похарчените zAPOLLON</translation>
     </message>
     <message>
-        <source>Converted zAPOLLON to APOLLON</source>
-        <translation>Конвертиран zAPOLLON във APOLLON</translation>
+        <source>Converted zAPOLLON to BDCASH</source>
+        <translation>Конвертиран zAPOLLON във BDCASH</translation>
     </message>
     <message>
         <source>Anonymous (zAPOLLON Transaction)</source>
@@ -4528,8 +4528,8 @@ Please be patient...</source>
         <translation>Експортирането Успешно</translation>
     </message>
     <message>
-        <source>Received APOLLON from zAPOLLON</source>
-        <translation>Получен APOLLON от zAPOLLON</translation>
+        <source>Received BDCASH from zAPOLLON</source>
+        <translation>Получен BDCASH от zAPOLLON</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zAPOLLON</source>
@@ -4569,8 +4569,8 @@ Please be patient...</source>
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 APOLLON.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 APOLLON.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BDCASH.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 BDCASH.</translation>
     </message>
 </context>
 <context>
@@ -4651,7 +4651,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Abet is probably already running.</source>
-        <translation>Не може да заключи папката с данни %s. APOLLON Портфейла вероятно вече е стартиран.</translation>
+        <translation>Не може да заключи папката с данни %s. BDCASH Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4682,8 +4682,8 @@ Please be patient...</source>
         <translation>Включи автоматичните бекъпи на портфейла след всяко zAPOLLON емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for APOLLON inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за APOLLON входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for BDCASH inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за BDCASH входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zAPOLLON inputs (0-1, default: %u)</source>
@@ -4722,12 +4722,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в APOLLON/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в BDCASH/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в APOLLON/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в BDCASH/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4823,19 +4823,19 @@ Please be patient...</source>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. Abet is probably already running.</source>
-        <translation>Не може да се прикачи към %s на този компютър. APOLLON Портфейла вероятно вече е стартиран.</translation>
+        <translation>Не може да се прикачи към %s на този компютър. BDCASH Портфейла вероятно вече е стартиран.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 APOLLON.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 1000 APOLLON.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BDCASH.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 1000 BDCASH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 APOLLON.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 1000 APOLLON.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BDCASH.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 1000 BDCASH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4851,7 +4851,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Abet will not work properly.</source>
-        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, APOLLON Портфейла няма да работи правилно.</translation>
+        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, BDCASH Портфейла няма да работи правилно.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4982,7 +4982,7 @@ Please be patient...</source>
         <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The APOLLON Core Developers</source>
+        <source>Copyright (C) 2015-%i The BDCASH Core Developers</source>
         <translation>Всички права запазени (c) 2015-%i Abet разработчици</translation>
     </message>
     <message>
@@ -5110,8 +5110,8 @@ Please be patient...</source>
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in APOLLON/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в APOLLON/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in BDCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в BDCASH/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5214,8 +5214,8 @@ Please be patient...</source>
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the APOLLON and zAPOLLON money supply statistics</source>
-        <translation>Индексирай наново APOLLON и zAPOLLON данните по наличности</translation>
+        <source>Reindex the BDCASH and zAPOLLON money supply statistics</source>
+        <translation>Индексирай наново BDCASH и zAPOLLON данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5254,8 +5254,8 @@ Please be patient...</source>
 </translation>
     </message>
     <message>
-        <source>Disable all APOLLON specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи APOLLON специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
+        <source>Disable all BDCASH specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи BDCASH специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>

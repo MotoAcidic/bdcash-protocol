@@ -62,12 +62,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina APOLLON adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your BDCASH addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina BDCASH adresser för att skicka betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your APOLLON addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina APOLLON adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your BDCASH addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina BDCASH adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>APOLLON will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
-        <translation>APOLLON kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina APOLLONs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>BDCASH will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your APOLLONs from being stolen by malware infecting your computer.</source>
+        <translation>BDCASH kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina APOLLONs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR APOLLON&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA APOLLON&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BDCASH&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA BDCASH&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>Enter a APOLLON Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Fyll i en APOLLON Adress som du skulle vilja kryptera med BIP 38. Skriv in en lösenfras i den mittersta raden. Tryck kryptera för att beräkna fram den krypterade privata nyckeln.</translation>
+        <source>Enter a BDCASH Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Fyll i en BDCASH Adress som du skulle vilja kryptera med BIP 38. Skriv in en lösenfras i den mittersta raden. Tryck kryptera för att beräkna fram den krypterade privata nyckeln.</translation>
     </message>
     <message>
-        <source>The APOLLON address to encrypt</source>
-        <translation>APOLLON adressen som ska krypteras</translation>
+        <source>The BDCASH address to encrypt</source>
+        <translation>BDCASH adressen som ska krypteras</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this APOLLON address</source>
-        <translation>Kryptera den privata nyckeln för denna APOLLON adressen</translation>
+        <source>Encrypt the private key for this BDCASH address</source>
+        <translation>Kryptera den privata nyckeln för denna BDCASH adressen</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -661,8 +661,8 @@
         <translation>Abet</translation>
     </message>
     <message>
-        <source>Send coins to a APOLLON address</source>
-        <translation>Skicka mynt till en APOLLON adress</translation>
+        <source>Send coins to a BDCASH address</source>
+        <translation>Skicka mynt till en BDCASH adress</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and abet: URIs)</source>
@@ -682,23 +682,23 @@
     </message>
     <message>
         <source>&amp;About Abet</source>
-        <translation>Om APOLLON Kärnan</translation>
+        <translation>Om BDCASH Kärnan</translation>
     </message>
     <message>
         <source>Show information about Abet</source>
-        <translation>Visa information om APOLLON Kärnan</translation>
+        <translation>Visa information om BDCASH Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for APOLLON</source>
-        <translation>Ändra konfigurationsval för APOLLON</translation>
+        <source>Modify configuration options for BDCASH</source>
+        <translation>Ändra konfigurationsval för BDCASH</translation>
     </message>
     <message>
-        <source>Sign messages with your APOLLON addresses to prove you own them</source>
-        <translation>Signera meddelanden med din APOLLON adress för att visa att du äger dem</translation>
+        <source>Sign messages with your BDCASH addresses to prove you own them</source>
+        <translation>Signera meddelanden med din BDCASH adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified APOLLON addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika APOLLON adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified BDCASH addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BDCASH adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -729,8 +729,8 @@
         <translation>Öppna Huvudnodens konfigurations fil </translation>
     </message>
     <message>
-        <source>Open a APOLLON: URI or payment request</source>
-        <translation>Öppna en APOLLON: URI eller betalningsförfrågan</translation>
+        <source>Open a BDCASH: URI or payment request</source>
+        <translation>Öppna en BDCASH: URI eller betalningsförfrågan</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -741,16 +741,16 @@
         <translation>Blockera utforskarfönstret</translation>
     </message>
     <message>
-        <source>Show the Abet help message to get a list with possible APOLLON command-line options</source>
-        <translation>Visa Abet hjälp meddelande för att få en lista med möjliga APOLLON kommandorad alternativ</translation>
+        <source>Show the Abet help message to get a list with possible BDCASH command-line options</source>
+        <translation>Visa Abet hjälp meddelande för att få en lista med möjliga BDCASH kommandorad alternativ</translation>
     </message>
     <message>
         <source>Abet client</source>
-        <translation>APOLLON kärn klient</translation>
+        <translation>BDCASH kärn klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to APOLLON network</source>
-        <translation><numerusform>%n aktiva anslutningar till APOLLON nätverket</numerusform><numerusform>%n aktiva  anslutningar till APOLLON nätverket</numerusform></translation>
+        <source>%n active connection(s) to BDCASH network</source>
+        <translation><numerusform>%n aktiva anslutningar till BDCASH nätverket</numerusform><numerusform>%n aktiva  anslutningar till BDCASH nätverket</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -877,8 +877,8 @@ MultiSend: %1</translation>
         <translation>Plånbok är &lt;b&gt;krypterad&lt;/b&gt; och tillfälligt &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. APOLLON can no longer continue safely and will quit.</source>
-        <translation>Ett fel inträffade. APOLLON kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
+        <source>A fatal error occurred. BDCASH can no longer continue safely and will quit.</source>
+        <translation>Ett fel inträffade. BDCASH kan inte längre köras säkert och kommer att stängas ned för tillfället.</translation>
     </message>
 </context>
 <context>
@@ -1201,8 +1201,8 @@ MultiSend: %1</translation>
         <translation>Redigera skickande adress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid APOLLON address.</source>
-        <translation>Den inmatade adressen "%1" är ej en giltig APOLLON adress.</translation>
+        <source>The entered address "%1" is not a valid BDCASH address.</source>
+        <translation>Den inmatade adressen "%1" är ej en giltig BDCASH adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1299,7 +1299,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>About Abet</source>
-        <translation>Om APOLLON Kärna</translation>
+        <translation>Om BDCASH Kärna</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1353,8 +1353,8 @@ MultiSend: %1</translation>
         <translation>Eftersom detta är första gången programmet körs så kan du välja var Abet ska spara sin data.</translation>
     </message>
     <message>
-        <source>Abet will download and store a copy of the APOLLON block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>APOLLON Kärnan kommer ladda ner och spara en kopia av APOLLON block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
+        <source>Abet will download and store a copy of the BDCASH block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BDCASH Kärnan kommer ladda ner och spara en kopia av BDCASH block chain. Minst %1GB data kommer sparas i denna katalog och den kommer växa med tiden. Plånboken kommer också sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1507,12 +1507,12 @@ MultiSend: %1</translation>
         <translation>Mata in Adress att Skicka till</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other APOLLON addresses after it matures.
-To Add: enter percentage to give and APOLLON address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other BDCASH addresses after it matures.
+To Add: enter percentage to give and BDCASH address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend tillåter dig att automatiskt skicka upp till 100% av dina staking eller huvudnod belöningar till en lista av andra APOLLON adresser efter att belöningarna har mognat.
-För att Lägga till: Ange procent att ge och APOLLON adress för att lägga till i MultiSend vektorn.
+        <translation>MultiSend tillåter dig att automatiskt skicka upp till 100% av dina staking eller huvudnod belöningar till en lista av andra BDCASH adresser efter att belöningarna har mognat.
+För att Lägga till: Ange procent att ge och BDCASH adress för att lägga till i MultiSend vektorn.
 För att Ta Bort: Ange adressen som ska tas bort och tryck ta bort.
 MultiSend kommer inte aktiveras om du inte tryckt på Aktivera</translation>
     </message>
@@ -1770,8 +1770,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Adress / Mängd:</translation>
     </message>
     <message>
-        <source>Add destinations to send APOLLON to</source>
-        <translation>Lägg till destination att skicka APOLLON till</translation>
+        <source>Add destinations to send BDCASH to</source>
+        <translation>Lägg till destination att skicka BDCASH till</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1904,8 +1904,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Om du avaktiverar spenderandet av okonfirmerad växel så kommer växeln från en transaktion &lt;br/&gt;ej kunna användas föräns transaktionen har minst en bekräftelse. &lt;br/&gt; Detta påverkar även hur ditt saldo beräknas.</translation>
     </message>
     <message>
-        <source>Automatically open the APOLLON client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt APOLLON klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
+        <source>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt BDCASH klient porten på denna router. Detta funkar endast om din router stödjer UPnP och är påslaget.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1924,12 +1924,12 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start APOLLON after logging in to the system.</source>
-        <translation>Starta APOLLON automatiskt efter inloggning på systemet.</translation>
+        <source>Automatically start BDCASH after logging in to the system.</source>
+        <translation>Starta BDCASH automatiskt efter inloggning på systemet.</translation>
     </message>
     <message>
-        <source>&amp;Start APOLLON on system login</source>
-        <translation>&amp;Starta APOLLON vid systeminloggning</translation>
+        <source>&amp;Start BDCASH on system login</source>
+        <translation>&amp;Starta BDCASH vid systeminloggning</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1956,8 +1956,8 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting APOLLON.</source>
-        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om APOLLON.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting BDCASH.</source>
+        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om BDCASH.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1970,8 +1970,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of APOLLON units to zAPOLLON</source>
-        <translation>Tillåt automatisk prägling med APOLLON enheter till zAPOLLON</translation>
+        <source>Enable automatic minting of BDCASH units to zAPOLLON</source>
+        <translation>Tillåt automatisk prägling med BDCASH enheter till zAPOLLON</translation>
     </message>
     <message>
         <source>Enable zAPOLLON Automint</source>
@@ -1986,16 +1986,16 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming APOLLON which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande APOLLON som automatiskt konverteras till zAPOLLON via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming BDCASH which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande BDCASH som automatiskt konverteras till zAPOLLON via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zAPOLLON</source>
         <translation>Procent av autopräglade zAPOLLON</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många APOLLON för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BDCASH for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många BDCASH för denna valör är tillgängliga</translation>
     </message>
     <message>
         <source>Preferred Automint zAPOLLON Denomination</source>
@@ -2006,8 +2006,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Staking delnings tröskel:</translation>
     </message>
     <message>
-        <source>Connect to the APOLLON network through a SOCKS5 proxy.</source>
-        <translation>Anslut till APOLLON nätverket via en SOCKS5 proxy.</translation>
+        <source>Connect to the BDCASH network through a SOCKS5 proxy.</source>
+        <translation>Anslut till BDCASH nätverket via en SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2165,8 +2165,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Totalt saldo, inkluderar alla otillgängliga mynt.</translation>
     </message>
     <message>
-        <source>APOLLON Balance</source>
-        <translation>APOLLON Saldo</translation>
+        <source>BDCASH Balance</source>
+        <translation>BDCASH Saldo</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2189,8 +2189,8 @@ https://www.transifex.com/abet-project/abet-project-translations</translation>
         <translation>Nuvarande låst saldo endast i "watch only" adresser</translation>
     </message>
     <message>
-        <source>Your current APOLLON balance, unconfirmed and immature transactions included</source>
-        <translation>Ditt nuvarande APOLLON saldo, obekräftade och omogna transaktioner är inkluderade</translation>
+        <source>Your current BDCASH balance, unconfirmed and immature transactions included</source>
+        <translation>Ditt nuvarande BDCASH saldo, obekräftade och omogna transaktioner är inkluderade</translation>
     </message>
     <message>
         <source>zAPOLLON Balance</source>
@@ -2209,8 +2209,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med APOLLON nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med BDCASH nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2253,8 +2253,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <translation>Spenderbar:</translation>
     </message>
     <message>
-        <source>Locked APOLLON or Masternode collaterals. These are excluded from zAPOLLON minting.</source>
-        <translation>Låsta APOLLON eller masternode som säkerhet. Dessa är uteslutna från zAPOLLON minting.</translation>
+        <source>Locked BDCASH or Masternode collaterals. These are excluded from zAPOLLON minting.</source>
+        <translation>Låsta BDCASH eller masternode som säkerhet. Dessa är uteslutna från zAPOLLON minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2326,8 +2326,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i a
         <translation>Kan ej starta abet: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid APOLLON address or malformed URI parameters.</source>
-        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig APOLLON adress eller felproducerade URI parametrar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BDCASH address or malformed URI parameters.</source>
+        <translation>URI kunde ej analyseras! Detta kan orsakas av en ogiltig BDCASH adress eller felproducerade URI parametrar.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2412,8 +2412,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i a
         <translation>Zerocoin Handlingar:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</source>
-        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med APOLLON nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</source>
+        <translation>nformationen kan vara föråldrad. Din plånbok synkroniserar automatiskt med BDCASH nätverket efter att en anslutning är etablerad, men denna process har inte blivit klar än.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2496,8 +2496,8 @@ zAPOLLON är mogna när de har över 20 bekräftelser OCH över 2 präglingar av
         <translation>Betala &amp;Till:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>APOLLON adress att skicka betalningen till. Skapar betalning till dig själv när den är tom.</translation>
+        <source>The BDCASH address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>BDCASH adress att skicka betalningen till. Skapar betalning till dig själv när den är tom.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3042,8 +3042,8 @@ Var tålmodig...</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>Enter a APOLLON address (e.g. %1)</source>
-        <translation>Mata in en APOLLON adress (e.g. %1)</translation>
+        <source>Enter a BDCASH address (e.g. %1)</source>
+        <translation>Mata in en BDCASH adress (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3200,8 +3200,8 @@ Var tålmodig...</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the APOLLON debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna APOLLON felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
+        <source>Open the BDCASH debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna BDCASH felsökningslogg från den nuvarande data katalogen. Detta kan ta några sekunder för stora logg filer.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3416,8 +3416,8 @@ Var tålmodig...</translation>
         <translation>Ut:</translation>
     </message>
     <message>
-        <source>Welcome to the APOLLON RPC console.</source>
-        <translation>Välkommen till APOLLON RPC konsol.</translation>
+        <source>Welcome to the BDCASH RPC console.</source>
+        <translation>Välkommen till BDCASH RPC konsol.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3559,16 +3559,16 @@ Var tålmodig...</translation>
         <translation>&amp;Mängd:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, som kommer visas när förfrågan öppnas. Observera: Medelandet kommer inte skickas med betalningen över APOLLON nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, som kommer visas när förfrågan öppnas. Observera: Medelandet kommer inte skickas med betalningen över BDCASH nätverket.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>ERHÅLLA</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the APOLLON network.</source>
-        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, vilket kommer visas när förfrågan öppnas.&lt;br&gt;Observera: Medelandet kommer inte skickas med betalningen över APOLLON nätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BDCASH network.</source>
+        <translation>Ett frivilligt meddelande att bifoga till betalningsförfrågan, vilket kommer visas när förfrågan öppnas.&lt;br&gt;Observera: Medelandet kommer inte skickas med betalningen över BDCASH nätverket.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3804,11 +3804,11 @@ Var tålmodig...</translation>
         <translation>UTXO Storlek:</translation>
     </message>
     <message>
-        <source>0 APOLLON</source>
-        <translation>0 APOLLON</translation>
+        <source>0 BDCASH</source>
+        <translation>0 BDCASH</translation>
     </message>
     <message>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 APOLLON applies</source>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 BDCASH applies</source>
         <translation>SwiftX teknologi tillåter nästan omedelbara transaktioner - En fast avgift på 0.01APOLLON tillkommer</translation>
     </message>
     <message>
@@ -3872,8 +3872,8 @@ Var tålmodig...</translation>
         <translation>Om 1000 uAPOLLONs är den valda skräddarsydda avgiften och transaktionen är bara 250 bytes så kommer "per kilobyte" bara betala 250 uAPOLLONs i avgift,&lt;br /&gt;medans "minst totalt" betalar 1000 uAPOLLONs. För transaktioner större än en kilobyte så betalar båda per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for APOLLON transactions than the network can process.</source>
-        <translation>Att endast betala minimum avgift är okej så länge som transaktionsvolymen är mindre än rummet i blocken.&lt;br /&gt;Men var medveten om att detta kan sluta som en transaktion som aldrig blir bekräftad när det finns ett större behov av APOLLON transaktioner än nätverket kan bearbeta.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BDCASH transactions than the network can process.</source>
+        <translation>Att endast betala minimum avgift är okej så länge som transaktionsvolymen är mindre än rummet i blocken.&lt;br /&gt;Men var medveten om att detta kan sluta som en transaktion som aldrig blir bekräftad när det finns ett större behov av BDCASH transaktioner än nätverket kan bearbeta.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3920,8 +3920,8 @@ Var tålmodig...</translation>
         <translation>Lägg till &amp;Mottagare</translation>
     </message>
     <message>
-        <source>Anonymized APOLLON</source>
-        <translation>Anonymiserade APOLLON</translation>
+        <source>Anonymized BDCASH</source>
+        <translation>Anonymiserade BDCASH</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3968,8 +3968,8 @@ Var tålmodig...</translation>
         <translation>Split block verktyget fungerar inte med flera adresser. Försök igen.</translation>
     </message>
     <message>
-        <source>Warning: Invalid APOLLON address</source>
-        <translation>Varning: Ogiltig APOLLON adress</translation>
+        <source>Warning: Invalid BDCASH address</source>
+        <translation>Varning: Ogiltig BDCASH adress</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4071,8 +4071,8 @@ Var tålmodig...</translation>
         <translation>Betala &amp;Till:</translation>
     </message>
     <message>
-        <source>The APOLLON address to send the payment to</source>
-        <translation>APOLLON adressen att skicka betalningen till</translation>
+        <source>The BDCASH address to send the payment to</source>
+        <translation>BDCASH adressen att skicka betalningen till</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4111,8 +4111,8 @@ Var tålmodig...</translation>
         <translation>Medelande:</translation>
     </message>
     <message>
-        <source>A message that was attached to the APOLLON: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the APOLLON network.</source>
-        <translation>Ett medelande som var bifogat till APOLLON: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom APOLLON nätverket.</translation>
+        <source>A message that was attached to the BDCASH: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BDCASH network.</source>
+        <translation>Ett medelande som var bifogat till BDCASH: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom BDCASH nätverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4161,8 +4161,8 @@ Var tålmodig...</translation>
         <translation>Du kan signera meddelanden med din egna adress för att bevisa att du äger dem. Se upp för att signera något vagt, då phishing-attacker kan försöka lura dig att signera din identitet åt dom. Signera endast fullt detaljerade påståenden du går med på.</translation>
     </message>
     <message>
-        <source>The APOLLON address to sign the message with</source>
-        <translation>APOLLON adressen för signera meddelandet med</translation>
+        <source>The BDCASH address to sign the message with</source>
+        <translation>BDCASH adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4193,16 +4193,16 @@ Var tålmodig...</translation>
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this APOLLON address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna APOLLON adress</translation>
+        <source>Sign the message to prove you own this BDCASH address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna BDCASH adress</translation>
     </message>
     <message>
-        <source>The APOLLON address the message was signed with</source>
-        <translation>APOLLON adressen meddelandet blev signerat med</translation>
+        <source>The BDCASH address the message was signed with</source>
+        <translation>BDCASH adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified APOLLON address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika APOLLON adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified BDCASH address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BDCASH adressen.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4304,7 +4304,7 @@ Var tålmodig...</translation>
         <translation>Dash Core utvecklarna</translation>
     </message>
     <message>
-        <source>The APOLLON Core developers</source>
+        <source>The BDCASH Core developers</source>
         <translation>Abet utvecklarna</translation>
     </message>
     <message>
@@ -4580,8 +4580,8 @@ Var tålmodig...</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>APOLLON Stake</source>
-        <translation>APOLLON staking</translation>
+        <source>BDCASH Stake</source>
+        <translation>BDCASH staking</translation>
     </message>
     <message>
         <source>zAPOLLON Stake</source>
@@ -4604,24 +4604,24 @@ Var tålmodig...</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted APOLLON to zAPOLLON</source>
-        <translation>Konvertera APOLLON till zAPOLLON</translation>
+        <source>Converted BDCASH to zAPOLLON</source>
+        <translation>Konvertera BDCASH till zAPOLLON</translation>
     </message>
     <message>
         <source>Spent zAPOLLON</source>
         <translation>Spendera zAPOLLON</translation>
     </message>
     <message>
-        <source>Received APOLLON from zAPOLLON</source>
-        <translation>Mottog APOLLON från zAPOLLON</translation>
+        <source>Received BDCASH from zAPOLLON</source>
+        <translation>Mottog BDCASH från zAPOLLON</translation>
     </message>
     <message>
         <source>Minted Change as zAPOLLON from zAPOLLON Spend</source>
         <translation>Myntad Växel som zAPOLLON från zAPOLLON Spendering</translation>
     </message>
     <message>
-        <source>Converted zAPOLLON to APOLLON</source>
-        <translation>Konverterad zAPOLLON till APOLLON</translation>
+        <source>Converted zAPOLLON to BDCASH</source>
+        <translation>Konverterad zAPOLLON till BDCASH</translation>
     </message>
     <message>
         <source>Anonymous (zAPOLLON Transaction)</source>
@@ -4843,8 +4843,8 @@ Var tålmodig...</translation>
         <translation>Exportering Lyckat</translation>
     </message>
     <message>
-        <source>Received APOLLON from zAPOLLON</source>
-        <translation>Mottog APOLLON från zAPOLLON</translation>
+        <source>Received BDCASH from zAPOLLON</source>
+        <translation>Mottog BDCASH från zAPOLLON</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zAPOLLON</source>
@@ -4884,8 +4884,8 @@ Var tålmodig...</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 APOLLON.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 APOLLON.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BDCASH.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 BDCASH.</translation>
     </message>
 </context>
 <context>
@@ -4966,7 +4966,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Abet is probably already running.</source>
-        <translation>Kan ej låsa in på data katalog %s. APOLLON Kärna körs förmodligen redan.</translation>
+        <translation>Kan ej låsa in på data katalog %s. BDCASH Kärna körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4997,8 +4997,8 @@ Var tålmodig...</translation>
         <translation>Aktivera automatisk plånboksbackup efter varje zAPOLLON minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for APOLLON inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för APOLLON inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for BDCASH inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för BDCASH inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for zAPOLLON inputs (0-1, default: %u)</source>
@@ -5037,12 +5037,12 @@ Var tålmodig...</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i APOLLON/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i BDCASH/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in APOLLON/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i APOLLON/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in BDCASH/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i BDCASH/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5149,12 +5149,12 @@ Var tålmodig...</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 APOLLON.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 1000 APOLLON.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BDCASH.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 1000 BDCASH.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 APOLLON.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 1000 APOLLON.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BDCASH.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 1000 BDCASH.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5305,8 +5305,8 @@ Var tålmodig...</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The APOLLON Core Developers</source>
-        <translation>Copyright (C) 2015-%i The APOLLON Core Developers</translation>
+        <source>Copyright (C) 2015-%i The BDCASH Core Developers</source>
+        <translation>Copyright (C) 2015-%i The BDCASH Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5386,7 +5386,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Abet</source>
-        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare APOLLON Kärna version</translation>
+        <translation>Fel vid laddning av wallet.dat: Plånbok  kräver nyare BDCASH Kärna version</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5441,8 +5441,8 @@ Var tålmodig...</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in APOLLON/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i APOLLON/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in BDCASH/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i BDCASH/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5482,7 +5482,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. Abet is shutting down.</source>
-        <translation>Initierings renlighetscheck misslyckades. APOLLON Kärna stängs ner.</translation>
+        <translation>Initierings renlighetscheck misslyckades. BDCASH Kärna stängs ner.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5545,8 +5545,8 @@ Var tålmodig...</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the APOLLON and zAPOLLON money supply statistics</source>
-        <translation>Indexera APOLLON och zAPOLLON pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the BDCASH and zAPOLLON money supply statistics</source>
+        <translation>Indexera BDCASH och zAPOLLON pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5589,8 +5589,8 @@ Var tålmodig...</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all APOLLON specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Avaktivera all APOLLON funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
+        <source>Disable all BDCASH specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Avaktivera all BDCASH funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -6170,7 +6170,7 @@ Var tålmodig...</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart Abet to complete</source>
-        <translation>Plånbok behöver skrivas om: starta om APOLLON Kärna för att göra klart</translation>
+        <translation>Plånbok behöver skrivas om: starta om BDCASH Kärna för att göra klart</translation>
     </message>
     <message>
         <source>Wallet options:</source>

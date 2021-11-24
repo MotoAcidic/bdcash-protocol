@@ -1,4 +1,4 @@
-# bash programmable completion for apollon-cli(1)
+# bash programmable completion for bdcash-cli(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -28,8 +28,8 @@ _apollon_cli() {
     local cur prev words=() cword
     local apollon_cli
 
-    # save and use original argument to invoke apollon-cli for -help, help and RPC
-    # as apollon-cli might not be in $PATH
+    # save and use original argument to invoke bdcash-cli for -help, help and RPC
+    # as bdcash-cli might not be in $PATH
     apollon_cli="$1"
 
     COMPREPLY=()
@@ -143,7 +143,7 @@ _apollon_cli() {
             ;;
     esac
 } &&
-complete -F _apollon_cli apollon-cli
+complete -F _apollon_cli bdcash-cli
 
 # Local variables:
 # mode: shell-script

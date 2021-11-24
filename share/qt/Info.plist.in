@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The APOLLON Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The BDCASH Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>APOLLON-Qt</string>
+  <string>BDCASH-Qt</string>
   
   <key>CFBundleName</key>
-  <string>APOLLON-Qt</string>
+  <string>BDCASH-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.apollon.Apollon-Qt</string>
+  <string>io.bdcash.Bdcash-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.apollon.ApollonPayment</string>
+      <string>io.bdcash.ApollonPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>apollon</string>
+        <string>bdcash</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.apollon.paymentrequest</string>
+      <string>io.bdcash.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Apollon payment request</string>
+      <string>Bdcash payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,7 +68,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-apollon-payment-request</string>
+        <string>application/x-bdcash-payment-request</string>
         <key>public.filename-extension</key>
         <array>
           <string>apollonpaymentrequest</string>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.apollon.paymentrequest</string>
+        <string>io.bdcash.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

@@ -1,39 +1,39 @@
-APOLLON Core
+BDCASH Core
 =============
 
 Setup
 ---------------------
-[APOLLON Core](http://apollon.org/wallet) is the original APOLLON client and it builds the backbone of the network. However, it downloads and stores the entire history of APOLLON transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[BDCASH Core](http://bdcash.org/wallet) is the original BDCASH client and it builds the backbone of the network. However, it downloads and stores the entire history of BDCASH transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run APOLLON Core on your native platform.
+The following are some helpful notes on how to run BDCASH Core on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/apollon-qt` (GUI) or
+- `bin/bdcash-qt` (GUI) or
 - `bin/apollond` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run apollon-qt.exe.
+Unpack the files into a directory, and then run bdcash-qt.exe.
 
 ### macOS
 
-Drag APOLLON-Qt to your applications folder, and then run APOLLON-Qt.
+Drag BDCASH-Qt to your applications folder, and then run BDCASH-Qt.
 
 ### Need Help?
 
-* See the documentation at the [APOLLON Wiki](https://github.com/APOLLON-Project/APOLLON/wiki)
+* See the documentation at the [BDCASH Wiki](https://github.com/BDCASH-Project/BDCASH/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [APOLLON Forum](http://forum.apollon.org/).
-* Join our Discord server [Discord Server](https://discord.apollon.org)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [BDCASH Forum](http://forum.bdcash.org/).
+* Join our Discord server [Discord Server](https://discord.bdcash.org)
 
 Building
 ---------------------
-The following are developer notes on how to build APOLLON Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build BDCASH Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
 - [macOS Build Notes](build-osx.md)
@@ -43,21 +43,21 @@ The following are developer notes on how to build APOLLON Core on your native pl
 
 Development
 ---------------------
-The APOLLON repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The BDCASH repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/apollon/doxygen/)
+- [Source Code Documentation (External Link)](https://www.fuzzbawls.pw/bdcash/doxygen/)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [APOLLON](http://forum.apollon.org/) forum.
-* Join the [APOLLON Discord](https://discord.apollon.org).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [BDCASH](http://forum.bdcash.org/) forum.
+* Join the [BDCASH Discord](https://discord.bdcash.org).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

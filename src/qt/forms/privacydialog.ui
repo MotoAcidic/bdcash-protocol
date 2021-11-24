@@ -164,7 +164,7 @@
                         <item>
                          <widget class="QLabel" name="labelzAPOLLONSyncStatus">
                           <property name="toolTip">
-                           <string>The displayed information may be out of date. Your wallet automatically synchronizes with the APOLLON network after a connection is established, but this process has not completed yet.</string>
+                           <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BDCASH network after a connection is established, but this process has not completed yet.</string>
                           </property>
                           <property name="styleSheet">
                            <string notr="true">QLabel { color: red; }</string>
@@ -694,7 +694,7 @@ zAPOLLON are mature when they have more than 20 confirmations AND more than 2 mi
                              </size>
                             </property>
                             <property name="toolTip">
-                             <string>The APOLLON address to send the payment to. Creates local payment to yourself when empty.</string>
+                             <string>The BDCASH address to send the payment to. Creates local payment to yourself when empty.</string>
                             </property>
                            </widget>
                           </item>
@@ -707,7 +707,7 @@ zAPOLLON are mature when they have more than 20 confirmations AND more than 2 mi
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="../apollon.qrc">
+                             <iconset resource="../bdcash.qrc">
                               <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
                             </property>
                             <property name="shortcut">
@@ -724,7 +724,7 @@ zAPOLLON are mature when they have more than 20 confirmations AND more than 2 mi
                              <string/>
                             </property>
                             <property name="icon">
-                             <iconset resource="../apollon.qrc">
+                             <iconset resource="../bdcash.qrc">
                               <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
                             </property>
                             <property name="shortcut">
@@ -1461,8 +1461,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                            <string>Show the current status of automatic zAPOLLON minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to apollon.conf
-- disable: add 'enablezeromint=0' to apollon.conf
+- enable: add 'enablezeromint=1' to bdcash.conf
+- disable: add 'enablezeromint=0' to bdcash.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zAPOLLON
@@ -1951,7 +1951,7 @@ To change the percentage (no restart required):
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 APOLLON</string>
+         <string notr="true">0.000 000 00 BDCASH</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2033,7 +2033,7 @@ To change the percentage (no restart required):
            <enum>Qt::ActionsContextMenu</enum>
           </property>
           <property name="text">
-           <string notr="true">0.00 APOLLON</string>
+           <string notr="true">0.00 BDCASH</string>
           </property>
           <property name="textInteractionFlags">
            <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2255,7 +2255,7 @@ To change the percentage (no restart required):
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 APOLLON</string>
+         <string notr="true">0.000 000 00 BDCASH</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2554,7 +2554,7 @@ To change the percentage (no restart required):
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../apollon.qrc"/>
+  <include location="../bdcash.qrc"/>
  </resources>
  <connections/>
 </ui>

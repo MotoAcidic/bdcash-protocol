@@ -19,7 +19,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(APOLLON);
+    unitlist.append(BDCASH);
     unitlist.append(mAPOLLON);
     unitlist.append(uAPOLLON);
     return unitlist;
@@ -28,7 +28,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case APOLLON:
+    case BDCASH:
     case mAPOLLON:
     case uAPOLLON:
         return true;
@@ -40,7 +40,7 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case APOLLON:
+    case BDCASH:
         return QString("xap");
     case mAPOLLON:
         return QString("mxap");
@@ -55,7 +55,7 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case APOLLON:
+        case BDCASH:
             return QString("XAP");
         case mAPOLLON:
             return QString("mXAP");
@@ -66,7 +66,7 @@ QString BitcoinUnits::name(int unit)
         }
     } else {
         switch (unit) {
-        case APOLLON:
+        case BDCASH:
             return QString("tXAP");
         case mAPOLLON:
             return QString("mtXAP");
@@ -82,7 +82,7 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case APOLLON:
+        case BDCASH:
             return QString("XAP");
         case mAPOLLON:
             return QString("Milli-XAP (1 / 1" THIN_SP_UTF8 "000)");
@@ -93,7 +93,7 @@ QString BitcoinUnits::description(int unit)
         }
     } else {
         switch (unit) {
-        case APOLLON:
+        case BDCASH:
             return QString("TestXAPs");
         case mAPOLLON:
             return QString("Milli-TestXAP (1 / 1" THIN_SP_UTF8 "000)");
@@ -108,7 +108,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case APOLLON:
+    case BDCASH:
         return 100000000;
     case mAPOLLON:
         return 100000;
@@ -122,7 +122,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case APOLLON:
+    case BDCASH:
         return 8;
     case mAPOLLON:
         return 5;

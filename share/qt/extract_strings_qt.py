@@ -78,6 +78,6 @@ f.write('static const char UNUSED *apollon_strings[] = {\n')
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("apollon-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("bdcash-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

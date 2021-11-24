@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -46,10 +46,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Apollon Core apollon-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Bdcash Core bdcash-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  apollon-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded apollon transaction") + "\n" +
-                               "  apollon-tx [options] -create [commands]   " + _("Create hex-encoded apollon transaction") + "\n" +
+                               "  bdcash-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded bdcash transaction") + "\n" +
+                               "  bdcash-tx [options] -create [commands]   " + _("Create hex-encoded bdcash transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());
@@ -567,7 +567,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded apollon transaction
+            // param: hex-encoded bdcash transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-") // "-" implies standard input
                 strHexTx = readStdin();

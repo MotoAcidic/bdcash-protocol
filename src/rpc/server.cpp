@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2019-2020 The Apollon developers
+// Copyright (c) 2019-2020 The Bdcash developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -266,11 +266,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop APOLLON server.");
+            "\nStop BDCASH server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "APOLLON server stopping";
+    return "BDCASH server stopping";
 }
 
 
@@ -363,35 +363,35 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true,  true,  false  },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
-        /* Apollon features */
-        {"apollon", "listmasternodes", &listmasternodes, true, true, false},
-        {"apollon", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"apollon", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"apollon", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"apollon", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"apollon", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"apollon", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"apollon", "masternodedebug", &masternodedebug, true, true, false},
-        {"apollon", "startmasternode", &startmasternode, true, true, false},
-        {"apollon", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"apollon", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"apollon", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"apollon", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"apollon", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"apollon", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"apollon", "preparebudget", &preparebudget, true, true, false},
-        {"apollon", "submitbudget", &submitbudget, true, true, false},
-        {"apollon", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"apollon", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"apollon", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"apollon", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"apollon", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"apollon", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"apollon", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"apollon", "checkbudgets", &checkbudgets, true, true, false},
-        {"apollon", "mnsync", &mnsync, true, true, false},
-        {"apollon", "spork", &spork, true, true, false},
-        {"apollon", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Bdcash features */
+        {"bdcash", "listmasternodes", &listmasternodes, true, true, false},
+        {"bdcash", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"bdcash", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"bdcash", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"bdcash", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"bdcash", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"bdcash", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"bdcash", "masternodedebug", &masternodedebug, true, true, false},
+        {"bdcash", "startmasternode", &startmasternode, true, true, false},
+        {"bdcash", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"bdcash", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"bdcash", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"bdcash", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"bdcash", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"bdcash", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"bdcash", "preparebudget", &preparebudget, true, true, false},
+        {"bdcash", "submitbudget", &submitbudget, true, true, false},
+        {"bdcash", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"bdcash", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"bdcash", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"bdcash", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"bdcash", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"bdcash", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"bdcash", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"bdcash", "checkbudgets", &checkbudgets, true, true, false},
+        {"bdcash", "mnsync", &mnsync, true, true, false},
+        {"bdcash", "spork", &spork, true, true, false},
+        {"bdcash", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -631,7 +631,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> apollon-cli " + methodname + " " + args + "\n";
+    return "> bdcash-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

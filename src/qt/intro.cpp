@@ -174,7 +174,7 @@ bool Intro::pickDataDirectory()
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch (fs::filesystem_error& e) {
-                QMessageBox::critical(0, tr("Apollon"),
+                QMessageBox::critical(0, tr("Bdcash"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
@@ -183,7 +183,7 @@ bool Intro::pickDataDirectory()
         settings.setValue("strDataDir", dataDir);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the apollon.conf file in the default data directory
+     * override -datadir in the bdcash.conf file in the default data directory
      * (to be consistent with apollond behavior)
      */
     if (dataDir != getDefaultDataDirectory())

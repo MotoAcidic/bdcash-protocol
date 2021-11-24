@@ -1,4 +1,4 @@
 cd ..
 cd src
-strip apollon{d,-cli}
-tar cvzf APOLLON-linux.tar.gz apollond apollon-cli
+strip bdcash{d,-cli}
+tar cvzf BDCASH-linux.tar.gz apollond bdcash-cli

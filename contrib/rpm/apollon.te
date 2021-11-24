@@ -1,4 +1,4 @@
-policy_module(apollon, 1.100.1)
+policy_module(bdcash, 1.100.1)
 
 ########################################
 #
@@ -28,7 +28,7 @@ corenet_port(apollon_port_t)
 
 ########################################
 #
-# apollon local policy
+# bdcash local policy
 #
 allow apollon_t self:process { fork };
 

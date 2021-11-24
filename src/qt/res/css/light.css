@@ -59,13 +59,13 @@ QMenu::item {
     font-family: "Ubuntu", "font";
 }
 QMenu::item:hover {
-    background-color: #3267fb;
+    background-color: #f5ed0e;
     color: #1d1d1d;
 }
 QMenu::item:selected {
-    background-color: #3267fb;
+    background-color: #f5ed0e;
     color: #1d1d1d;
-    border-left: 10px solid #3267fb;
+    border-left: 10px solid #f5ed0e;
 }
 QToolBar {
     background-color: #fff;
@@ -140,7 +140,7 @@ QProgressBar {
     padding-right: 0px;
 }
 QProgressBar::chunk {
-    background-color: #f50e3a;
+    background-color: #f5d20e;
     width: 20px;
 }
 #progressBarLabel {
@@ -158,7 +158,7 @@ QTabWidget::pane {
 QTabBar {
     background: #e7ebf3;
     color: #1d1d1d;
-    border:1px solid #354d7e;
+    border:1px solid #7e7335;
 }
 QTabBar::tab:hover:!selected {
     background: none;
@@ -171,7 +171,7 @@ QTabBar::tab {
     border-bottom: 3px solid transparent;
 }
 QTabBar::tab:selected {
-    border-bottom: 3px solid #f50e3a;
+    border-bottom: 3px solid #f5d20e;
     background: #e7ebf3;
 }
 QTabBar::tab:pressed {
@@ -297,16 +297,16 @@ QComboBox {
     color: #1d1d1d;
     border-radius: 10px;
     border: 1px solid #e0e0ee;
-    selection-background-color: #f50e3a;
+    selection-background-color: #f5d20e;
 }
 QComboBox:checked {
     background-color: #f5f7fb;
     border: 1px solid #a8a8b3;
 }
 QComboBox:editable {
-    background: #f50e3a;
+    background: #f5d20e;
     color: #1d1d1d;
-    border: 0 solid #f50e3a;
+    border: 0 solid #f5d20e;
 }
 QComboBox::drop-down {
     width: 25px;
@@ -441,7 +441,7 @@ QTableView::item:selected,
 #transactionView::item:selected,
 #tableWidgetAllMasternodes::item:selected,
 #tableWidgetMyMasternodes::item:selected {
-    background: #f60c3a;
+    background: #f5d20e;
     color: #1d1d1d;
 }
 QTableWidget {
@@ -474,13 +474,13 @@ QScrollBar:horizontal {
     margin: 0;
 }
 QScrollBar::handle:vertical {
-    background: #f60c3a;
+    background: #f5d20e;
     border-radius: 6px;
     min-height: 50px;
     width: 3px;
 }
 QScrollBar::handle:horizontal {
-    background: #f60c3a;
+    background: #f5d20e;
     min-width: 50px;
     border-radius: 6px;
 }
@@ -1325,7 +1325,7 @@ QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::item:checked {
     color: #1d1d1d;
 }
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:selected {
-    background: #f50e3a;
+    background: #f5d20e;
     color: #1d1d1d;
 }
 QDialog#CoinControlDialog .CoinControlTreeWidget#treeWidget::branch:checked {

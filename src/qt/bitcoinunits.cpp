@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The BDCASH developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(BDCASH);
-    unitlist.append(mBDCASH);
-    unitlist.append(uBDCASH);
+    unitlist.append(APOLLON);
+    unitlist.append(mAPOLLON);
+    unitlist.append(uAPOLLON);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case BDCASH:
-    case mBDCASH:
-    case uBDCASH:
+    case APOLLON:
+    case mAPOLLON:
+    case uAPOLLON:
         return true;
     default:
         return false;
@@ -41,12 +40,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case BDCASH:
-        return QString("bdcash");
-    case mBDCASH:
-        return QString("mbdcash");
-    case uBDCASH:
-        return QString::fromUtf8("ubdcash");
+    case APOLLON:
+        return QString("xap");
+    case mAPOLLON:
+        return QString("mxap");
+    case uAPOLLON:
+        return QString::fromUtf8("uxap");
     default:
         return QString("???");
     }
@@ -56,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BDCASH:
-            return QString("BDCASH");
-        case mBDCASH:
-            return QString("mBDCASH");
-        case uBDCASH:
-            return QString::fromUtf8("μBDCASH");
+        case APOLLON:
+            return QString("XAP");
+        case mAPOLLON:
+            return QString("mXAP");
+        case uAPOLLON:
+            return QString::fromUtf8("μXAP");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BDCASH:
-            return QString("tBDCASH");
-        case mBDCASH:
-            return QString("mtBDCASH");
-        case uBDCASH:
-            return QString::fromUtf8("μtBDCASH");
+        case APOLLON:
+            return QString("tXAP");
+        case mAPOLLON:
+            return QString("mtXAP");
+        case uAPOLLON:
+            return QString::fromUtf8("μtXAP");
         default:
             return QString("???");
         }
@@ -83,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case BDCASH:
-            return QString("BDCASH");
-        case mBDCASH:
-            return QString("Milli-BDCASH (1 / 1" THIN_SP_UTF8 "000)");
-        case uBDCASH:
-            return QString("Micro-BDCASH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case APOLLON:
+            return QString("XAP");
+        case mAPOLLON:
+            return QString("Milli-XAP (1 / 1" THIN_SP_UTF8 "000)");
+        case uAPOLLON:
+            return QString("Micro-XAP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case BDCASH:
-            return QString("TestBDCASHs");
-        case mBDCASH:
-            return QString("Milli-TestBDCASH (1 / 1" THIN_SP_UTF8 "000)");
-        case uBDCASH:
-            return QString("Micro-TestBDCASH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case APOLLON:
+            return QString("TestXAPs");
+        case mAPOLLON:
+            return QString("Milli-TestXAP (1 / 1" THIN_SP_UTF8 "000)");
+        case uAPOLLON:
+            return QString("Micro-TestXAP (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case BDCASH:
+    case APOLLON:
         return 100000000;
-    case mBDCASH:
+    case mAPOLLON:
         return 100000;
-    case uBDCASH:
+    case uAPOLLON:
         return 100;
     default:
         return 100000000;
@@ -123,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case BDCASH:
+    case APOLLON:
         return 8;
-    case mBDCASH:
+    case mAPOLLON:
         return 5;
-    case uBDCASH:
+    case uAPOLLON:
         return 2;
     default:
         return 0;

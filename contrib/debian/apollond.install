@@ -1,0 +1,3 @@
+usr/local/bin/apollond usr/bin
+usr/local/bin/apollon-cli usr/bin
+debian/examples/apollon.conf etc/apollon

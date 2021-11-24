@@ -1,4 +1,5 @@
 // Copyright (c) 2014 The Bitcoin developers
+// Copyright (c) 2017-2018 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,8 +10,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between bdcash-cli and bdcashd)
- * of a given instance of the BDCASH system.
+ * CBaseChainParams defines the base parameters (shared between apollon-cli and apollond)
+ * of a given instance of the Apollon system.
  */
 class CBaseChainParams
 {

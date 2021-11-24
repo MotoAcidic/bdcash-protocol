@@ -1,5 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,12 +16,11 @@
 #include <assert.h>
 #include <stdint.h>
 
-#include <boost/foreach.hpp>
 #include <boost/unordered_map.hpp>
 
 /** 
 
-    ****Note - for BDCASH we added fCoinStake to the 2nd bit. Keep in mind when reading the following and adjust as needed.
+    ****Note - for APOLLON we added fCoinStake to the 2nd bit. Keep in mind when reading the following and adjust as needed.
  * Pruned version of CTransaction: only retains metadata and unspent transaction outputs
  *
  * Serialized format:
@@ -29,13 +29,11 @@
  * - unspentness bitvector, for vout[2] and further; least significant byte first
  * - the non-spent CTxOuts (via CTxOutCompressor)
  * - VARINT(nHeight)
- * - nTime
  *
  * The nCode value consists of:
  * - bit 1: IsCoinBase()
  * - bit 2: vout[0] is not spent
  * - bit 4: vout[1] is not spent
- * - bit 8: IsCoinStake()
  * - The higher bits encode N, the number of non-zero bytes in the following bitvector.
  *   - In case both bit 2 and bit 4 are unset, they encode N-1, as there must be at
  *     least one non-spent output).
@@ -90,9 +88,6 @@ public:
     //! as new tx version will probably only be introduced at certain heights
     int nVersion;
 
-    //! time of the CTransaction
-    //unsigned int nTime;
-
     void FromTx(const CTransaction& tx, int nHeightIn)
     {
         fCoinBase = tx.IsCoinBase();
@@ -132,7 +127,7 @@ public:
 
     void ClearUnspendable()
     {
-        BOOST_FOREACH (CTxOut& txout, vout) {
+        for (CTxOut& txout : vout) {
             if (txout.scriptPubKey.IsUnspendable())
                 txout.SetNull();
         }
@@ -198,8 +193,6 @@ public:
                 nSize += ::GetSerializeSize(CTxOutCompressor(REF(vout[i])), nType, nVersion);
         // height
         nSize += ::GetSerializeSize(VARINT(nHeight), nType, nVersion);
-        // time
-        //nSize += ::GetSerializeSize(nTime, nType, nVersion);
         return nSize;
     }
 
@@ -231,8 +224,6 @@ public:
         }
         // coinbase height
         ::Serialize(s, VARINT(nHeight), nType, nVersion);
-        // time
-        //::Serialize(s, nTime, nType, nVersion);
     }
 
     template <typename Stream>
@@ -268,8 +259,6 @@ public:
         }
         // coinbase height
         ::Unserialize(s, VARINT(nHeight), nType, nVersion);
-        // time
-        //::Unserialize(s, nTime, nType, nVersion);
         Cleanup();
     }
 
@@ -282,14 +271,14 @@ public:
     //! check whether a particular output is still available
     bool IsAvailable(unsigned int nPos) const
     {
-        return (nPos < vout.size() && !vout[nPos].IsNull());
+        return (nPos < vout.size() && !vout[nPos].IsNull() && !vout[nPos].IsZerocoinMint());
     }
 
     //! check whether the entire CCoins is spent
     //! note that only !IsPruned() CCoins can be serialized
     bool IsPruned() const
     {
-        BOOST_FOREACH (const CTxOut& out, vout)
+        for (const CTxOut& out : vout)
             if (!out.IsNull())
                 return false;
         return true;
@@ -468,7 +457,7 @@ public:
     unsigned int GetCacheSize() const;
 
     /** 
-     * Amount of bdcash coming in to a transaction
+     * Amount of apollon coming in to a transaction
      * Note that lightweight clients may not know anything besides the hash of previous transactions,
      * so may not be able to calculate this.
      *

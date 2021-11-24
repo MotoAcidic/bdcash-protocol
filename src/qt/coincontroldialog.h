@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
+// Copyright (c) 2017-2018 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,9 +16,9 @@
 #include <QPoint>
 #include <QString>
 #include <QTreeWidgetItem>
-
 class WalletModel;
 
+class MultisigDialog;
 class CCoinControl;
 class CTxMemPool;
 
@@ -26,15 +27,26 @@ namespace Ui
 class CoinControlDialog;
 }
 
+class CCoinControlWidgetItem : public QTreeWidgetItem
+{
+public:
+    explicit CCoinControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CCoinControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CCoinControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+
+    bool operator<(const QTreeWidgetItem &other) const;
+};
+
 class CoinControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit CoinControlDialog(QWidget* parent = 0);
+    explicit CoinControlDialog(QWidget* parent = nullptr, bool fMultisigEnabled = false);
     ~CoinControlDialog();
 
     void setModel(WalletModel* model);
+    void updateDialogLabels();
 
     // static because also called from sendcoinsdialog
     static void updateLabels(WalletModel*, QDialog*);
@@ -49,14 +61,13 @@ private:
     WalletModel* model;
     int sortColumn;
     Qt::SortOrder sortOrder;
-
+    bool fMultisigEnabled;
     QMenu* contextMenu;
     QTreeWidgetItem* contextMenuItem;
     QAction* copyTransactionHashAction;
     QAction* lockAction;
     QAction* unlockAction;
 
-    QString strPad(QString, int, QString);
     void sortView(int, Qt::SortOrder);
     void updateView();
 
@@ -65,7 +76,7 @@ private:
         COLUMN_AMOUNT,
         COLUMN_LABEL,
         COLUMN_ADDRESS,
-        COLUMN_OBFUSCATION_ROUNDS,
+        COLUMN_TYPE,
         COLUMN_DATE,
         COLUMN_CONFIRMATIONS,
         COLUMN_PRIORITY,
@@ -75,8 +86,9 @@ private:
         COLUMN_PRIORITY_INT64,
         COLUMN_DATE_INT64
     };
+    friend class CCoinControlWidgetItem;
 
-    // some columns have a hidden column containing the value used for sorting
+	    // some columns have a hidden column containing the value used for sorting
     int getMappedColumn(int column, bool fVisibleColumn = true)
     {
         if (fVisibleColumn) {
@@ -116,10 +128,19 @@ private slots:
     void clipboardChange();
     void radioTreeMode(bool);
     void radioListMode(bool);
+    void toggled(bool);
     void viewItemChanged(QTreeWidgetItem*, int);
     void headerSectionClicked(int);
     void buttonBoxClicked(QAbstractButton*);
     void buttonSelectAllClicked();
+    void HideInputAutoSelection();
+    void ShowInputAutoSelection();
+    void greater();
+    void Less();
+    void Equal();
+    void select_50();
+    void select_100();
+    void select_250();
     void buttonToggleLockClicked();
     void updateLabelLocked();
 };

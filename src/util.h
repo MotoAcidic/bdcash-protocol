@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The BDCASH developers
+// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2019-2020 The Apollon developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +14,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bdcash-config.h"
+#include "config/apollon-config.h"
 #endif
 
 #include "compat.h"
@@ -26,24 +26,22 @@
 #include <stdint.h>
 #include <string>
 #include <vector>
-#include <iterator>
-#include <sstream>
 
 #include <boost/filesystem/path.hpp>
 #include <boost/thread/exceptions.hpp>
+#include <boost/thread/condition_variable.hpp> // for boost::thread_interrupted
 
-using namespace std;
-
-//BDCASH only features
+//APOLLON only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
 extern bool fEnableSwiftTX;
 extern int nSwiftTXDepth;
-extern int nObfuscationRounds;
-extern int nAnonymizeBDCASHAmount;
-extern int nLiquidityProvider;
-extern bool fEnableObfuscation;
+extern int nZeromintPercentage;
+extern const int64_t AUTOMINT_DELAY;
+extern int nPreferredDenom;
+extern bool fEnableZeromint;
+extern bool fEnableAutoConvert;
 extern int64_t enforceMasternodePaymentsTime;
 extern std::string strMasterNodeAddr;
 extern int keysLoaded;
@@ -63,16 +61,7 @@ extern bool fLogIPs;
 extern volatile bool fReopenDebugLog;
 
 void SetupEnvironment();
-
-// Simple hex to ascii conversion
-std::string hex2str(std::string hex);
-
-template <class Container>
-void ssplit(const std::string& str, Container& cont)
-{
-    istringstream iss(str);
-    copy(istream_iterator<std::string>(iss), istream_iterator<std::string>(), back_inserter(cont));
-}
+bool SetupNetworking();
 
 /** Return true if log accepts specified category */
 bool LogAcceptCategory(const char* category);
@@ -80,6 +69,9 @@ bool LogAcceptCategory(const char* category);
 int LogPrintStr(const std::string& str);
 
 #define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
+
+/** Get format string from VA_ARGS for error reporting */
+template<typename... Args> std::string FormatStringFromLogArgs(const char *fmt, const Args&... args) { return fmt; }
 
 /**
  * When we switch to C++11, this can be switched to variadic templates instead
@@ -91,13 +83,25 @@ int LogPrintStr(const std::string& str);
     static inline int LogPrint(const char* category, const char* format, TINYFORMAT_VARARGS(n)) \
     {                                                                                           \
         if (!LogAcceptCategory(category)) return 0;                                             \
-        return LogPrintStr(tfm::format(format, TINYFORMAT_PASSARGS(n)));                        \
+        std::string _log_msg_; /* Unlikely name to avoid shadowing variables */                 \
+        try {                                                                                   \
+            _log_msg_ = tfm::format(format, TINYFORMAT_PASSARGS(n));                            \
+        } catch (std::runtime_error &e) {                                                       \
+            _log_msg_ = "Error \"" + std::string(e.what()) + "\" while formatting log message: " + FormatStringFromLogArgs(format, TINYFORMAT_PASSARGS(n));\
+        }                                                                                       \
+        return LogPrintStr(_log_msg_);                                                          \
     }                                                                                           \
     /**   Log error and return false */                                                         \
     template <TINYFORMAT_ARGTYPES(n)>                                                           \
     static inline bool error(const char* format, TINYFORMAT_VARARGS(n))                         \
     {                                                                                           \
-        LogPrintStr("ERROR: " + tfm::format(format, TINYFORMAT_PASSARGS(n)) + "\n");            \
+        std::string _log_msg_; /* Unlikely name to avoid shadowing variables */                 \
+        try {                                                                                   \
+            _log_msg_ = tfm::format(format, TINYFORMAT_PASSARGS(n));                            \
+        } catch (std::runtime_error &e) {                                                       \
+            _log_msg_ = "Error \"" + std::string(e.what()) + "\" while formatting log message: " + FormatStringFromLogArgs(format, TINYFORMAT_PASSARGS(n));\
+        }                                                                                       \
+        LogPrintStr(std::string("ERROR: ") + _log_msg_ + "\n");                                 \
         return false;                                                                           \
     }
 
@@ -118,6 +122,8 @@ static inline bool error(const char* format)
     return false;
 }
 
+double double_safe_addition(double fValue, double fIncrement);
+double double_safe_multiplication(double fValue, double fmultiplicator);
 void PrintExceptionContinue(std::exception* pex, const char* pszThread);
 void ParseParameters(int argc, const char* const argv[]);
 void FileCommit(FILE* fileout);
@@ -127,7 +133,8 @@ void AllocateFileRange(FILE* file, unsigned int offset, unsigned int length);
 bool RenameOver(boost::filesystem::path src, boost::filesystem::path dest);
 bool TryCreateDirectory(const boost::filesystem::path& p);
 boost::filesystem::path GetDefaultDataDir();
-const boost::filesystem::path& GetDataDir(bool fNetSpecific = true);
+const boost::filesystem::path &GetDataDir(bool fNetSpecific = true);
+void ClearDatadirCache();
 boost::filesystem::path GetConfigFile();
 boost::filesystem::path GetMasternodeConfigFile();
 #ifndef WIN32
@@ -217,44 +224,12 @@ void SetThreadPriority(int nPriority);
 void RenameThread(const char* name);
 
 /**
- * Standard wrapper for do-something-forever thread functions.
- * "Forever" really means until the thread is interrupted.
- * Use it like:
- *   new boost::thread(boost::bind(&LoopForever<void (*)()>, "dumpaddr", &DumpAddresses, 900000));
- * or maybe:
- *    boost::function<void()> f = boost::bind(&FunctionWithArg, argument);
- *    threadGroup.create_thread(boost::bind(&LoopForever<boost::function<void()> >, "nothing", f, milliseconds));
- */
-template <typename Callable>
-void LoopForever(const char* name, Callable func, int64_t msecs)
-{
-    std::string s = strprintf("bdcash-%s", name);
-    RenameThread(s.c_str());
-    LogPrintf("%s thread start\n", name);
-    try {
-        while (1) {
-            MilliSleep(msecs);
-            func();
-        }
-    } catch (boost::thread_interrupted) {
-        LogPrintf("%s thread stop\n", name);
-        throw;
-    } catch (std::exception& e) {
-        PrintExceptionContinue(&e, name);
-        throw;
-    } catch (...) {
-        PrintExceptionContinue(NULL, name);
-        throw;
-    }
-}
-
-/**
  * .. and a wrapper that just calls func once
  */
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("bdcash-%s", name);
+    std::string s = strprintf("apollon-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

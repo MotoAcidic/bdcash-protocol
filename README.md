@@ -1,64 +1,63 @@
-## What is BDCash Protocol?
-The best decentralization to cash or the BDCASH is a cryptocurrency forked from the pivx code, but which has its own protocol that makes it possible to use our ecosystem to create non-fungible tokens (NFT), Tokens and Dapps at a relatively fee, super low compared to other larger, well-known projects.
+[![Discord Chat](https://img.shields.io/discord/473618220524240928.svg?style=flat&logo=Discord)](https://apollon.io/go/discord) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/apollonofficial.svg?style=social)](https://apollon.io/go/twitter) 
 
+About Apollon.io
+=====
+<p>Mutual betting is widely adopted in gambling and applied to horse racing, greyhound racing and sports betting. Apollon is the first platform that combines this model with blockchain technology, what allows to benefit from the advantages of own cryptocurrency.</p>
+<p>In the long-term perspective, Apollon aspires to become world’s leading online mutual betting platform.</p>
+<p>We do believe that having the best product / best offer is the key. Our team is planning to offer perfect platform for mutual betting and gambling which will be fully transparent thanks to our custom provably fair system. Apollon platform is and will be one of the kind.</p>
+<a href="https://apollon.io" title="apollon website" target="_blank">View our website for more details</a>
 
-<img style="float:right;" src="https://bdcashprotocol.com/img/bdcash-logo.png"></br>
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date/BdcashProtocol/bdcash-protocol?color=%24000ace&cacheSeconds=3600)](https://github.com/BdcashProtocol/bdcash-protocol/releases)
-[![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/rrr8vFS) 
-[![Twitter Follow](https://img.shields.io/twitter/follow/BdcashProtocol)](https://twitter.com/BdcashProtocol)
+About APOLLON cryptocurrency
+=====
+<p>Apollon is an experimental digital currency that enables instant payments to anyone, anywhere in the world. Apollon uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. Apollon Core is the name of open source software which enables the use of this currency.</p>
 
-<table>
-<tr><th>Coin Specs </th><th>Reward Schema</th></tr>
-<tr><td>
+## Table of Contents
+- [Specifications](#specifications)
+- [PoS Staking Requirements](#pos-staking-requirements)
+- [PoS Block Rewards](#pos-block-rewards)
 
-Coin Name | BDCash Protocol
-:--- | :---
-Ticker | BDCASH
-Maximum supply | 15,000,000(15M) 
-Consensus | PoS / Mn
-Algorithm | Quark
-Collateral | 5,000 
-RPC/P2P main Port | 36264/36263
-RPC/P2P test Port | 37264/37263
- 
-</td><td>
- 
-From | To | Rewards | Masternode | Staker |
----: | --- | ---: | ---: | ---: |
-0         | 1         | 1,000,000   | 0%  | 0%  
-2     | 10000    | 1      | 0% | 0% 
-10001     | 19999    | 2     | 75% | 25% 
-20000     | 29999    | 3     | 75% | 25% 
-30000     | 39999    | 1     | 75% | 25% 
-40000     | 59999    | 4     | 75% | 25% 
-60000     | 79999    | 3     | 75% | 25% 
-80000     | 99999    | 2     | 75% | 25%
-100000    | 149999   | 1     | 75% | 25% 
-150000    | 199999   | 0.75  | 80% | 20% 
-200000    | 299999   | 0.5   | 90% | 10% 
-300000    | to end   | 0.25  | 70% | 30% 
+<a name="specifications"></a>
+## Specifications
 
-</td></tr> </table>
+| Specification         | Descriptor                              |
+|-----------------------|-----------------------------------------|
+| Ticker                | APOLLON                                    |
+| Algorithm             | QUARK                                   |
+| RPC Port              | 9279                                    |
+| P2P Port              | 9270                                    |
+| Masternode Collateral | 1000 APOLLON                               |
+| Block Spacing         | 120 Seconds                             |
+| PoW Period            | nHeight ≤ 500                           |
+| PoS Period            | nHeight ≥ 501                           |
+| Protocol Support      | IPV4, IPV6, TOR, I2P                    |
 
-### Clients:
-[![GitHub Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/latest/total)](https://github.com/BdcashProtocol/bdcash-protocol/releases/latest) 
-[![GitHub All Releases](https://img.shields.io/github/downloads/BdcashProtocol/bdcash-protocol/total?label=downloads%40all%20releases)](https://github.com/BdcashProtocol/bdcash-protocol/releases)<br>
+<a name="pos-staking-requirements"></a>
+## PoS Staking Requirements
 
-### Social Network:
- [![Twitter](https://img.shields.io/static/v1?label=Twitter&message=Follow&color=blue)](https://twitter.com/bdcashprotocol) 
- [![ANN Official](https://img.shields.io/static/v1?label=BitcoinTalk&message=Join&color=yellow)](https://bitcointalk.org/index.php?topic=5244522) 
- [![Discord](https://img.shields.io/static/v1?label=Discord&message=Join&color=blueviolet)](https://discord.gg/rrr8vFS)
- [![Telegram Officia](https://img.shields.io/static/v1?label=Telegram&message=Join&color=blue)](https://t.me/bdcashprotocol_official) 
- [![Reddit](https://img.shields.io/static/v1?label=Reddit&message=Join&color=orange)](https://www.reddit.com/r/Bdcash/)
- [![Medium](https://img.shields.io/static/v1?label=Medium&message=Join&color=green)](https://bdcashprotocol.medium.com/) 
+| Requirement   | Details              |
+|---------------|----------------------|
+| Confirmations | 120 Blocks           |
+| Amount        | 10 APOLLON (Per Input)  |
+| Wallet        | Unlocked for Staking |
 
+<a name="pos-block-rewards"></a>
+## PoS Block Rewards
 
-### Market/ Price  Data:
+| Subsidy | Block           | Reward | Reward Split   | Note          |
+|---------|-----------------|--------|----------------|---------------|
+| SWAP    | 501-7200        | 0.25 APOLLON  | 90% MN / 10% POS | 10 days |
+| Phase 1 | 7201-72000      | 2.60 APOLLON  | 90% MN / 10% POS | 90 days |
+| Phase 2 | 72001-136800    | 2.50 APOLLON  | 90% MN / 10% POS | 90 days |
+| Phase 3 | 136801-266400   | 2.40 APOLLON  | 90% MN / 10% POS | 180 days |
+| Phase 4 | 266401-396000   | 2.30 APOLLON  | 90% MN / 10% POS | 180 days |
+| Phase 5 | 396001-655200   | 2.20 APOLLON  | 90% MN / 10% POS | 360 days |
+| Phase 6 | 655201-914400   | 2.10 APOLLON  | 90% MN / 10% POS | 360 days |
+| Phase 7 | 914401∞         | 2.00 APOLLON  | 90% MN / 10% POS | 35+ years|
 
-[![CoinMarketCap](https://img.shields.io/static/v1?label=CoinMarketCap&message=Check&color=blue)](https://coinmarketcap.com/currencies/bdcash/) 
-[![CoinGecko](https://img.shields.io/static/v1?label=CoinGecko&message=Check&color=green)](https://coingecko.com/coins/bigdata-cash/) 
-[![Coinpaprika](https://img.shields.io/static/v1?label=Coinpaprika&message=Join&color=red)](https://coinpaprika.com/coin/bdcash-bdcash/) 
-[![Coinlore](https://img.shields.io/static/v1?label=Coinlore&message=Join&color=9cf)](https://www.coinlore.com/coin/bdcash)
-[![Coinlib](https://img.shields.io/static/v1?label=Coinlib&message=Join&color=Blueblack)](https://coinlib.io/coin/BDCASH/BigDataCash/) 
-[![LivecoinWatch](https://img.shields.io/static/v1?label=LivecoinWatch&message=Join&color=greenblack)](https://www.livecoinwatch.com/price/Bdcash-BDCASH) 
+License
+=====
+
+<p>APOLLON Core is released under the terms of the MIT license. See https://github.com/apollon/apollon/blob/master/COPYING for more information or see https://opensource.org/licenses/MIT.</p>
+
+APOLLON uses components from PIVX Core, which uses components of both Bitcoin and DASH.

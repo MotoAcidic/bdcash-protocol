@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>576</width>
-    <height>526</height>
+    <height>442</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>4</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabMain">
       <attribute name="title">
@@ -29,17 +29,11 @@
       <layout class="QVBoxLayout" name="verticalLayout_Main">
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
-          <string>Automatically start BDCASH after logging in to the system.</string>
+          <string>Automatically start APOLLON after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start BDCASH on system login</string>
+          <string>&amp;Start APOLLON on system login</string>
          </property>
         </widget>
        </item>
@@ -59,14 +53,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="databaseCache">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QSpinBox" name="databaseCache"/>
          </item>
          <item>
           <widget class="QLabel" name="databaseCacheUnitLabel">
@@ -110,12 +97,6 @@
          </item>
          <item>
           <widget class="QSpinBox" name="threadsScriptVerif">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="toolTip">
             <string>(0 = auto, &lt;0 = leave that many cores free)</string>
            </property>
@@ -137,7 +118,7 @@
         </layout>
        </item>
        <item>
-        <spacer name="verticalSpacer_Main">
+        <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -150,85 +131,109 @@
         </spacer>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4_Main">
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="toolTip">
-            <string>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</string>
-           </property>
-           <property name="text">
-            <string>Obfuscation rounds to use</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="obfuscationRounds">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="minimum">
-            <number>2</number>
-           </property>
-           <property name="maximum">
-            <number>8</number>
-           </property>
-           <property name="value">
-            <number>4</number>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="toolTip">
-            <string>This amount acts as a threshold to turn off Obfuscation once it's reached.</string>
-           </property>
-           <property name="statusTip">
-            <string notr="true"/>
-           </property>
-           <property name="whatsThis">
-            <string notr="true"/>
-           </property>
-           <property name="accessibleName">
-            <string notr="true"/>
-           </property>
-           <property name="accessibleDescription">
-            <string notr="true"/>
-           </property>
-           <property name="text">
-            <string>Amount of BDCASH to keep anonymized</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QSpinBox" name="anonymizeBDCASH">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="minimum">
-            <number>100</number>
-           </property>
-           <property name="maximum">
-            <number>100000</number>
-           </property>
-           <property name="singleStep">
-            <number>100</number>
-           </property>
-           <property name="value">
-            <number>1000</number>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QWidget" name="verticalZpivOptionsWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZpivOptionsLayout">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalAutomintingLayout">
+            <item>
+             <widget class="QCheckBox" name="checkBoxZeromintEnable">
+              <property name="toolTip">
+               <string>Enable automatic minting of APOLLON units to zAPOLLON</string>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Enable zAPOLLON Automint</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxZeromintAddresses">
+              <property name="toolTip">
+               <string>Enable automatic zAPOLLON minting from specific addresses</string>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Enable Automint Addresses</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalZmintPercentageLayout">
+            <item>
+             <widget class="QLabel" name="percentage_label">
+              <property name="toolTip">
+               <string>Percentage of incoming APOLLON which get automatically converted to zAPOLLON via Zerocoin Protocol (min: 10%)</string>
+              </property>
+              <property name="text">
+               <string>Percentage of autominted zAPOLLON</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="zeromintPercentage">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <item>
+             <widget class="QLabel" name="labelPreferredDenom">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</string>
+              </property>
+              <property name="text">
+               <string>Preferred Automint zAPOLLON Denomination</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="preferredDenom">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>27</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Wait with automatic conversion to Zerocoin until enough APOLLON for this denomination is available</string>
+              </property>
+              <property name="maxVisibleItems">
+               <number>9</number>
+              </property>
+              <property name="maxCount">
+               <number>9</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -238,6 +243,27 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Wallet">
        <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Wallet">
+         <item>
+          <widget class="QLabel" name="labelStakeSplitThresholdText">
+           <property name="text">
+            <string>Stake split threshold:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBoxStakeSplitThreshold">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>999999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
         <widget class="QGroupBox" name="groupBox">
          <property name="title">
           <string>Expert</string>
@@ -245,12 +271,6 @@
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
            <widget class="QCheckBox" name="coinControlFeatures">
-            <property name="minimumSize">
-             <size>
-              <width>36</width>
-              <height>36</height>
-             </size>
-            </property>
             <property name="toolTip">
              <string>Whether to show coin control features or not.</string>
             </property>
@@ -261,12 +281,6 @@
           </item>
           <item>
            <widget class="QCheckBox" name="showMasternodesTab">
-            <property name="minimumSize">
-             <size>
-              <width>36</width>
-              <height>36</height>
-             </size>
-            </property>
             <property name="toolTip">
              <string>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</string>
             </property>
@@ -277,12 +291,6 @@
           </item>
           <item>
            <widget class="QCheckBox" name="spendZeroConfChange">
-            <property name="minimumSize">
-             <size>
-              <width>36</width>
-              <height>36</height>
-             </size>
-            </property>
             <property name="toolTip">
              <string>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</string>
             </property>
@@ -316,14 +324,8 @@
       <layout class="QVBoxLayout" name="verticalLayout_Network">
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
-          <string>Automatically open the BDCASH client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the APOLLON client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -332,12 +334,6 @@
        </item>
        <item>
         <widget class="QCheckBox" name="allowIncoming">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
           <string>Accept connections from outside</string>
          </property>
@@ -348,14 +344,8 @@
        </item>
        <item>
         <widget class="QCheckBox" name="connectSocks">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
-          <string>Connect to the BDCASH network through a SOCKS5 proxy.</string>
+          <string>Connect to the APOLLON network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -381,8 +371,8 @@
           <widget class="QValidatedLineEdit" name="proxyIp">
            <property name="minimumSize">
             <size>
-             <width>36</width>
-             <height>36</height>
+             <width>140</width>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -413,8 +403,8 @@
           <widget class="QLineEdit" name="proxyPort">
            <property name="minimumSize">
             <size>
-             <width>36</width>
-             <height>36</height>
+             <width>55</width>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -465,12 +455,6 @@
       <layout class="QVBoxLayout" name="verticalLayout_Window">
        <item>
         <widget class="QCheckBox" name="minimizeToTray">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
           <string>Show only a tray icon after minimizing the window.</string>
          </property>
@@ -481,12 +465,6 @@
        </item>
        <item>
         <widget class="QCheckBox" name="minimizeOnClose">
-         <property name="minimumSize">
-          <size>
-           <width>36</width>
-           <height>36</height>
-          </size>
-         </property>
          <property name="toolTip">
           <string>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</string>
          </property>
@@ -532,14 +510,8 @@
          </item>
          <item>
           <widget class="QValueComboBox" name="lang">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting BDCASH.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting APOLLON.</string>
            </property>
           </widget>
          </item>
@@ -561,7 +533,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bdcash-project/bdcash-project-translations</string>
+https://www.transifex.com/apollon-project/apollon-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -575,7 +547,7 @@ https://www.transifex.com/bdcash-project/bdcash-project-translations</string>
         </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4_Display" stretch="0,0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2_Display" stretch="0,0">
          <item>
           <widget class="QLabel" name="themeLabel">
            <property name="text">
@@ -584,104 +556,121 @@ https://www.transifex.com/bdcash-project/bdcash-project-translations</string>
           </widget>
          </item>
          <item>
-          <widget class="QValueComboBox" name="theme">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QValueComboBox" name="theme"/>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="Line" name="line">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
+        <widget class="QWidget" name="verticalZpivDisplayWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZpivDisplayLayout">
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3_Display">
+            <item>
+             <widget class="QLabel" name="unitLabel">
+              <property name="text">
+               <string>Unit to show amounts in:</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QValueComboBox" name="unit">
+              <property name="toolTip">
+               <string>Choose the default subdivision unit to show in the interface and when sending coins.</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4_Display">
+            <item>
+             <widget class="QLabel" name="digitsLabel">
+              <property name="text">
+               <string>Decimal digits</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QValueComboBox" name="digits"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
+            <item>
+             <widget class="QCheckBox" name="checkBoxHideZeroBalances">
+              <property name="toolTip">
+               <string>Hide empty balances</string>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Hide empty balances</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBoxHideOrphans">
+              <property name="toolTip">
+               <string>Hide orphan stakes in transaction lists</string>
+              </property>
+              <property name="text">
+               <string>Hide orphan stakes</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6_Display">
+            <item>
+             <widget class="QLabel" name="thirdPartyTxUrlsLabel">
+              <property name="toolTip">
+               <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
+              </property>
+              <property name="text">
+               <string>Third party transaction URLs</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="thirdPartyTxUrls">
+              <property name="toolTip">
+               <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
         </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2_Display">
-         <item>
-          <widget class="QLabel" name="unitLabel">
-           <property name="text">
-            <string>&amp;Unit to show amounts in:</string>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::PlainText</enum>
-           </property>
-           <property name="buddy">
-            <cstring>unit</cstring>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QValueComboBox" name="unit">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string>Choose the default subdivision unit to show in the interface and when sending coins.</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5_Display">
-         <item>
-          <widget class="QLabel" name="digitsLabel">
-           <property name="text">
-            <string>Decimal digits</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QValueComboBox" name="digits">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3_Display">
-         <item>
-          <widget class="QLabel" name="thirdPartyTxUrlsLabel">
-           <property name="toolTip">
-            <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
-           </property>
-           <property name="text">
-            <string>Third party transaction URLs</string>
-           </property>
-           <property name="buddy">
-            <cstring>thirdPartyTxUrls</cstring>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="thirdPartyTxUrls">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
        </item>
        <item>
         <spacer name="verticalSpacer">

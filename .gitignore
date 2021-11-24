@@ -1,48 +1,59 @@
-# Prerequisites
-*.d
+.DS_Store
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+.vs/Apollon/v16/.suo
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-.vs/bdcash-protocol/v16/.suo
-
-.vs/bdcash-protocol/v16/Browse.VC.db
-
-.vs/bdcash-protocol/v16/Browse.VC.db-shm
-
-.vs/bdcash-protocol/v16/Browse.VC.db-wal
-
-.vs/bdcash-protocol/v16/Browse.VC.opendb
+.vs/Apollon/v16/Browse.VC.db
 
 .vs/ProjectSettings.json
 
 .vs/slnx.sqlite
 
 .vs/VSWorkspaceState.json
+
+.vs/Apollon/v16/ipch/AutoPCH/797be36d02798ac3/MAIN.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/adda9819ed47f71/CHAINPARAMS.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/be9756ff769a9f13/KERNEL.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/e55e1ea8a94b5edc/WALLET.ipch
+
+.vs/Apollon/v16/Browse.VC.opendb
+
+.vs/Apollon/v15/.suo
+
+.vs/Apollon/v15/Browse.VC.db
+
+.vs/Apollon/v15/Browse.VC.opendb
+
+.vs/Apollon/v15/ipch/AutoPCH/6d9b0687d18f16b9/CHAINPARAMS.ipch
+
+.vs/Apollon/v15/ipch/AutoPCH/ad5f6c2842f76ad0/POW.ipch
+
+.vs/Apollon/v15/ipch/AutoPCH/c731084955db34db/MAIN.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/8873ca34163d00f6/CONFIGUREMASTERNODEPAGE.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/b8d6043c71082bee/OUTPUTSPAGE.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/20a13f5d4a389197/MASTERNODELIST.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/9520e0c0762c1f1e/RPCDUMP.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/46f10584dfe6b915/RPCDUMP.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/81ec9acde4c7835e/BITCOINGUI.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/9352b019b21f97e1/ACCUMULATORCHECKPOINTS.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/a537b0098d432af5/RPCMISC.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/a70feaeb212afb38/ACCUMULATORCHECKPOINTS.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/c86d877d29edf5b0/ACTIVEMASTERNODE.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/db689d5722594e1c/PROPOSALTABLEMODEL.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/dc0db9f8253e0ec5/RPCMASTERNODE-BUDGET.ipch
+
+.vs/Apollon/v16/ipch/AutoPCH/1de8e2b9b0c4aa18/QVALIDATEDLINEEDIT.ipch

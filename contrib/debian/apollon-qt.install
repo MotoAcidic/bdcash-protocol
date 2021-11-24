@@ -1,0 +1,6 @@
+usr/local/bin/apollon-qt usr/bin
+share/pixmaps/apollon32.xpm usr/share/pixmaps
+share/pixmaps/apollon16.xpm usr/share/pixmaps
+share/pixmaps/apollon128.png usr/share/pixmaps
+debian/apollon-qt.desktop usr/share/applications
+debian/apollon-qt.protocol usr/share/kde4/services/

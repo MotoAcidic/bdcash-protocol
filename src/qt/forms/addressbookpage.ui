@@ -96,11 +96,9 @@
        <property name="text">
         <string>&amp;New</string>
        </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
+       <property name="icon">
+        <iconset resource="../apollon.qrc">
+         <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -115,11 +113,9 @@
        <property name="text">
         <string>&amp;Copy</string>
        </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
+       <property name="icon">
+        <iconset resource="../apollon.qrc">
+         <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -134,11 +130,9 @@
        <property name="text">
         <string>&amp;Delete</string>
        </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
+       <property name="icon">
+        <iconset resource="../apollon.qrc">
+         <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -166,11 +160,9 @@
        <property name="text">
         <string>&amp;Export</string>
        </property>
-       <property name="iconSize">
-        <size>
-         <width>24</width>
-         <height>24</height>
-        </size>
+       <property name="icon">
+        <iconset resource="../apollon.qrc">
+         <normaloff>:/icons/export</normaloff>:/icons/export</iconset>
        </property>
        <property name="autoDefault">
         <bool>false</bool>
@@ -197,6 +189,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../apollon.qrc"/>
+ </resources>
  <connections/>
 </ui>

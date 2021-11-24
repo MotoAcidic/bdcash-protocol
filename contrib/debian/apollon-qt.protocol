@@ -1,0 +1,11 @@
+[Protocol]
+exec=apollon-qt '%u'
+protocol=apollon
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>371</height>
+    <height>334</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tabBip38Encrypt">
       <attribute name="title">
@@ -30,7 +30,7 @@
        <item>
         <widget class="QLabel" name="infoLabel_ENC">
          <property name="text">
-          <string>Enter a BDCASH Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</string>
+          <string>Enter a APOLLON Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</string>
          </property>
          <property name="textFormat">
           <enum>Qt::PlainText</enum>
@@ -42,11 +42,17 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_1_ENC">
-         <property name="spacing">
-          <number>0</number>
-         </property>
          <item>
           <widget class="QLabel" name="label_5">
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>85</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Address:</string>
            </property>
@@ -54,31 +60,13 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="toolTip">
-            <string>The BDCASH address to sign the message with</string>
+            <string>The APOLLON address to encrypt</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="addressBookButton_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
+          <widget class="QToolButton" name="addressBookButton_ENC">
            <property name="toolTip">
             <string>Choose previously used address</string>
            </property>
@@ -86,31 +74,16 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../apollon.qrc">
              <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
            </property>
            <property name="shortcut">
             <string>Alt+A</string>
            </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pasteButton_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
+          <widget class="QToolButton" name="pasteButton_ENC">
            <property name="toolTip">
             <string>Paste address from clipboard</string>
            </property>
@@ -118,20 +91,11 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="../apollon.qrc">
              <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
            </property>
            <property name="shortcut">
             <string>Alt+P</string>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
            </property>
           </widget>
          </item>
@@ -141,6 +105,15 @@
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
           <widget class="QLabel" name="label_6">
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>85</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Passphrase: </string>
            </property>
@@ -148,18 +121,6 @@
          </item>
          <item>
           <widget class="QLineEdit" name="passphraseIn_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="echoMode">
             <enum>QLineEdit::Password</enum>
            </property>
@@ -169,11 +130,17 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_ENC">
-         <property name="spacing">
-          <number>0</number>
-         </property>
          <item>
           <widget class="QLabel" name="encryptedKeyLabel_ENC">
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>85</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Encrypted Key:</string>
            </property>
@@ -184,18 +151,6 @@
          </item>
          <item>
           <widget class="QLineEdit" name="encryptedKeyOut_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="font">
             <font>
              <italic>true</italic>
@@ -207,19 +162,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="copyKeyButton_ENC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>16777215</height>
-            </size>
-           </property>
+          <widget class="QToolButton" name="copyKeyButton_ENC">
            <property name="toolTip">
             <string>Copy the current signature to the system clipboard</string>
            </property>
@@ -227,17 +170,8 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../bdcash.qrc">
+            <iconset resource="../apollon.qrc">
              <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
            </property>
           </widget>
          </item>
@@ -248,10 +182,14 @@
          <item>
           <widget class="QPushButton" name="encryptKeyButton_ENC">
            <property name="toolTip">
-            <string>Sign the message to prove you own this BDCASH address</string>
+            <string>Encrypt the private key for this APOLLON address</string>
            </property>
            <property name="text">
             <string>Encrypt &amp;Key</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../apollon.qrc">
+             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -261,10 +199,14 @@
          <item>
           <widget class="QPushButton" name="clearButton_ENC">
            <property name="toolTip">
-            <string>Reset all sign message fields</string>
+            <string>Reset all fields</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../apollon.qrc">
+             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -330,9 +272,6 @@
          <property name="textFormat">
           <enum>Qt::PlainText</enum>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-         </property>
          <property name="wordWrap">
           <bool>true</bool>
          </property>
@@ -342,6 +281,15 @@
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
           <widget class="QLabel" name="label_2">
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>85</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Encrypted Key:</string>
            </property>
@@ -349,14 +297,25 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="encryptedKeyIn_DEC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="toolTip">
-            <string>The BDCASH address the message was signed with</string>
+            <string>The encrypted private key</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="pasteButton_DEC">
+           <property name="toolTip">
+            <string>Paste address from clipboard</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../apollon.qrc">
+             <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
+           </property>
+           <property name="shortcut">
+            <string>Alt+P</string>
            </property>
           </widget>
          </item>
@@ -366,6 +325,15 @@
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QLabel" name="label">
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>85</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Passphrase: </string>
            </property>
@@ -373,12 +341,6 @@
          </item>
          <item>
           <widget class="QLineEdit" name="passphraseIn_DEC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
            <property name="echoMode">
             <enum>QLineEdit::Password</enum>
            </property>
@@ -391,10 +353,14 @@
          <item>
           <widget class="QPushButton" name="decryptKeyButton_DEC">
            <property name="toolTip">
-            <string>Verify the message to ensure it was signed with the specified BDCASH address</string>
+            <string>Decrypt the entered key using the passphrase</string>
            </property>
            <property name="text">
             <string>Decrypt &amp;Key</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../apollon.qrc">
+             <normaloff>:/icons/transaction_0</normaloff>:/icons/transaction_0</iconset>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -404,10 +370,14 @@
          <item>
           <widget class="QPushButton" name="clearButton_DEC">
            <property name="toolTip">
-            <string>Reset all verify message fields</string>
+            <string>Reset all fields</string>
            </property>
            <property name="text">
             <string>Clear &amp;All</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../apollon.qrc">
+             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="autoDefault">
             <bool>false</bool>
@@ -468,14 +438,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QValidatedLineEdit" name="decryptedKeyOut_DEC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QValidatedLineEdit" name="decryptedKeyOut_DEC"/>
          </item>
         </layout>
        </item>
@@ -496,14 +459,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="addressOut_DEC">
-           <property name="minimumSize">
-            <size>
-             <width>36</width>
-             <height>36</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QLineEdit" name="addressOut_DEC"/>
          </item>
         </layout>
        </item>
@@ -521,7 +477,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../bdcash.qrc"/>
+  <include location="../apollon.qrc"/>
  </resources>
  <connections/>
 </ui>

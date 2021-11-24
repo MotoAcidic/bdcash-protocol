@@ -1,4 +1,5 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2017-2018 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,7 +7,7 @@
 #define BITCOIN_QT_BITCOINGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bdcash-config.h"
+#include "config/apollon-config.h"
 #endif
 
 #include "amount.h"
@@ -18,18 +19,20 @@
 #include <QPoint>
 #include <QPushButton>
 #include <QSystemTrayIcon>
-//#include <QtWebKit>
+#include <QNetworkReply>
 
 class ClientModel;
 class NetworkStyle;
 class Notificator;
 class OptionsModel;
+class BlockExplorer;
 class RPCConsole;
 class SendCoinsRecipient;
 class UnitDisplayStatusBarControl;
 class WalletFrame;
 class WalletModel;
 class MasternodeList;
+class ProposalList;
 
 class CWallet;
 
@@ -76,7 +79,6 @@ protected:
     void dragEnterEvent(QDragEnterEvent* event);
     void dropEvent(QDropEvent* event);
     bool eventFilter(QObject* object, QEvent* event);
-    //void paintEvent(QPaintEvent *event) override;
 
 private:
     ClientModel* clientModel;
@@ -84,7 +86,9 @@ private:
 
     UnitDisplayStatusBarControl* unitDisplayControl;
     QLabel* labelStakingIcon;
-    QLabel* labelEncryptionIcon;
+    QPushButton* labelAutoMintIcon;
+    QPushButton* labelEncryptionIcon;
+    QLabel* labelTorIcon;
     QPushButton* labelConnectionsIcon;
     QLabel* labelBlocksIcon;
     QLabel* progressBarLabel;
@@ -102,8 +106,12 @@ private:
     QAction* signMessageAction;
     QAction* verifyMessageAction;
     QAction* bip38ToolAction;
+    QAction* multisigCreateAction;
+    QAction* multisigSpendAction;
+    QAction* multisigSignAction;
     QAction* aboutAction;
     QAction* receiveCoinsAction;
+    QAction* privacyAction;
     QAction* optionsAction;
     QAction* toggleHideAction;
     QAction* encryptWalletAction;
@@ -121,13 +129,16 @@ private:
     QAction* openMNConfEditorAction;
     QAction* showBackupsAction;
     QAction* openAction;
+    QAction* openBlockExplorerAction;
     QAction* showHelpMessageAction;
     QAction* multiSendAction;
+    QAction* proposalAction;
 
     QSystemTrayIcon* trayIcon;
     QMenu* trayIconMenu;
     Notificator* notificator;
     RPCConsole* rpcConsole;
+    BlockExplorer* explorerWindow;
 
     /** Keep track of previous number of blocks, to detect progress */
     int prevBlocks;
@@ -174,10 +185,13 @@ public slots:
        @param[in] ret       pointer to a bool that will be modified to whether Ok was clicked (modal only)
     */
     void message(const QString& title, const QString& message, unsigned int style, bool* ret = NULL);
-
-    void setStakingStatus();
+    void Checkversion();
+    void replyFinishedcheckversion(QNetworkReply *reply);
 
 #ifdef ENABLE_WALLET
+    void setStakingStatus();
+    void setAutoMintStatus();
+
     /** Set the encryption status as shown in the UI.
        @param[in] status            current encryption status
        @see WalletModel::EncryptionStatus
@@ -190,18 +204,28 @@ public slots:
     void incomingTransaction(const QString& date, int unit, const CAmount& amount, const QString& type, const QString& address);
 #endif // ENABLE_WALLET
 
+private:
+    /** Set the Tor-enabled icon as shown in the UI. */
+    void updateTorIcon();
+
 private slots:
 #ifdef ENABLE_WALLET
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
     void gotoHistoryPage();
+    /** Switch to Explorer Page */
+    void gotoBlockExplorerPage();
     /** Switch to masternode page */
     void gotoMasternodePage();
-    /** Switch to receive coins page */
+    /** Switch to privacy page */
     void gotoReceiveCoinsPage();
+    /** Switch to receive coins page */
+    void gotoPrivacyPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage(QString addr = "");
+    /** Switch to proposal page */
+    void gotoProposalPage();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");
@@ -209,7 +233,10 @@ private slots:
     void gotoVerifyMessageTab(QString addr = "");
     /** Show MultiSend Dialog */
     void gotoMultiSendDialog();
-
+    /** Show MultiSig Dialog */
+    void gotoMultisigCreate();
+    void gotoMultisigSpend();
+    void gotoMultisigSign();
     /** Show BIP 38 tool - default to Encryption tab */
     void gotoBip38Tool();
 
@@ -270,27 +297,3 @@ private slots:
 };
 
 #endif // BITCOIN_QT_BITCOINGUI_H
-
-
-
-
-/* ADDED TO HAVE A CUSTOM/SCALABLE/RETINA-READY BACKGROUND IMAGE ON TOOLBAR */
-#ifndef CUSTOMQWIDGET_H
-#define CUSTOMQWIDGET_H
-
-#include <QWidget>
-#include <QPainter>
-
-class CustomQWidget : public QWidget
-{
-    Q_OBJECT
-public:
-    explicit CustomQWidget(QWidget *parent = nullptr);
-    void paintEvent(QPaintEvent *pe);
-
-signals:
-
-public slots:
-};
-
-#endif // CUSTOMQWIDGET_H

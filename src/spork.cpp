@@ -99,6 +99,7 @@ bool IsSporkActive(int nSporkID)
         if (nSporkID == SPORK_18_SKIP_SYNC) r = SPORK_18_SKIP_SYNC_DEFAULT;
         if (nSporkID == SPORK_19_FEE_ADJUSTMENT) r = SPORK_19_FEE_ADJUSTMENT_DEFAULT;
         if (nSporkID == SPORK_20_BLOCK_TIME_ADJUSTMENT) r = SPORK_20_BLOCK_TIME_ADJUSTMENT_DEFAULT;
+        if (nSporkID == SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3) r = SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -132,6 +133,7 @@ int64_t GetSporkValue(int nSporkID)
         if (nSporkID == SPORK_18_SKIP_SYNC) r = SPORK_18_SKIP_SYNC_DEFAULT;
         if (nSporkID == SPORK_19_FEE_ADJUSTMENT) r = SPORK_19_FEE_ADJUSTMENT_DEFAULT;
         if (nSporkID == SPORK_20_BLOCK_TIME_ADJUSTMENT) r = SPORK_20_BLOCK_TIME_ADJUSTMENT_DEFAULT;
+        if (nSporkID == SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3) r = SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT;
 
         if (r == -1) LogPrintf("GetSpork::Unknown Spork %d\n", nSporkID);
     }
@@ -284,6 +286,7 @@ int CSporkManager::GetSporkIDByName(std::string strName)
     if (strName == "SPORK_18_SKIP_SYNC") return SPORK_18_SKIP_SYNC;
     if (strName == "SPORK_19_FEE_ADJUSTMENT") return SPORK_19_FEE_ADJUSTMENT;
     if (strName == "SPORK_20_BLOCK_TIME_ADJUSTMENT") return SPORK_20_BLOCK_TIME_ADJUSTMENT;
+    if (strName == "SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3") return SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3;
 
     return -1;
 }
@@ -307,6 +310,7 @@ std::string CSporkManager::GetSporkNameByID(int id)
     if (id == SPORK_18_SKIP_SYNC) return "SPORK_18_SKIP_SYNC";
     if (id == SPORK_19_FEE_ADJUSTMENT) return "SPORK_19_FEE_ADJUSTMENT";
     if (id == SPORK_20_BLOCK_TIME_ADJUSTMENT) return "SPORK_20_BLOCK_TIME_ADJUSTMENT";
+    if (id == SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3) return "SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3";
 
     return "Unknown";
 }

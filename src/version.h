@@ -44,7 +44,7 @@ static const int NO_BLOOM_VERSION = 70005;
 //! version where we change block rewards
 static const int REWARD_CHANGE = 70920;
 
-//! version where we change block time
-static const int TIME_CHANGE = 70924;
+//! version where we prep for the change of block time
+static const int TIME_CHANGE = 70925;
 
 #endif // BITCOIN_VERSION_H

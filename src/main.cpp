@@ -3171,6 +3171,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     LogPrintf("\nCheckNEW\n");
     // This was added as a quick check due to a fork to make sure everyone gets on the correct chain if they are already not
     // This happens before the kernel is checked to prevent a hangup on sync as seen during testing when trying to validate invalid blocks
+
     /*
     if (chainActive.Height() >= 205706) {
       int checkBlock = 205706;

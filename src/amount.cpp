@@ -21,6 +21,10 @@ CAmount CFeeRate::GetFee(size_t nSize) const
 {
     CAmount nFee = nSatoshisPerK * nSize / 1000;
 
+    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT)) {
+        CAmount nFee = nSatoshisPerK * nSize / 500;
+    }
+
     if (nFee == 0 && nSatoshisPerK > 0)
         nFee = nSatoshisPerK;
 

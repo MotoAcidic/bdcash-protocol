@@ -54,13 +54,18 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000614f748a5984e0c535d008734c8cadfce1fbc979a9f4aa60982f40f0e5d"));
+    (0, uint256("0x00000614f748a5984e0c535d008734c8cadfce1fbc979a9f4aa60982f40f0e5d"))
+    (125000, uint256("0xc017b56085363e438d6bcae8578efeea0957189228ccee1b7696a726927ae076"))
+    (200000, uint256("0x85cad31d1de19a13d1d95bf1e3f6220d094338fbad5290ede081b96fbe1886a3"))
+    (202000, uint256("0xae359f06575bce25efb1852e1878e3a73ab899af032800df9d1845b89b92a685"))
+    (205706, uint256("0x04d581960a2e844fa9f0e89b4bdfb55893b1e4c16089b3d602f288052bdc023c"))
+    (205707, uint256("0x0edbcac29ace4f7c937deaeff0a1da1cfbfe67af9b721b281e989bdb3c4fd108"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1596043182, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1638942332, // * UNIX timestamp of last checkpoint block
+    465966,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0        // * estimated number of transactions per day after checkpoint
+    2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -112,7 +117,7 @@ public:
         nModifierUpdateBlock = 510;
         nMaxMoneyOut = 15000000 * COIN;
         nNewMasternodeCollateral_StartBlock = 20; // Nov 7, 2018 (approximately)
-	nNewMasternodeCollateral_GPBlock = 20; // 1 week grace period to allow for masternodes to activate using the new collateral
+	    nNewMasternodeCollateral_GPBlock = 20; // 1 week grace period to allow for masternodes to activate using the new collateral
         nNewMasternode_Collateral = 5000;
         nOriginalMasternode_Collateral = 5000;
         nBudget_Fee_Confirmations = 15; // Number of confirmations for the finalization fee

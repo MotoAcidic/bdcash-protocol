@@ -3171,6 +3171,8 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     LogPrintf("\nCheckNEW\n");
     // This was added as a quick check due to a fork to make sure everyone gets on the correct chain if they are already not
     // This happens before the kernel is checked to prevent a hangup on sync as seen during testing when trying to validate invalid blocks
+
+    /*
     if (chainActive.Height() >= 205706) {
       int checkBlock = 205706;
       CBlockIndex* cblockindex = chainActive[checkBlock];
@@ -3182,6 +3184,7 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
         return false;
       }
     }
+    */
 
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
@@ -5356,7 +5359,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+    if (IsSporkActive(SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3))
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;

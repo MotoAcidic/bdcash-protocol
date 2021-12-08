@@ -31,18 +31,3 @@
 *.out
 *.app
 
-.vs/bdcash-protocol/v16/.suo
-
-.vs/bdcash-protocol/v16/Browse.VC.db
-
-.vs/bdcash-protocol/v16/Browse.VC.db-shm
-
-.vs/bdcash-protocol/v16/Browse.VC.db-wal
-
-.vs/bdcash-protocol/v16/Browse.VC.opendb
-
-.vs/ProjectSettings.json
-
-.vs/slnx.sqlite
-
-.vs/VSWorkspaceState.json

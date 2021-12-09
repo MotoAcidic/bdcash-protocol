@@ -9,20 +9,21 @@
 
 CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 {
-    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && nSize > 0)
+    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE && nSize > 0) {
         nSatoshisPerK = nFeePaid * 500 / nSize;
-    else if (!IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && nSize > 0)
+    } else if (!IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() < TIME_CHANGE && nSize > 0) {
         nSatoshisPerK = nFeePaid * 1000 / nSize;
-    else
+    } else {
         nSatoshisPerK = 0;
+    }
 }
 
 CAmount CFeeRate::GetFee(size_t nSize) const
 {
-    CAmount nFee = nSatoshisPerK * nSize / 1000;
-
-    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT)) {
+    if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE) {
         CAmount nFee = nSatoshisPerK * nSize / 500;
+    } else if (!IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() < TIME_CHANGE) {
+        CAmount nFee = nSatoshisPerK * nSize / 1000;
     }
 
     if (nFee == 0 && nSatoshisPerK > 0)

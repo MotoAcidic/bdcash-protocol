@@ -20,10 +20,11 @@ CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 
 CAmount CFeeRate::GetFee(size_t nSize) const
 {
+    CAmount nFee = CalcFee;
     if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE) {
-        CAmount nFee = nSatoshisPerK * nSize / 500;
+        CalcFee = nSatoshisPerK * nSize / 500;
     } else if (!IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() < TIME_CHANGE) {
-        CAmount nFee = nSatoshisPerK * nSize / 1000;
+        CalcFee = nSatoshisPerK * nSize / 1000;
     }
 
     if (nFee == 0 && nSatoshisPerK > 0)

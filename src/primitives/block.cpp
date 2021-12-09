@@ -217,9 +217,6 @@ bool CBlock::SignBlock(const CKeyStore& keystore)
 
 bool CBlock::CheckBlockSignature() const
 {
-    if (block.nTime <= Params().Checkpoints().nTimeLastCheckpoint)
-        return true;
-
     if (IsProofOfWork())
         return vchBlockSig.empty();
 

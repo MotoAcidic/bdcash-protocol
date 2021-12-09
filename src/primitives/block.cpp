@@ -8,6 +8,7 @@
 #include "hash.h"
 #include "script/standard.h"
 #include "script/sign.h"
+#include "../chainparams.h"
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "util.h"
@@ -216,6 +217,9 @@ bool CBlock::SignBlock(const CKeyStore& keystore)
 
 bool CBlock::CheckBlockSignature() const
 {
+    if (block.nTime <= Params().Checkpoints().nTimeLastCheckpoint)
+        return true;
+
     if (IsProofOfWork())
         return vchBlockSig.empty();
 

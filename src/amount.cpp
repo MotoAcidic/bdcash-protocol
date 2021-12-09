@@ -20,6 +20,7 @@ CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 
 CAmount CFeeRate::GetFee(size_t nSize) const
 {
+    CAmount CalcFee;
     CAmount nFee = CalcFee;
     if (IsSporkActive(SPORK_19_FEE_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE) {
         CalcFee = nSatoshisPerK * nSize / 500;

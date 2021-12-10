@@ -39,7 +39,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         int64_t nTargetTimespan = 60 * 40;
     
 
-        if (ActiveProtocol() >= TIME_CHANGE && pindexLast->nHeight > 206200){
+        if (ActiveProtocol() >= TIME_CHANGE && pindexLast->nHeight >= 206131){
             nTargetSpacing = 120;
             nTargetTimespan = 30;
         }

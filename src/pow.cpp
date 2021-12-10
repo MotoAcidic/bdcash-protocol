@@ -33,12 +33,13 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         return Params().ProofOfWorkLimit().GetCompact();
     }
 
-    if (pindexLast->nHeight > Params().LAST_POW_BLOCK() && ActiveProtocol() < TIME_CHANGE) {
+    if (pindexLast->nHeight > Params().LAST_POW_BLOCK()) {
         uint256 bnTargetLimit = (~uint256(0) >> 20);
         int64_t nTargetSpacing = 180;
         int64_t nTargetTimespan = 60 * 40;
+    
 
-        if (IsSporkActive(SPORK_20_BLOCK_TIME_ADJUSTMENT) && ActiveProtocol() >= TIME_CHANGE ){
+        if (ActiveProtocol() >= TIME_CHANGE && pindexLast->nHeight > 206000){
             nTargetSpacing = 120;
             nTargetTimespan = 30;
         }

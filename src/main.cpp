@@ -3186,6 +3186,9 @@ bool CheckWork(const CBlock block, CBlockIndex* const pindexPrev)
     }
     */
 
+    if (block.nTime <= Params().Checkpoints().nTimeLastCheckpoint)
+        return true;
+
     if (pindexPrev == NULL)
         return error("%s : null pindexPrev for block %s", __func__, block.GetHash().ToString().c_str());
 

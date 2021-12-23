@@ -1599,7 +1599,7 @@ int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 1 * COIN;
 
-    if (ActiveProtocol() >= REWARD_CHANGE) {
+    if (ActiveProtocol() < REWARD_CHANGEV2) {
         if (nHeight >= 300000)  nSubsidy = .25 * COIN;
         if (nHeight >= 200000 && nHeight < 300000) nSubsidy = .5 * COIN;
         if (nHeight >= 150000 && nHeight < 200000)  nSubsidy = .75 * COIN;
@@ -1611,8 +1611,13 @@ int64_t GetBlockValue(int nHeight)
         if (nHeight >= 10000 && nHeight < 20000)   nSubsidy = 2 * COIN;
         if (nHeight >= 1 && nHeight < 10000)   nSubsidy = 1 * COIN;
         if (nHeight == 0)      nSubsidy = 1000000 * COIN;
-    }
-    else {
+    }else if (ActiveProtocol() >= REWARD_CHANGEV2){
+        //added news level from 1000000 to >2000000
+        if (nHeight >= 2000000)  nSubsidy = .06 * COIN;
+        if (nHeight >= 1000000 && nHeight < 2000000) nSubsidy = .12 * COIN;
+        if (nHeight >= 300000 && nHeight < 1000000)  nSubsidy = .25 * COIN;
+        if (nHeight >= 200000 && nHeight < 300000) nSubsidy = .5 * COIN;
+        if (nHeight >= 150000 && nHeight < 200000)  nSubsidy = .75 * COIN;
         if (nHeight >= 100000 && nHeight < 150000) nSubsidy = 1 * COIN;
         if (nHeight >= 80000 && nHeight < 100000)  nSubsidy = 2 * COIN;
         if (nHeight >= 60000 && nHeight < 80000)   nSubsidy = 3 * COIN;
@@ -1638,13 +1643,15 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 
-    if (ActiveProtocol() >= REWARD_CHANGE) {
+    if (ActiveProtocol() < REWARD_CHANGEV2) {
         if (nHeight > 10000 && nHeight < 150000)   ret = blockValue / 100 * 75;
         if (nHeight >= 150000 && nHeight < 200000) ret = blockValue / 100 * 80;
         if (nHeight >= 200000 && nHeight < 300000) ret = blockValue / 100 * 90;      
-    }else{
-        if (nHeight < 10000) ret = blockValue * 0;
-        if (nHeight > 10000) ret = blockValue / 100 * 70;
+    }else if(ActiveProtocol() >= REWARD_CHANGEV2){
+        if (nHeight > 10000 && nHeight < 150000)   ret = blockValue / 100 * 75;
+        if (nHeight >= 150000 && nHeight < 200000) ret = blockValue / 100 * 80;
+        if (nHeight >= 200000 && nHeight < 300000) ret = blockValue / 100 * 90;
+        if (nHeight >= 300000) ret = blockValue / 100 * 70;  // last level bdcash to Masternodes 
     }    
 
     return ret;
@@ -5362,7 +5369,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    if (IsSporkActive(SPORK_21_NEW_PROTOCOL_ENFORCEMENT_3))
+    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
